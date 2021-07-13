@@ -1,0 +1,2577 @@
+Importing File Data
+Reading Line: {5.1,3.5,1.4,0.2,Iris-setosa}
+Reading Line: {4.9,3.0,1.4,0.2,Iris-setosa}
+Reading Line: {4.7,3.2,1.3,0.2,Iris-setosa}
+Reading Line: {4.6,3.1,1.5,0.2,Iris-setosa}
+Reading Line: {5.0,3.6,1.4,0.2,Iris-setosa}
+Reading Line: {5.4,3.9,1.7,0.4,Iris-setosa}
+Reading Line: {4.6,3.4,1.4,0.3,Iris-setosa}
+Reading Line: {5.0,3.4,1.5,0.2,Iris-setosa}
+Reading Line: {4.4,2.9,1.4,0.2,Iris-setosa}
+Reading Line: {4.9,3.1,1.5,0.1,Iris-setosa}
+Reading Line: {5.4,3.7,1.5,0.2,Iris-setosa}
+Reading Line: {4.8,3.4,1.6,0.2,Iris-setosa}
+Reading Line: {4.8,3.0,1.4,0.1,Iris-setosa}
+Reading Line: {4.3,3.0,1.1,0.1,Iris-setosa}
+Reading Line: {5.8,4.0,1.2,0.2,Iris-setosa}
+Reading Line: {5.7,4.4,1.5,0.4,Iris-setosa}
+Reading Line: {5.4,3.9,1.3,0.4,Iris-setosa}
+Reading Line: {5.1,3.5,1.4,0.3,Iris-setosa}
+Reading Line: {5.7,3.8,1.7,0.3,Iris-setosa}
+Reading Line: {5.1,3.8,1.5,0.3,Iris-setosa}
+Reading Line: {5.4,3.4,1.7,0.2,Iris-setosa}
+Reading Line: {5.1,3.7,1.5,0.4,Iris-setosa}
+Reading Line: {4.6,3.6,1.0,0.2,Iris-setosa}
+Reading Line: {5.1,3.3,1.7,0.5,Iris-setosa}
+Reading Line: {4.8,3.4,1.9,0.2,Iris-setosa}
+Reading Line: {5.0,3.0,1.6,0.2,Iris-setosa}
+Reading Line: {5.0,3.4,1.6,0.4,Iris-setosa}
+Reading Line: {5.2,3.5,1.5,0.2,Iris-setosa}
+Reading Line: {5.2,3.4,1.4,0.2,Iris-setosa}
+Reading Line: {4.7,3.2,1.6,0.2,Iris-setosa}
+Reading Line: {4.8,3.1,1.6,0.2,Iris-setosa}
+Reading Line: {5.4,3.4,1.5,0.4,Iris-setosa}
+Reading Line: {5.2,4.1,1.5,0.1,Iris-setosa}
+Reading Line: {5.5,4.2,1.4,0.2,Iris-setosa}
+Reading Line: {4.9,3.1,1.5,0.1,Iris-setosa}
+Reading Line: {5.0,3.2,1.2,0.2,Iris-setosa}
+Reading Line: {5.5,3.5,1.3,0.2,Iris-setosa}
+Reading Line: {4.9,3.1,1.5,0.1,Iris-setosa}
+Reading Line: {4.4,3.0,1.3,0.2,Iris-setosa}
+Reading Line: {5.1,3.4,1.5,0.2,Iris-setosa}
+Reading Line: {5.0,3.5,1.3,0.3,Iris-setosa}
+Reading Line: {4.5,2.3,1.3,0.3,Iris-setosa}
+Reading Line: {4.4,3.2,1.3,0.2,Iris-setosa}
+Reading Line: {5.0,3.5,1.6,0.6,Iris-setosa}
+Reading Line: {5.1,3.8,1.9,0.4,Iris-setosa}
+Reading Line: {4.8,3.0,1.4,0.3,Iris-setosa}
+Reading Line: {5.1,3.8,1.6,0.2,Iris-setosa}
+Reading Line: {4.6,3.2,1.4,0.2,Iris-setosa}
+Reading Line: {5.3,3.7,1.5,0.2,Iris-setosa}
+Reading Line: {5.0,3.3,1.4,0.2,Iris-setosa}
+Reading Line: {7.0,3.2,4.7,1.4,Iris-versicolor}
+Reading Line: {6.4,3.2,4.5,1.5,Iris-versicolor}
+Reading Line: {6.9,3.1,4.9,1.5,Iris-versicolor}
+Reading Line: {5.5,2.3,4.0,1.3,Iris-versicolor}
+Reading Line: {6.5,2.8,4.6,1.5,Iris-versicolor}
+Reading Line: {5.7,2.8,4.5,1.3,Iris-versicolor}
+Reading Line: {6.3,3.3,4.7,1.6,Iris-versicolor}
+Reading Line: {4.9,2.4,3.3,1.0,Iris-versicolor}
+Reading Line: {6.6,2.9,4.6,1.3,Iris-versicolor}
+Reading Line: {5.2,2.7,3.9,1.4,Iris-versicolor}
+Reading Line: {5.0,2.0,3.5,1.0,Iris-versicolor}
+Reading Line: {5.9,3.0,4.2,1.5,Iris-versicolor}
+Reading Line: {6.0,2.2,4.0,1.0,Iris-versicolor}
+Reading Line: {6.1,2.9,4.7,1.4,Iris-versicolor}
+Reading Line: {5.6,2.9,3.6,1.3,Iris-versicolor}
+Reading Line: {6.7,3.1,4.4,1.4,Iris-versicolor}
+Reading Line: {5.6,3.0,4.5,1.5,Iris-versicolor}
+Reading Line: {5.8,2.7,4.1,1.0,Iris-versicolor}
+Reading Line: {6.2,2.2,4.5,1.5,Iris-versicolor}
+Reading Line: {5.6,2.5,3.9,1.1,Iris-versicolor}
+Reading Line: {5.9,3.2,4.8,1.8,Iris-versicolor}
+Reading Line: {6.1,2.8,4.0,1.3,Iris-versicolor}
+Reading Line: {6.3,2.5,4.9,1.5,Iris-versicolor}
+Reading Line: {6.1,2.8,4.7,1.2,Iris-versicolor}
+Reading Line: {6.4,2.9,4.3,1.3,Iris-versicolor}
+Reading Line: {6.6,3.0,4.4,1.4,Iris-versicolor}
+Reading Line: {6.8,2.8,4.8,1.4,Iris-versicolor}
+Reading Line: {6.7,3.0,5.0,1.7,Iris-versicolor}
+Reading Line: {6.0,2.9,4.5,1.5,Iris-versicolor}
+Reading Line: {5.7,2.6,3.5,1.0,Iris-versicolor}
+Reading Line: {5.5,2.4,3.8,1.1,Iris-versicolor}
+Reading Line: {5.5,2.4,3.7,1.0,Iris-versicolor}
+Reading Line: {5.8,2.7,3.9,1.2,Iris-versicolor}
+Reading Line: {6.0,2.7,5.1,1.6,Iris-versicolor}
+Reading Line: {5.4,3.0,4.5,1.5,Iris-versicolor}
+Reading Line: {6.0,3.4,4.5,1.6,Iris-versicolor}
+Reading Line: {6.7,3.1,4.7,1.5,Iris-versicolor}
+Reading Line: {6.3,2.3,4.4,1.3,Iris-versicolor}
+Reading Line: {5.6,3.0,4.1,1.3,Iris-versicolor}
+Reading Line: {5.5,2.5,4.0,1.3,Iris-versicolor}
+Reading Line: {5.5,2.6,4.4,1.2,Iris-versicolor}
+Reading Line: {6.1,3.0,4.6,1.4,Iris-versicolor}
+Reading Line: {5.8,2.6,4.0,1.2,Iris-versicolor}
+Reading Line: {5.0,2.3,3.3,1.0,Iris-versicolor}
+Reading Line: {5.6,2.7,4.2,1.3,Iris-versicolor}
+Reading Line: {5.7,3.0,4.2,1.2,Iris-versicolor}
+Reading Line: {5.7,2.9,4.2,1.3,Iris-versicolor}
+Reading Line: {6.2,2.9,4.3,1.3,Iris-versicolor}
+Reading Line: {5.1,2.5,3.0,1.1,Iris-versicolor}
+Reading Line: {5.7,2.8,4.1,1.3,Iris-versicolor}
+Reading Line: {6.3,3.3,6.0,2.5,Iris-virginica}
+Reading Line: {5.8,2.7,5.1,1.9,Iris-virginica}
+Reading Line: {7.1,3.0,5.9,2.1,Iris-virginica}
+Reading Line: {6.3,2.9,5.6,1.8,Iris-virginica}
+Reading Line: {6.5,3.0,5.8,2.2,Iris-virginica}
+Reading Line: {7.6,3.0,6.6,2.1,Iris-virginica}
+Reading Line: {4.9,2.5,4.5,1.7,Iris-virginica}
+Reading Line: {7.3,2.9,6.3,1.8,Iris-virginica}
+Reading Line: {6.7,2.5,5.8,1.8,Iris-virginica}
+Reading Line: {7.2,3.6,6.1,2.5,Iris-virginica}
+Reading Line: {6.5,3.2,5.1,2.0,Iris-virginica}
+Reading Line: {6.4,2.7,5.3,1.9,Iris-virginica}
+Reading Line: {6.8,3.0,5.5,2.1,Iris-virginica}
+Reading Line: {5.7,2.5,5.0,2.0,Iris-virginica}
+Reading Line: {5.8,2.8,5.1,2.4,Iris-virginica}
+Reading Line: {6.4,3.2,5.3,2.3,Iris-virginica}
+Reading Line: {6.5,3.0,5.5,1.8,Iris-virginica}
+Reading Line: {7.7,3.8,6.7,2.2,Iris-virginica}
+Reading Line: {7.7,2.6,6.9,2.3,Iris-virginica}
+Reading Line: {6.0,2.2,5.0,1.5,Iris-virginica}
+Reading Line: {6.9,3.2,5.7,2.3,Iris-virginica}
+Reading Line: {5.6,2.8,4.9,2.0,Iris-virginica}
+Reading Line: {7.7,2.8,6.7,2.0,Iris-virginica}
+Reading Line: {6.3,2.7,4.9,1.8,Iris-virginica}
+Reading Line: {6.7,3.3,5.7,2.1,Iris-virginica}
+Reading Line: {7.2,3.2,6.0,1.8,Iris-virginica}
+Reading Line: {6.2,2.8,4.8,1.8,Iris-virginica}
+Reading Line: {6.1,3.0,4.9,1.8,Iris-virginica}
+Reading Line: {6.4,2.8,5.6,2.1,Iris-virginica}
+Reading Line: {7.2,3.0,5.8,1.6,Iris-virginica}
+Reading Line: {7.4,2.8,6.1,1.9,Iris-virginica}
+Reading Line: {7.9,3.8,6.4,2.0,Iris-virginica}
+Reading Line: {6.4,2.8,5.6,2.2,Iris-virginica}
+Reading Line: {6.3,2.8,5.1,1.5,Iris-virginica}
+Reading Line: {6.1,2.6,5.6,1.4,Iris-virginica}
+Reading Line: {7.7,3.0,6.1,2.3,Iris-virginica}
+Reading Line: {6.3,3.4,5.6,2.4,Iris-virginica}
+Reading Line: {6.4,3.1,5.5,1.8,Iris-virginica}
+Reading Line: {6.0,3.0,4.8,1.8,Iris-virginica}
+Reading Line: {6.9,3.1,5.4,2.1,Iris-virginica}
+Reading Line: {6.7,3.1,5.6,2.4,Iris-virginica}
+Reading Line: {6.9,3.1,5.1,2.3,Iris-virginica}
+Reading Line: {5.8,2.7,5.1,1.9,Iris-virginica}
+Reading Line: {6.8,3.2,5.9,2.3,Iris-virginica}
+Reading Line: {6.7,3.3,5.7,2.5,Iris-virginica}
+Reading Line: {6.7,3.0,5.2,2.3,Iris-virginica}
+Reading Line: {6.3,2.5,5.0,1.9,Iris-virginica}
+Reading Line: {6.5,3.0,5.2,2.0,Iris-virginica}
+Reading Line: {6.2,3.4,5.4,2.3,Iris-virginica}
+Reading Line: {5.9,3.0,5.1,1.8,Iris-virginica}
+Reading Line: {null}
+Data Import Finished 150 Irises. Unique: 3
+
+
+Euclidean Distance
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.5, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.14694216549377498
+Distance from Iris-versicolor: 3.2560167609911126
+Distance from Iris-virginica: 4.807779521110665
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.0, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.43816891719974876
+Distance from Iris-versicolor: 3.237064090092326
+Distance from Iris-virginica: 4.845074191755074
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.7, SW: 3.2, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 0.4123008610226271
+Distance from Iris-versicolor: 3.4117462529903704
+Distance from Iris-virginica: 5.0091743089000635
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.1, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.5188371613521916
+Distance from Iris-versicolor: 3.2672169154105535
+Distance from Iris-virginica: 4.8770886729288705
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.6, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.19796969465046868
+Distance from Iris-versicolor: 3.3063964361148552
+Distance from Iris-virginica: 4.852120902960316
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.9, PL:1.7, PW: 0.4
+Distance from Iris-setosa: 0.683806990312325
+Distance from Iris-versicolor: 2.987253916924637
+Distance from Iris-virginica: 4.449362567485867
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.4, PL:1.4, PW: 0.3
+Distance from Iris-setosa: 0.4152011560677545
+Distance from Iris-versicolor: 3.363521636754591
+Distance from Iris-virginica: 4.941886676524573
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.4, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.05993329625508687
+Distance from Iris-versicolor: 3.1743571171244622
+Distance from Iris-virginica: 4.744399567589604
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.4, SW: 2.9, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.80099438200277
+Distance from Iris-versicolor: 3.421273817689861
+Distance from Iris-virginica: 5.043452249231448
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 0.3665951445395862
+Distance from Iris-versicolor: 3.1954706856669945
+Distance from Iris-virginica: 4.800537531389351
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.7, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.48784423743650035
+Distance from Iris-versicolor: 3.158857363309177
+Distance from Iris-virginica: 4.661830176044357
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.4, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.2513801901502977
+Distance from Iris-versicolor: 3.1531021726421047
+Distance from Iris-virginica: 4.732044370418677
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.0, PL:1.4, PW: 0.1
+Distance from Iris-setosa: 0.49192682382647146
+Distance from Iris-versicolor: 3.3055013273943903
+Distance from Iris-virginica: 4.91940822223003
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.3, SW: 3.0, PL:1.1, PW: 0.1
+Distance from Iris-setosa: 0.9090610540552266
+Distance from Iris-versicolor: 3.7538296424571196
+Distance from Iris-virginica: 5.370303584554393
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.8, SW: 4.0, PL:1.2, PW: 0.2
+Distance from Iris-setosa: 1.0201921387660267
+Distance from Iris-versicolor: 3.4814980714233412
+Distance from Iris-virginica: 4.89665640244556
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.7, SW: 4.4, PL:1.5, PW: 0.4
+Distance from Iris-setosa: 1.213091917374772
+Distance from Iris-versicolor: 3.3398051154340647
+Distance from Iris-virginica: 4.682520039851522
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.9, PL:1.3, PW: 0.4
+Distance from Iris-setosa: 0.6624137679728586
+Distance from Iris-versicolor: 3.3353414054204706
+Distance from Iris-virginica: 4.7998431144789615
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.5, PL:1.4, PW: 0.3
+Distance from Iris-setosa: 0.15097019573412487
+Distance from Iris-versicolor: 3.222847683132323
+Distance from Iris-virginica: 4.770804676042022
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.7, SW: 3.8, PL:1.7, PW: 0.3
+Distance from Iris-setosa: 0.8284877790287558
+Distance from Iris-versicolor: 2.946567052139322
+Distance from Iris-virginica: 4.395375667328611
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.8, PL:1.5, PW: 0.3
+Distance from Iris-setosa: 0.3989887216451105
+Distance from Iris-versicolor: 3.218665626181318
+Distance from Iris-virginica: 4.727595645809586
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.4, PL:1.7, PW: 0.2
+Distance from Iris-setosa: 0.4617271921817046
+Distance from Iris-versicolor: 2.905977696463765
+Distance from Iris-virginica: 4.449924410250631
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.7, PL:1.5, PW: 0.4
+Distance from Iris-setosa: 0.3376270131372782
+Distance from Iris-versicolor: 3.1570801940933793
+Distance from Iris-virginica: 4.675395946542328
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.6, PL:1.0, PW: 0.2
+Distance from Iris-setosa: 0.6443539400050251
+Distance from Iris-versicolor: 3.7768376044929703
+Distance from Iris-virginica: 5.335860810616949
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.3, PL:1.7, PW: 0.5
+Distance from Iris-setosa: 0.3794627781482662
+Distance from Iris-versicolor: 2.8532137707021605
+Distance from Iris-virginica: 4.4201425984098925
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.4, PL:1.9, PW: 0.2
+Distance from Iris-setosa: 0.484553402629679
+Distance from Iris-versicolor: 2.9054158164060446
+Distance from Iris-virginica: 4.48452828328812
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.0, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.4418053870201228
+Distance from Iris-versicolor: 3.0307290570492786
+Distance from Iris-virginica: 4.639207251633741
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.4, PL:1.6, PW: 0.4
+Distance from Iris-setosa: 0.20782685100823733
+Distance from Iris-versicolor: 3.021016899495719
+Distance from Iris-virginica: 4.584820308032195
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.2, SW: 3.5, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.21815590755237463
+Distance from Iris-versicolor: 3.1446118875570734
+Distance from Iris-virginica: 4.6906993711255645
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.2, SW: 3.4, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.20974269951538324
+Distance from Iris-versicolor: 3.211079709841706
+Distance from Iris-virginica: 4.767222523679565
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.7, SW: 3.2, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.4019850743497819
+Distance from Iris-versicolor: 3.155851747135133
+Distance from Iris-virginica: 4.757160629718575
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.1, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.40495925720990766
+Distance from Iris-versicolor: 3.106249829778331
+Distance from Iris-virginica: 4.71404750968964
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.4, PL:1.5, PW: 0.4
+Distance from Iris-setosa: 0.42566653615242156
+Distance from Iris-versicolor: 3.015844594345473
+Distance from Iris-virginica: 4.5491018077137415
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.2, SW: 4.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 0.7244252894536461
+Distance from Iris-versicolor: 3.371944912775686
+Distance from Iris-virginica: 4.834958868175036
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.5, SW: 4.2, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.9282198015556444
+Distance from Iris-versicolor: 3.4109386231229957
+Distance from Iris-virginica: 4.827498723315325
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 0.3665951445395862
+Distance from Iris-versicolor: 3.1954706856669945
+Distance from Iris-virginica: 4.800537531389351
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.2, PL:1.2, PW: 0.2
+Distance from Iris-setosa: 0.3452419441493171
+Distance from Iris-versicolor: 3.406118780643895
+Distance from Iris-virginica: 4.989713811794329
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.5, SW: 3.5, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 0.5287645979072355
+Distance from Iris-versicolor: 3.269620873749606
+Distance from Iris-virginica: 4.786281847489876
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 0.3665951445395862
+Distance from Iris-versicolor: 3.1954706856669945
+Distance from Iris-virginica: 4.800537531389351
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.4, SW: 3.0, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 0.7555077762670609
+Distance from Iris-versicolor: 3.5104235811770104
+Distance from Iris-virginica: 5.125767642374271
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.4, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.1113193604006063
+Distance from Iris-versicolor: 3.147012228158891
+Distance from Iris-virginica: 4.711439333184474
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.5, PL:1.3, PW: 0.3
+Distance from Iris-setosa: 0.19181240835774904
+Distance from Iris-versicolor: 3.3376351527932435
+Distance from Iris-virginica: 4.890057319733355
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.5, SW: 2.3, PL:1.3, PW: 0.3
+Distance from Iris-setosa: 1.2393514432960495
+Distance from Iris-versicolor: 3.459918048589749
+Distance from Iris-virginica: 5.092248415347694
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.4, SW: 3.2, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 0.666027026478655
+Distance from Iris-versicolor: 3.5296719285742775
+Distance from Iris-virginica: 5.130967477673623
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.5, PL:1.6, PW: 0.6
+Distance from Iris-setosa: 0.389861513873837
+Distance from Iris-versicolor: 2.9890637816400303
+Distance from Iris-virginica: 4.528676472246363
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.8, PL:1.9, PW: 0.4
+Distance from Iris-setosa: 0.6076117181226836
+Distance from Iris-versicolor: 2.8502796577611282
+Distance from Iris-virginica: 4.351359242460272
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.0, PL:1.4, PW: 0.3
+Distance from Iris-setosa: 0.4737003272112025
+Distance from Iris-versicolor: 3.236748848310404
+Distance from Iris-virginica: 4.844816190900444
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.8, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.4185594342503816
+Distance from Iris-versicolor: 3.1677282539246003
+Distance from Iris-virginica: 4.680161385067588
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.2, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.4673242985336842
+Distance from Iris-versicolor: 3.3634306230422415
+Distance from Iris-virginica: 4.964179414258154
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.3, SW: 3.7, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.4113295515763486
+Distance from Iris-versicolor: 3.176670739089865
+Distance from Iris-virginica: 4.688744742139886
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.3, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.1413930691370697
+Distance from Iris-versicolor: 3.243299567821413
+Distance from Iris-virginica: 4.822144466619019
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 7.0, SW: 3.2, PL:4.7, PW: 1.4
+Distance from Iris-setosa: 3.9788933134729816
+Distance from Iris-versicolor: 1.2564170976890066
+Distance from Iris-virginica: 1.1486197181593407
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.4, SW: 3.2, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 3.5756946178330167
+Distance from Iris-versicolor: 0.7219674401174583
+Distance from Iris-virginica: 1.2149049031142756
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.9, SW: 3.1, PL:4.9, PW: 1.5
+Distance from Iris-setosa: 4.131826714662657
+Distance from Iris-versicolor: 1.240314412450575
+Distance from Iris-virginica: 0.8940510371027168
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.3, PL:4.0, PW: 1.3
+Distance from Iris-setosa: 3.00672446359822
+Distance from Iris-versicolor: 0.6693068642015444
+Distance from Iris-virginica: 2.145089879300578
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.5, SW: 2.8, PL:4.6, PW: 1.5
+Distance from Iris-setosa: 3.745129103248645
+Distance from Iris-versicolor: 0.7050924421213817
+Distance from Iris-virginica: 1.1032877791451825
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.8, PL:4.5, PW: 1.3
+Distance from Iris-setosa: 3.346041243021371
+Distance from Iris-versicolor: 0.33168131511111076
+Distance from Iris-virginica: 1.574587964181245
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.3, SW: 3.3, PL:4.7, PW: 1.6
+Distance from Iris-setosa: 3.7414959575014914
+Distance from Iris-versicolor: 0.8464886928002847
+Distance from Iris-virginica: 1.0532460571701376
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 4.9, SW: 2.4, PL:3.3, PW: 1.0
+Distance from Iris-setosa: 2.233828999722226
+Distance from Iris-versicolor: 1.4727498384418747
+Distance from Iris-virginica: 3.0583482345231876
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.6, SW: 2.9, PL:4.6, PW: 1.3
+Distance from Iris-setosa: 3.7092845671369026
+Distance from Iris-versicolor: 0.7822079196017604
+Distance from Iris-virginica: 1.196067413210661
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.2, SW: 2.7, PL:3.9, PW: 1.4
+Distance from Iris-setosa: 2.7970684653758475
+Distance from Iris-versicolor: 0.8017915175723532
+Distance from Iris-virginica: 2.273615459338812
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.0, SW: 2.0, PL:3.5, PW: 1.0
+Distance from Iris-setosa: 2.5937602047992026
+Distance from Iris-versicolor: 1.4438512292978298
+Distance from Iris-virginica: 2.9621490943138618
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.9, SW: 3.0, PL:4.2, PW: 1.5
+Distance from Iris-setosa: 3.1681527740940783
+Distance from Iris-versicolor: 0.3010394321211009
+Distance from Iris-virginica: 1.613147210768783
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 2.2, PL:4.0, PW: 1.0
+Distance from Iris-setosa: 3.0780500320820003
+Distance from Iris-versicolor: 0.7004461004901054
+Distance from Iris-virginica: 2.0997406007118524
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 2.9, PL:4.7, PW: 1.4
+Distance from Iris-setosa: 3.6432392180585675
+Distance from Iris-versicolor: 0.5109137920991192
+Distance from Iris-virginica: 1.1723170462568735
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 2.9, PL:3.6, PW: 1.3
+Distance from Iris-setosa: 2.5097394287056973
+Distance from Iris-versicolor: 0.7365198397773622
+Distance from Iris-virginica: 2.313311606826406
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.7, SW: 3.1, PL:4.4, PW: 1.4
+Distance from Iris-setosa: 3.595440445898111
+Distance from Iris-versicolor: 0.8717869549344252
+Distance from Iris-virginica: 1.3186775914823814
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 3.0, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 3.36487622357792
+Distance from Iris-versicolor: 0.498581912392803
+Distance from Iris-virginica: 1.5478998428874866
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.8, SW: 2.7, PL:4.1, PW: 1.0
+Distance from Iris-setosa: 2.9438057001099787
+Distance from Iris-versicolor: 0.3806710574465955
+Distance from Iris-virginica: 1.9685427580516943
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.2, SW: 2.2, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 3.701890327927072
+Distance from Iris-versicolor: 0.6995714759021249
+Distance from Iris-virginica: 1.4603631706797362
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 2.5, PL:3.9, PW: 1.1
+Distance from Iris-setosa: 2.8039957203961636
+Distance from Iris-versicolor: 0.5836306534888264
+Distance from Iris-virginica: 2.1935877591162014
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.9, SW: 3.2, PL:4.8, PW: 1.8
+Distance from Iris-setosa: 3.7943104775439767
+Distance from Iris-versicolor: 0.8486557467115212
+Distance from Iris-virginica: 1.081932186851117
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 2.8, PL:4.0, PW: 1.3
+Distance from Iris-setosa: 3.0207932732975955
+Distance from Iris-versicolor: 0.31560153917325795
+Distance from Iris-virginica: 1.7929706979231717
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.3, SW: 2.5, PL:4.9, PW: 1.5
+Distance from Iris-setosa: 3.9875797170714975
+Distance from Iris-versicolor: 0.817919364381705
+Distance from Iris-virginica: 1.0046528041788572
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 2.8, PL:4.7, PW: 1.2
+Distance from Iris-setosa: 3.6006099483282
+Distance from Iris-versicolor: 0.5030643291703684
+Distance from Iris-virginica: 1.2984582872049093
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.4, SW: 2.9, PL:4.3, PW: 1.3
+Distance from Iris-setosa: 3.3718825602324887
+Distance from Iris-versicolor: 0.5081099881914931
+Distance from Iris-virginica: 1.4612188714486867
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.6, SW: 3.0, PL:4.4, PW: 1.4
+Distance from Iris-setosa: 3.5597741501393037
+Distance from Iris-versicolor: 0.7450600885902847
+Distance from Iris-virginica: 1.309164080731584
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.8, SW: 2.8, PL:4.8, PW: 1.4
+Distance from Iris-setosa: 4.008190614229817
+Distance from Iris-versicolor: 1.0455016591491537
+Distance from Iris-virginica: 1.0077585310700392
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.7, SW: 3.0, PL:5.0, PW: 1.7
+Distance from Iris-setosa: 4.203283478424932
+Distance from Iris-versicolor: 1.1731747633690741
+Distance from Iris-virginica: 0.645944210912297
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 2.9, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 3.4714826803543186
+Distance from Iris-versicolor: 0.3455434124619903
+Distance from Iris-virginica: 1.323880882208733
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.6, PL:3.5, PW: 1.0
+Distance from Iris-setosa: 2.422311292959681
+Distance from Iris-versicolor: 0.8609512091807251
+Distance from Iris-virginica: 2.492520930760215
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.4, PL:3.8, PW: 1.1
+Distance from Iris-setosa: 2.7331286102194317
+Distance from Iris-versicolor: 0.7456077133055785
+Distance from Iris-virginica: 2.3382138318834533
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.4, PL:3.7, PW: 1.0
+Distance from Iris-setosa: 2.6175545839580887
+Distance from Iris-versicolor: 0.8432276697055783
+Distance from Iris-virginica: 2.453941168191372
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.8, SW: 2.7, PL:3.9, PW: 1.2
+Distance from Iris-setosa: 2.827364850881471
+Distance from Iris-versicolor: 0.3943636632290911
+Distance from Iris-virginica: 2.0316644876253
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 2.7, PL:5.1, PW: 1.6
+Distance from Iris-setosa: 4.0697410237016305
+Distance from Iris-versicolor: 0.8987589203088073
+Distance from Iris-virginica: 0.9070063893257722
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.4, SW: 3.0, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 3.3353848353675777
+Distance from Iris-versicolor: 0.6436600104710168
+Distance from Iris-virginica: 1.6850303430337497
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 3.4, PL:4.5, PW: 1.6
+Distance from Iris-setosa: 3.4705031335528287
+Distance from Iris-versicolor: 0.7438264588708076
+Distance from Iris-virginica: 1.3571393653359407
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.7, SW: 3.1, PL:4.7, PW: 1.5
+Distance from Iris-setosa: 3.8755634429073673
+Distance from Iris-versicolor: 0.9820907751894451
+Distance from Iris-virginica: 1.0116787650292502
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.3, SW: 2.3, PL:4.4, PW: 1.3
+Distance from Iris-setosa: 3.558032040327912
+Distance from Iris-versicolor: 0.6199179051128876
+Distance from Iris-virginica: 1.5448011491055322
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 3.0, PL:4.1, PW: 1.3
+Distance from Iris-setosa: 2.9310735234722447
+Distance from Iris-versicolor: 0.4233156839324801
+Distance from Iris-virginica: 1.909448591507796
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.5, PL:4.0, PW: 1.3
+Distance from Iris-setosa: 2.9382293988046615
+Distance from Iris-versicolor: 0.5508918973346196
+Distance from Iris-virginica: 2.0915888514741856
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.6, PL:4.4, PW: 1.2
+Distance from Iris-setosa: 3.232211626734859
+Distance from Iris-versicolor: 0.48509650302060037
+Distance from Iris-virginica: 1.834096668738529
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 3.0, PL:4.6, PW: 1.4
+Distance from Iris-setosa: 3.5415239657525963
+Distance from Iris-versicolor: 0.46796590327776116
+Distance from Iris-virginica: 1.2455563376571026
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.8, SW: 2.6, PL:4.0, PW: 1.2
+Distance from Iris-setosa: 2.9402027140998293
+Distance from Iris-versicolor: 0.34287536394730767
+Distance from Iris-virginica: 1.9673782699177191
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.0, SW: 2.3, PL:3.3, PW: 1.0
+Distance from Iris-setosa: 2.278682075235596
+Distance from Iris-versicolor: 1.434705489545715
+Distance from Iris-virginica: 3.024096656900663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 2.7, PL:4.2, PW: 1.3
+Distance from Iris-setosa: 3.0772052255252658
+Distance from Iris-versicolor: 0.3251565476937553
+Distance from Iris-virginica: 1.8535310240037628
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 3.0, PL:4.2, PW: 1.2
+Distance from Iris-setosa: 3.0093175306039077
+Distance from Iris-versicolor: 0.34789783407934693
+Distance from Iris-virginica: 1.824301854667817
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.9, PL:4.2, PW: 1.3
+Distance from Iris-setosa: 3.057906473389924
+Distance from Iris-versicolor: 0.2614953952416963
+Distance from Iris-virginica: 1.782482517056227
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.2, SW: 2.9, PL:4.3, PW: 1.3
+Distance from Iris-setosa: 3.2942361785397236
+Distance from Iris-versicolor: 0.3223197881208111
+Distance from Iris-virginica: 1.5028286408007756
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.1, SW: 2.5, PL:3.0, PW: 1.1
+Distance from Iris-setosa: 1.9858479297267457
+Distance from Iris-versicolor: 1.5319096542131279
+Distance from Iris-virginica: 3.1390939123061874
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.8, PL:4.1, PW: 1.3
+Distance from Iris-setosa: 2.987840691870971
+Distance from Iris-versicolor: 0.26613684698749945
+Distance from Iris-virginica: 1.8657421910894079
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 3.3, PL:6.0, PW: 2.5
+Distance from Iris-setosa: 5.230027915795479
+Distance from Iris-versicolor: 2.209028839368374
+Distance from Iris-virginica: 0.7977534645977905
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.8, SW: 2.7, PL:5.1, PW: 1.9
+Distance from Iris-setosa: 4.13627755354981
+Distance from Iris-versicolor: 1.0338220373922766
+Distance from Iris-virginica: 0.9713361537650638
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.1, SW: 3.0, PL:5.9, PW: 2.1
+Distance from Iris-setosa: 5.261405895765884
+Distance from Iris-versicolor: 2.187117253955293
+Distance from Iris-virginica: 0.6084082431047267
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.9, PL:5.6, PW: 1.8
+Distance from Iris-setosa: 4.633615435057164
+Distance from Iris-versicolor: 1.4879146634851896
+Distance from Iris-virginica: 0.38804285452053283
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.0, PL:5.8, PW: 2.2
+Distance from Iris-setosa: 5.00335807233502
+Distance from Iris-versicolor: 1.8883672476880067
+Distance from Iris-virginica: 0.3262063614918907
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.6, SW: 3.0, PL:6.6, PW: 2.1
+Distance from Iris-setosa: 6.060263360613958
+Distance from Iris-versicolor: 3.0029598060637865
+Distance from Iris-virginica: 1.4453064001372795
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 4.9, SW: 2.5, PL:4.5, PW: 1.7
+Distance from Iris-setosa: 3.4915887501250773
+Distance from Iris-versicolor: 1.140180904415538
+Distance from Iris-virginica: 2.0847047569406802
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.3, SW: 2.9, PL:6.3, PW: 1.8
+Distance from Iris-setosa: 5.598106108319135
+Distance from Iris-versicolor: 2.522675176437555
+Distance from Iris-virginica: 1.0445065455089857
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 2.5, PL:5.8, PW: 1.8
+Distance from Iris-setosa: 4.993434889932981
+Distance from Iris-versicolor: 1.8196243851292784
+Distance from Iris-virginica: 0.5800091294779576
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.2, SW: 3.6, PL:6.1, PW: 2.5
+Distance from Iris-setosa: 5.606138778160954
+Distance from Iris-versicolor: 2.675286031798599
+Distance from Iris-virginica: 1.1318100209889976
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.2, PL:5.1, PW: 2.0
+Distance from Iris-setosa: 4.310869053914767
+Distance from Iris-versicolor: 1.3086884870045763
+Distance from Iris-virginica: 0.5205707671499719
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 2.7, PL:5.3, PW: 1.9
+Distance from Iris-setosa: 4.4627336913600395
+Distance from Iris-versicolor: 1.2927633134451781
+Distance from Iris-virginica: 0.4389311908235459
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.8, SW: 3.0, PL:5.5, PW: 2.1
+Distance from Iris-setosa: 4.809073923324531
+Distance from Iris-versicolor: 1.7328790025997145
+Distance from Iris-virginica: 0.21639606499297762
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.7, SW: 2.5, PL:5.0, PW: 2.0
+Distance from Iris-setosa: 4.1123219718305135
+Distance from Iris-versicolor: 1.063692185842506
+Distance from Iris-virginica: 1.1610672921689076
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.8, SW: 2.8, PL:5.1, PW: 2.4
+Distance from Iris-setosa: 4.345249359933213
+Distance from Iris-versicolor: 1.375519287803834
+Distance from Iris-virginica: 1.0145576656575226
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 3.2, PL:5.3, PW: 2.3
+Distance from Iris-setosa: 4.575236824471494
+Distance from Iris-versicolor: 1.5749351282066013
+Distance from Iris-virginica: 0.4892108512128931
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.0, PL:5.5, PW: 1.8
+Distance from Iris-setosa: 4.595344600788933
+Distance from Iris-versicolor: 1.4785584005285115
+Distance from Iris-virginica: 0.2536281864155556
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 3.8, PL:6.7, PW: 2.2
+Distance from Iris-setosa: 6.216525717794466
+Distance from Iris-versicolor: 3.321422771868664
+Distance from Iris-virginica: 1.7988868568120449
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 2.6, PL:6.9, PW: 2.3
+Distance from Iris-setosa: 6.457862804364924
+Distance from Iris-versicolor: 3.3441713297241433
+Distance from Iris-virginica: 1.7947127691112912
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.0, SW: 2.2, PL:5.0, PW: 1.5
+Distance from Iris-setosa: 4.068463100484014
+Distance from Iris-versicolor: 0.9560826990626377
+Distance from Iris-virginica: 1.2385114413188816
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.9, SW: 3.2, PL:5.7, PW: 2.3
+Distance from Iris-setosa: 5.079920471818433
+Distance from Iris-versicolor: 2.0531241115049084
+Distance from Iris-virginica: 0.4892108512128961
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.6, SW: 2.8, PL:4.9, PW: 2.0
+Distance from Iris-setosa: 3.9527701678696174
+Distance from Iris-versicolor: 0.988821316939847
+Distance from Iris-virginica: 1.212501789803946
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 2.8, PL:6.7, PW: 2.0
+Distance from Iris-setosa: 6.175661260140489
+Distance from Iris-versicolor: 3.1054941840948445
+Distance from Iris-virginica: 1.593003637873368
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.7, PL:4.9, PW: 1.8
+Distance from Iris-setosa: 4.05181342117329
+Distance from Iris-versicolor: 0.8943200842881616
+Distance from Iris-virginica: 0.8001003626281984
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.3, PL:5.7, PW: 2.1
+Distance from Iris-setosa: 4.926661344155899
+Distance from Iris-versicolor: 1.8996273117022897
+Distance from Iris-virginica: 0.3842663012518515
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.2, SW: 3.2, PL:6.0, PW: 1.8
+Distance from Iris-setosa: 5.278029177638183
+Distance from Iris-versicolor: 2.265088241038702
+Distance from Iris-virginica: 0.8086473831515077
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.2, SW: 2.8, PL:4.8, PW: 1.8
+Distance from Iris-setosa: 3.918876369573299
+Distance from Iris-versicolor: 0.7814248138444262
+Distance from Iris-virginica: 0.8993945687393128
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.1, SW: 3.0, PL:4.9, PW: 1.8
+Distance from Iris-setosa: 3.949530605021311
+Distance from Iris-versicolor: 0.8595277802362871
+Distance from Iris-virginica: 0.8564425979662078
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 2.8, PL:5.6, PW: 2.1
+Distance from Iris-setosa: 4.782927137224651
+Distance from Iris-versicolor: 1.6305164590905747
+Distance from Iris-virginica: 0.2823896662611972
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.2, SW: 3.0, PL:5.8, PW: 1.6
+Distance from Iris-setosa: 5.062409702898414
+Distance from Iris-versicolor: 2.045805126898166
+Distance from Iris-virginica: 0.7679478651647608
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.4, SW: 2.8, PL:6.1, PW: 1.9
+Distance from Iris-setosa: 5.508901160848686
+Distance from Iris-versicolor: 2.4410628842776503
+Distance from Iris-virginica: 0.9845441874006714
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.9, SW: 3.8, PL:6.4, PW: 2.0
+Distance from Iris-setosa: 5.997398769466644
+Distance from Iris-versicolor: 3.1775057996860903
+Distance from Iris-virginica: 1.7556320581520262
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 2.8, PL:5.6, PW: 2.2
+Distance from Iris-setosa: 4.822612569966615
+Distance from Iris-versicolor: 1.6803826838496025
+Distance from Iris-virginica: 0.3249265408433786
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.8, PL:5.1, PW: 1.5
+Distance from Iris-setosa: 4.105410089138477
+Distance from Iris-versicolor: 0.9496574274377653
+Distance from Iris-virginica: 0.7736238902794491
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.1, SW: 2.6, PL:5.6, PW: 1.4
+Distance from Iris-setosa: 4.506527709889288
+Distance from Iris-versicolor: 1.3732919799302608
+Distance from Iris-virginica: 0.8835028335803132
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 3.0, PL:6.1, PW: 2.3
+Distance from Iris-setosa: 5.757776654230346
+Distance from Iris-versicolor: 2.75973457850088
+Distance from Iris-virginica: 1.2533929645610415
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 3.4, PL:5.6, PW: 2.4
+Distance from Iris-setosa: 4.8404123791263896
+Distance from Iris-versicolor: 1.8797015191025106
+Distance from Iris-virginica: 0.6549126585108714
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 3.1, PL:5.5, PW: 1.8
+Distance from Iris-setosa: 4.555742749541506
+Distance from Iris-versicolor: 1.461761673006715
+Distance from Iris-virginica: 0.3356495051058124
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.0, SW: 3.0, PL:4.8, PW: 1.8
+Distance from Iris-setosa: 3.8357257461919776
+Distance from Iris-versicolor: 0.7693173789065954
+Distance from Iris-virginica: 0.9927624373154137
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.9, SW: 3.1, PL:5.4, PW: 2.1
+Distance from Iris-setosa: 4.756594580159214
+Distance from Iris-versicolor: 1.734350506232033
+Distance from Iris-virginica: 0.36365357637607804
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.1, PL:5.6, PW: 2.4
+Distance from Iris-setosa: 4.972483484135467
+Distance from Iris-versicolor: 1.9257683981635139
+Distance from Iris-virginica: 0.4150227989052069
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.9, SW: 3.1, PL:5.1, PW: 2.3
+Distance from Iris-setosa: 4.597389694163417
+Distance from Iris-versicolor: 1.6609599648991902
+Distance from Iris-virginica: 0.6206130761414703
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.8, SW: 2.7, PL:5.1, PW: 1.9
+Distance from Iris-setosa: 4.13627755354981
+Distance from Iris-versicolor: 1.0338220373922766
+Distance from Iris-virginica: 0.9713361537650638
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.8, SW: 3.2, PL:5.9, PW: 2.3
+Distance from Iris-setosa: 5.212599351571153
+Distance from Iris-versicolor: 2.1558681770541206
+Distance from Iris-virginica: 0.5386655644068774
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.3, PL:5.7, PW: 2.5
+Distance from Iris-setosa: 5.090853759439571
+Distance from Iris-versicolor: 2.0949921447658397
+Distance from Iris-virginica: 0.609092705268346
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.0, PL:5.2, PW: 2.3
+Distance from Iris-setosa: 4.6075147313926195
+Distance from Iris-versicolor: 1.5895103356187201
+Distance from Iris-virginica: 0.45979407377409426
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.5, PL:5.0, PW: 1.9
+Distance from Iris-setosa: 4.2145927442636735
+Distance from Iris-versicolor: 1.053183824535501
+Distance from Iris-virginica: 0.7951376758845656
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.0, PL:5.2, PW: 2.0
+Distance from Iris-setosa: 4.409987755085042
+Distance from Iris-versicolor: 1.3255003848751015
+Distance from Iris-virginica: 0.370464470106257
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.2, SW: 3.4, PL:5.4, PW: 2.3
+Distance from Iris-setosa: 4.5983901530861875
+Distance from Iris-versicolor: 1.6617584259519822
+Distance from Iris-virginica: 0.6749646338471689
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.9, SW: 3.0, PL:5.1, PW: 1.8
+Distance from Iris-setosa: 4.076222761331868
+Distance from Iris-versicolor: 1.0020449727666407
+Distance from Iris-virginica: 0.8694791105087616
+Iris Determined as Iris-virginica
+Iris: Iris-setosa Correct: 50.0 Total: 50.0 Score: 100.00
+Iris: Iris-versicolor Correct: 46.0 Total: 50.0 Score: 92.00
+Iris: Iris-virginica Correct: 44.0 Total: 50.0 Score: 88.00
+
+
+Chebyshev Distance
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.5, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.0940000000000003
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.0, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.4180000000000006
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.7, SW: 3.2, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 0.30599999999999916
+Distance from Iris-versicolor: 2.9510204081632647
+Distance from Iris-virginica: 4.252083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.1, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.4059999999999997
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.6, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.1819999999999995
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.9, PL:1.7, PW: 0.4
+Distance from Iris-setosa: 0.4819999999999993
+Distance from Iris-versicolor: 2.5510204081632644
+Distance from Iris-virginica: 3.852083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.4, PL:1.4, PW: 0.3
+Distance from Iris-setosa: 0.4059999999999997
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.4, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.0439999999999999
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.4, SW: 2.9, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.605999999999999
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 0.3180000000000005
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.7, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.394000000000001
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.4, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.20599999999999952
+Distance from Iris-versicolor: 2.6510204081632645
+Distance from Iris-virginica: 3.952083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.0, PL:1.4, PW: 0.1
+Distance from Iris-setosa: 0.4180000000000006
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.3, SW: 3.0, PL:1.1, PW: 0.1
+Distance from Iris-setosa: 0.7059999999999995
+Distance from Iris-versicolor: 3.1510204081632645
+Distance from Iris-virginica: 4.4520833333333325
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.8, SW: 4.0, PL:1.2, PW: 0.2
+Distance from Iris-setosa: 0.7940000000000005
+Distance from Iris-versicolor: 3.0510204081632644
+Distance from Iris-virginica: 4.352083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.7, SW: 4.4, PL:1.5, PW: 0.4
+Distance from Iris-setosa: 0.9819999999999998
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.9, PL:1.3, PW: 0.4
+Distance from Iris-setosa: 0.4819999999999993
+Distance from Iris-versicolor: 2.9510204081632647
+Distance from Iris-virginica: 4.252083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.5, PL:1.4, PW: 0.3
+Distance from Iris-setosa: 0.0940000000000003
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.7, SW: 3.8, PL:1.7, PW: 0.3
+Distance from Iris-setosa: 0.6940000000000008
+Distance from Iris-versicolor: 2.5510204081632644
+Distance from Iris-virginica: 3.852083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.8, PL:1.5, PW: 0.3
+Distance from Iris-setosa: 0.38199999999999923
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.4, PL:1.7, PW: 0.2
+Distance from Iris-setosa: 0.394000000000001
+Distance from Iris-versicolor: 2.5510204081632644
+Distance from Iris-virginica: 3.852083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.7, PL:1.5, PW: 0.4
+Distance from Iris-setosa: 0.2819999999999996
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.6, PL:1.0, PW: 0.2
+Distance from Iris-setosa: 0.46399999999999997
+Distance from Iris-versicolor: 3.2510204081632645
+Distance from Iris-virginica: 4.552083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.3, PL:1.7, PW: 0.5
+Distance from Iris-setosa: 0.2560000000000001
+Distance from Iris-versicolor: 2.5510204081632644
+Distance from Iris-virginica: 3.852083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.4, PL:1.9, PW: 0.2
+Distance from Iris-setosa: 0.43599999999999994
+Distance from Iris-versicolor: 2.3510204081632646
+Distance from Iris-virginica: 3.6520833333333322
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.0, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.4180000000000006
+Distance from Iris-versicolor: 2.6510204081632645
+Distance from Iris-virginica: 3.952083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.4, PL:1.6, PW: 0.4
+Distance from Iris-setosa: 0.1560000000000001
+Distance from Iris-versicolor: 2.6510204081632645
+Distance from Iris-virginica: 3.952083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.2, SW: 3.5, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.19400000000000084
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.2, SW: 3.4, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.19400000000000084
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.7, SW: 3.2, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.30599999999999916
+Distance from Iris-versicolor: 2.6510204081632645
+Distance from Iris-virginica: 3.952083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.1, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.3180000000000005
+Distance from Iris-versicolor: 2.6510204081632645
+Distance from Iris-virginica: 3.952083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.4, PL:1.5, PW: 0.4
+Distance from Iris-setosa: 0.394000000000001
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.2, SW: 4.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 0.681999999999999
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.5, SW: 4.2, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.7819999999999996
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 0.3180000000000005
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.2, PL:1.2, PW: 0.2
+Distance from Iris-setosa: 0.264
+Distance from Iris-versicolor: 3.0510204081632644
+Distance from Iris-virginica: 4.352083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.5, SW: 3.5, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 0.49400000000000066
+Distance from Iris-versicolor: 2.9510204081632647
+Distance from Iris-virginica: 4.252083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 0.3180000000000005
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.4, SW: 3.0, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 0.605999999999999
+Distance from Iris-versicolor: 2.9510204081632647
+Distance from Iris-virginica: 4.252083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.4, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.0940000000000003
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.5, PL:1.3, PW: 0.3
+Distance from Iris-setosa: 0.16399999999999992
+Distance from Iris-versicolor: 2.9510204081632647
+Distance from Iris-virginica: 4.252083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.5, SW: 2.3, PL:1.3, PW: 0.3
+Distance from Iris-setosa: 1.1180000000000008
+Distance from Iris-versicolor: 2.9510204081632647
+Distance from Iris-virginica: 4.252083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.4, SW: 3.2, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 0.605999999999999
+Distance from Iris-versicolor: 2.9510204081632647
+Distance from Iris-virginica: 4.252083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.5, PL:1.6, PW: 0.6
+Distance from Iris-setosa: 0.3560000000000001
+Distance from Iris-versicolor: 2.6510204081632645
+Distance from Iris-virginica: 3.952083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.8, PL:1.9, PW: 0.4
+Distance from Iris-setosa: 0.43599999999999994
+Distance from Iris-versicolor: 2.3510204081632646
+Distance from Iris-virginica: 3.6520833333333322
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.0, PL:1.4, PW: 0.3
+Distance from Iris-setosa: 0.4180000000000006
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.8, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.38199999999999923
+Distance from Iris-versicolor: 2.6510204081632645
+Distance from Iris-virginica: 3.952083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.2, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.4059999999999997
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.3, SW: 3.7, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.2940000000000005
+Distance from Iris-versicolor: 2.7510204081632645
+Distance from Iris-virginica: 4.052083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.3, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.11800000000000077
+Distance from Iris-versicolor: 2.8510204081632646
+Distance from Iris-virginica: 4.152083333333332
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 7.0, SW: 3.2, PL:4.7, PW: 1.4
+Distance from Iris-setosa: 3.236
+Distance from Iris-versicolor: 1.0857142857142863
+Distance from Iris-virginica: 0.852083333333332
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.4, SW: 3.2, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 3.036
+Distance from Iris-versicolor: 0.48571428571428665
+Distance from Iris-virginica: 1.0520833333333321
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.9, SW: 3.1, PL:4.9, PW: 1.5
+Distance from Iris-setosa: 3.4360000000000004
+Distance from Iris-versicolor: 0.9857142857142867
+Distance from Iris-virginica: 0.6520833333333318
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.3, PL:4.0, PW: 1.3
+Distance from Iris-setosa: 2.536
+Distance from Iris-versicolor: 0.46122448979591857
+Distance from Iris-virginica: 1.5520833333333321
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.5, SW: 2.8, PL:4.6, PW: 1.5
+Distance from Iris-setosa: 3.1359999999999997
+Distance from Iris-versicolor: 0.5857142857142863
+Distance from Iris-virginica: 0.9520833333333325
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.8, PL:4.5, PW: 1.3
+Distance from Iris-setosa: 3.036
+Distance from Iris-versicolor: 0.24897959183673546
+Distance from Iris-virginica: 1.0520833333333321
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.3, SW: 3.3, PL:4.7, PW: 1.6
+Distance from Iris-setosa: 3.236
+Distance from Iris-versicolor: 0.5387755102040814
+Distance from Iris-virginica: 0.852083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 4.9, SW: 2.4, PL:3.3, PW: 1.0
+Distance from Iris-setosa: 1.8359999999999999
+Distance from Iris-versicolor: 1.0142857142857133
+Distance from Iris-virginica: 2.2520833333333323
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.6, SW: 2.9, PL:4.6, PW: 1.3
+Distance from Iris-setosa: 3.1359999999999997
+Distance from Iris-versicolor: 0.6857142857142859
+Distance from Iris-virginica: 0.9520833333333325
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.2, SW: 2.7, PL:3.9, PW: 1.4
+Distance from Iris-setosa: 2.436
+Distance from Iris-versicolor: 0.7142857142857135
+Distance from Iris-virginica: 1.6520833333333322
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.0, SW: 2.0, PL:3.5, PW: 1.0
+Distance from Iris-setosa: 2.036
+Distance from Iris-versicolor: 0.9142857142857137
+Distance from Iris-virginica: 2.052083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.9, SW: 3.0, PL:4.2, PW: 1.5
+Distance from Iris-setosa: 2.736
+Distance from Iris-versicolor: 0.2387755102040816
+Distance from Iris-virginica: 1.352083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 2.2, PL:4.0, PW: 1.0
+Distance from Iris-setosa: 2.536
+Distance from Iris-versicolor: 0.5612244897959182
+Distance from Iris-virginica: 1.5520833333333321
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 2.9, PL:4.7, PW: 1.4
+Distance from Iris-setosa: 3.236
+Distance from Iris-versicolor: 0.44897959183673564
+Distance from Iris-virginica: 0.852083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 2.9, PL:3.6, PW: 1.3
+Distance from Iris-setosa: 2.136
+Distance from Iris-versicolor: 0.6510204081632645
+Distance from Iris-virginica: 1.952083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.7, SW: 3.1, PL:4.4, PW: 1.4
+Distance from Iris-setosa: 2.9360000000000004
+Distance from Iris-versicolor: 0.7857142857142865
+Distance from Iris-virginica: 1.1520833333333318
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 3.0, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 3.036
+Distance from Iris-versicolor: 0.31428571428571406
+Distance from Iris-virginica: 1.0520833333333321
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.8, SW: 2.7, PL:4.1, PW: 1.0
+Distance from Iris-setosa: 2.6359999999999997
+Distance from Iris-versicolor: 0.32448979591836746
+Distance from Iris-virginica: 1.4520833333333325
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.2, SW: 2.2, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 3.036
+Distance from Iris-versicolor: 0.5612244897959182
+Distance from Iris-virginica: 1.0520833333333321
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 2.5, PL:3.9, PW: 1.1
+Distance from Iris-setosa: 2.436
+Distance from Iris-versicolor: 0.35102040816326463
+Distance from Iris-virginica: 1.6520833333333322
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.9, SW: 3.2, PL:4.8, PW: 1.8
+Distance from Iris-setosa: 3.336
+Distance from Iris-versicolor: 0.5489795918367353
+Distance from Iris-virginica: 0.7520833333333323
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 2.8, PL:4.0, PW: 1.3
+Distance from Iris-setosa: 2.536
+Distance from Iris-versicolor: 0.25102040816326454
+Distance from Iris-virginica: 1.5520833333333321
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.3, SW: 2.5, PL:4.9, PW: 1.5
+Distance from Iris-setosa: 3.4360000000000004
+Distance from Iris-versicolor: 0.6489795918367358
+Distance from Iris-virginica: 0.6520833333333318
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 2.8, PL:4.7, PW: 1.2
+Distance from Iris-setosa: 3.236
+Distance from Iris-versicolor: 0.44897959183673564
+Distance from Iris-virginica: 0.852083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.4, SW: 2.9, PL:4.3, PW: 1.3
+Distance from Iris-setosa: 2.836
+Distance from Iris-versicolor: 0.48571428571428665
+Distance from Iris-virginica: 1.2520833333333323
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.6, SW: 3.0, PL:4.4, PW: 1.4
+Distance from Iris-setosa: 2.9360000000000004
+Distance from Iris-versicolor: 0.6857142857142859
+Distance from Iris-virginica: 1.1520833333333318
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.8, SW: 2.8, PL:4.8, PW: 1.4
+Distance from Iris-setosa: 3.336
+Distance from Iris-versicolor: 0.8857142857142861
+Distance from Iris-virginica: 0.7520833333333323
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.7, SW: 3.0, PL:5.0, PW: 1.7
+Distance from Iris-setosa: 3.536
+Distance from Iris-versicolor: 0.7857142857142865
+Distance from Iris-virginica: 0.5520833333333321
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 2.9, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 3.036
+Distance from Iris-versicolor: 0.24897959183673546
+Distance from Iris-virginica: 1.0520833333333321
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.6, PL:3.5, PW: 1.0
+Distance from Iris-setosa: 2.036
+Distance from Iris-versicolor: 0.7510204081632645
+Distance from Iris-virginica: 2.052083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.4, PL:3.8, PW: 1.1
+Distance from Iris-setosa: 2.336
+Distance from Iris-versicolor: 0.4510204081632647
+Distance from Iris-virginica: 1.7520833333333323
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.4, PL:3.7, PW: 1.0
+Distance from Iris-setosa: 2.236
+Distance from Iris-versicolor: 0.5510204081632644
+Distance from Iris-virginica: 1.852083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.8, SW: 2.7, PL:3.9, PW: 1.2
+Distance from Iris-setosa: 2.436
+Distance from Iris-versicolor: 0.35102040816326463
+Distance from Iris-virginica: 1.6520833333333322
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 2.7, PL:5.1, PW: 1.6
+Distance from Iris-setosa: 3.6359999999999997
+Distance from Iris-versicolor: 0.8489795918367351
+Distance from Iris-virginica: 0.6083333333333316
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.4, SW: 3.0, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 3.036
+Distance from Iris-versicolor: 0.5142857142857133
+Distance from Iris-virginica: 1.2083333333333313
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 3.4, PL:4.5, PW: 1.6
+Distance from Iris-setosa: 3.036
+Distance from Iris-versicolor: 0.6387755102040815
+Distance from Iris-virginica: 1.0520833333333321
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.7, SW: 3.1, PL:4.7, PW: 1.5
+Distance from Iris-setosa: 3.236
+Distance from Iris-versicolor: 0.7857142857142865
+Distance from Iris-virginica: 0.852083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.3, SW: 2.3, PL:4.4, PW: 1.3
+Distance from Iris-setosa: 2.9360000000000004
+Distance from Iris-versicolor: 0.46122448979591857
+Distance from Iris-virginica: 1.1520833333333318
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 3.0, PL:4.1, PW: 1.3
+Distance from Iris-setosa: 2.6359999999999997
+Distance from Iris-versicolor: 0.31428571428571406
+Distance from Iris-virginica: 1.4520833333333325
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.5, PL:4.0, PW: 1.3
+Distance from Iris-setosa: 2.536
+Distance from Iris-versicolor: 0.4142857142857137
+Distance from Iris-virginica: 1.5520833333333321
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.6, PL:4.4, PW: 1.2
+Distance from Iris-setosa: 2.9360000000000004
+Distance from Iris-versicolor: 0.4142857142857137
+Distance from Iris-virginica: 1.1520833333333318
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 3.0, PL:4.6, PW: 1.4
+Distance from Iris-setosa: 3.1359999999999997
+Distance from Iris-versicolor: 0.3489795918367351
+Distance from Iris-virginica: 0.9520833333333325
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.8, SW: 2.6, PL:4.0, PW: 1.2
+Distance from Iris-setosa: 2.536
+Distance from Iris-versicolor: 0.25102040816326454
+Distance from Iris-virginica: 1.5520833333333321
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.0, SW: 2.3, PL:3.3, PW: 1.0
+Distance from Iris-setosa: 1.8359999999999999
+Distance from Iris-versicolor: 0.9510204081632647
+Distance from Iris-virginica: 2.2520833333333323
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 2.7, PL:4.2, PW: 1.3
+Distance from Iris-setosa: 2.736
+Distance from Iris-versicolor: 0.31428571428571406
+Distance from Iris-virginica: 1.352083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 3.0, PL:4.2, PW: 1.2
+Distance from Iris-setosa: 2.736
+Distance from Iris-versicolor: 0.2387755102040816
+Distance from Iris-virginica: 1.352083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.9, PL:4.2, PW: 1.3
+Distance from Iris-setosa: 2.736
+Distance from Iris-versicolor: 0.21428571428571352
+Distance from Iris-virginica: 1.352083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.2, SW: 2.9, PL:4.3, PW: 1.3
+Distance from Iris-setosa: 2.836
+Distance from Iris-versicolor: 0.2857142857142865
+Distance from Iris-virginica: 1.2520833333333323
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.1, SW: 2.5, PL:3.0, PW: 1.1
+Distance from Iris-setosa: 1.536
+Distance from Iris-versicolor: 1.2510204081632645
+Distance from Iris-virginica: 2.552083333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.8, PL:4.1, PW: 1.3
+Distance from Iris-setosa: 2.6359999999999997
+Distance from Iris-versicolor: 0.21428571428571352
+Distance from Iris-virginica: 1.4520833333333325
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 3.3, PL:6.0, PW: 2.5
+Distance from Iris-setosa: 4.536
+Distance from Iris-versicolor: 1.7489795918367355
+Distance from Iris-virginica: 0.47916666666666696
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.8, SW: 2.7, PL:5.1, PW: 1.9
+Distance from Iris-setosa: 3.6359999999999997
+Distance from Iris-versicolor: 0.8489795918367351
+Distance from Iris-virginica: 0.8083333333333318
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.1, SW: 3.0, PL:5.9, PW: 2.1
+Distance from Iris-setosa: 4.436
+Distance from Iris-versicolor: 1.6489795918367358
+Distance from Iris-virginica: 0.49166666666666803
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.9, PL:5.6, PW: 1.8
+Distance from Iris-setosa: 4.135999999999999
+Distance from Iris-versicolor: 1.348979591836735
+Distance from Iris-virginica: 0.3083333333333318
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.0, PL:5.8, PW: 2.2
+Distance from Iris-setosa: 4.336
+Distance from Iris-versicolor: 1.5489795918367353
+Distance from Iris-virginica: 0.24791666666666767
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.6, SW: 3.0, PL:6.6, PW: 2.1
+Distance from Iris-setosa: 5.135999999999999
+Distance from Iris-versicolor: 2.348979591836735
+Distance from Iris-virginica: 1.0479166666666675
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 4.9, SW: 2.5, PL:4.5, PW: 1.7
+Distance from Iris-setosa: 3.036
+Distance from Iris-versicolor: 1.0142857142857133
+Distance from Iris-virginica: 1.7083333333333313
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.3, SW: 2.9, PL:6.3, PW: 1.8
+Distance from Iris-setosa: 4.836
+Distance from Iris-versicolor: 2.0489795918367353
+Distance from Iris-virginica: 0.7479166666666677
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 2.5, PL:5.8, PW: 1.8
+Distance from Iris-setosa: 4.336
+Distance from Iris-versicolor: 1.5489795918367353
+Distance from Iris-virginica: 0.46666666666666634
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.2, SW: 3.6, PL:6.1, PW: 2.5
+Distance from Iris-setosa: 4.635999999999999
+Distance from Iris-versicolor: 1.848979591836735
+Distance from Iris-virginica: 0.6333333333333337
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.2, PL:5.1, PW: 2.0
+Distance from Iris-setosa: 3.6359999999999997
+Distance from Iris-versicolor: 0.8489795918367351
+Distance from Iris-virginica: 0.4520833333333325
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 2.7, PL:5.3, PW: 1.9
+Distance from Iris-setosa: 3.836
+Distance from Iris-versicolor: 1.0489795918367353
+Distance from Iris-virginica: 0.26666666666666616
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.8, SW: 3.0, PL:5.5, PW: 2.1
+Distance from Iris-setosa: 4.036
+Distance from Iris-versicolor: 1.2489795918367355
+Distance from Iris-virginica: 0.1916666666666682
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.7, SW: 2.5, PL:5.0, PW: 2.0
+Distance from Iris-setosa: 3.536
+Distance from Iris-versicolor: 0.7489795918367355
+Distance from Iris-virginica: 0.9083333333333314
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.8, SW: 2.8, PL:5.1, PW: 2.4
+Distance from Iris-setosa: 3.6359999999999997
+Distance from Iris-versicolor: 1.0755102040816324
+Distance from Iris-virginica: 0.8083333333333318
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 3.2, PL:5.3, PW: 2.3
+Distance from Iris-setosa: 3.836
+Distance from Iris-versicolor: 1.0489795918367353
+Distance from Iris-virginica: 0.2791666666666668
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.0, PL:5.5, PW: 1.8
+Distance from Iris-setosa: 4.036
+Distance from Iris-versicolor: 1.2489795918367355
+Distance from Iris-virginica: 0.220833333333333
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 3.8, PL:6.7, PW: 2.2
+Distance from Iris-setosa: 5.236000000000001
+Distance from Iris-versicolor: 2.4489795918367356
+Distance from Iris-virginica: 1.147916666666668
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 2.6, PL:6.9, PW: 2.3
+Distance from Iris-setosa: 5.436
+Distance from Iris-versicolor: 2.648979591836736
+Distance from Iris-virginica: 1.3479166666666682
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.0, SW: 2.2, PL:5.0, PW: 1.5
+Distance from Iris-setosa: 3.536
+Distance from Iris-versicolor: 0.7489795918367355
+Distance from Iris-virginica: 0.7666666666666662
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.9, SW: 3.2, PL:5.7, PW: 2.3
+Distance from Iris-setosa: 4.236000000000001
+Distance from Iris-versicolor: 1.4489795918367356
+Distance from Iris-virginica: 0.29166666666666874
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.6, SW: 2.8, PL:4.9, PW: 2.0
+Distance from Iris-setosa: 3.4360000000000004
+Distance from Iris-versicolor: 0.6755102040816325
+Distance from Iris-virginica: 1.008333333333332
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 2.8, PL:6.7, PW: 2.0
+Distance from Iris-setosa: 5.236000000000001
+Distance from Iris-versicolor: 2.4489795918367356
+Distance from Iris-virginica: 1.147916666666668
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.7, PL:4.9, PW: 1.8
+Distance from Iris-setosa: 3.4360000000000004
+Distance from Iris-versicolor: 0.6489795918367358
+Distance from Iris-virginica: 0.6520833333333318
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.3, PL:5.7, PW: 2.1
+Distance from Iris-setosa: 4.236000000000001
+Distance from Iris-versicolor: 1.4489795918367356
+Distance from Iris-virginica: 0.3333333333333335
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.2, SW: 3.2, PL:6.0, PW: 1.8
+Distance from Iris-setosa: 4.536
+Distance from Iris-versicolor: 1.7489795918367355
+Distance from Iris-virginica: 0.5916666666666686
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.2, SW: 2.8, PL:4.8, PW: 1.8
+Distance from Iris-setosa: 3.336
+Distance from Iris-versicolor: 0.5489795918367353
+Distance from Iris-virginica: 0.7520833333333323
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.1, SW: 3.0, PL:4.9, PW: 1.8
+Distance from Iris-setosa: 3.4360000000000004
+Distance from Iris-versicolor: 0.6489795918367358
+Distance from Iris-virginica: 0.6520833333333318
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 2.8, PL:5.6, PW: 2.1
+Distance from Iris-setosa: 4.135999999999999
+Distance from Iris-versicolor: 1.348979591836735
+Distance from Iris-virginica: 0.20833333333333126
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.2, SW: 3.0, PL:5.8, PW: 1.6
+Distance from Iris-setosa: 4.336
+Distance from Iris-versicolor: 1.5489795918367353
+Distance from Iris-virginica: 0.5916666666666686
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.4, SW: 2.8, PL:6.1, PW: 1.9
+Distance from Iris-setosa: 4.635999999999999
+Distance from Iris-versicolor: 1.848979591836735
+Distance from Iris-virginica: 0.7916666666666687
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.9, SW: 3.8, PL:6.4, PW: 2.0
+Distance from Iris-setosa: 4.936
+Distance from Iris-versicolor: 2.148979591836736
+Distance from Iris-virginica: 1.2916666666666687
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 2.8, PL:5.6, PW: 2.2
+Distance from Iris-setosa: 4.135999999999999
+Distance from Iris-versicolor: 1.348979591836735
+Distance from Iris-virginica: 0.20833333333333126
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.8, PL:5.1, PW: 1.5
+Distance from Iris-setosa: 3.6359999999999997
+Distance from Iris-versicolor: 0.8489795918367351
+Distance from Iris-virginica: 0.520833333333333
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.1, SW: 2.6, PL:5.6, PW: 1.4
+Distance from Iris-setosa: 4.135999999999999
+Distance from Iris-versicolor: 1.348979591836735
+Distance from Iris-virginica: 0.6208333333333331
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 3.0, PL:6.1, PW: 2.3
+Distance from Iris-setosa: 4.635999999999999
+Distance from Iris-versicolor: 1.848979591836735
+Distance from Iris-virginica: 1.0916666666666686
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 3.4, PL:5.6, PW: 2.4
+Distance from Iris-setosa: 4.135999999999999
+Distance from Iris-versicolor: 1.348979591836735
+Distance from Iris-virginica: 0.43333333333333357
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 3.1, PL:5.5, PW: 1.8
+Distance from Iris-setosa: 4.036
+Distance from Iris-versicolor: 1.2489795918367355
+Distance from Iris-virginica: 0.220833333333333
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.0, SW: 3.0, PL:4.8, PW: 1.8
+Distance from Iris-setosa: 3.336
+Distance from Iris-versicolor: 0.5489795918367353
+Distance from Iris-virginica: 0.7520833333333323
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.9, SW: 3.1, PL:5.4, PW: 2.1
+Distance from Iris-setosa: 3.9360000000000004
+Distance from Iris-versicolor: 1.1489795918367358
+Distance from Iris-virginica: 0.29166666666666874
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.1, PL:5.6, PW: 2.4
+Distance from Iris-setosa: 4.135999999999999
+Distance from Iris-versicolor: 1.348979591836735
+Distance from Iris-virginica: 0.3791666666666669
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.9, SW: 3.1, PL:5.1, PW: 2.3
+Distance from Iris-setosa: 3.6359999999999997
+Distance from Iris-versicolor: 0.9857142857142867
+Distance from Iris-virginica: 0.4520833333333325
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.8, SW: 2.7, PL:5.1, PW: 1.9
+Distance from Iris-setosa: 3.6359999999999997
+Distance from Iris-versicolor: 0.8489795918367351
+Distance from Iris-virginica: 0.8083333333333318
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.8, SW: 3.2, PL:5.9, PW: 2.3
+Distance from Iris-setosa: 4.436
+Distance from Iris-versicolor: 1.6489795918367358
+Distance from Iris-virginica: 0.3479166666666682
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.3, PL:5.7, PW: 2.5
+Distance from Iris-setosa: 4.236000000000001
+Distance from Iris-versicolor: 1.4489795918367356
+Distance from Iris-virginica: 0.47916666666666696
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.0, PL:5.2, PW: 2.3
+Distance from Iris-setosa: 3.736
+Distance from Iris-versicolor: 0.9755102040816324
+Distance from Iris-virginica: 0.35208333333333197
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.5, PL:5.0, PW: 1.9
+Distance from Iris-setosa: 3.536
+Distance from Iris-versicolor: 0.7489795918367355
+Distance from Iris-virginica: 0.5520833333333321
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.0, PL:5.2, PW: 2.0
+Distance from Iris-setosa: 3.736
+Distance from Iris-versicolor: 0.9489795918367356
+Distance from Iris-virginica: 0.35208333333333197
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.2, SW: 3.4, PL:5.4, PW: 2.3
+Distance from Iris-setosa: 3.9360000000000004
+Distance from Iris-versicolor: 1.1489795918367358
+Distance from Iris-virginica: 0.43333333333333357
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.9, SW: 3.0, PL:5.1, PW: 1.8
+Distance from Iris-setosa: 3.6359999999999997
+Distance from Iris-versicolor: 0.8489795918367351
+Distance from Iris-virginica: 0.7083333333333313
+Iris Determined as Iris-virginica
+Iris: Iris-setosa Correct: 50.0 Total: 50.0 Score: 100.00
+Iris: Iris-versicolor Correct: 45.0 Total: 50.0 Score: 90.00
+Iris: Iris-virginica Correct: 42.0 Total: 50.0 Score: 84.00
+
+
+Manhattan Distance
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.5, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.2839999999999997
+Distance from Iris-versicolor: 5.528571428571428
+Distance from Iris-virginica: 8.01458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.0, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.6319999999999996
+Distance from Iris-versicolor: 5.228571428571427
+Distance from Iris-virginica: 7.71458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.7, SW: 3.2, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 0.7319999999999994
+Distance from Iris-versicolor: 5.728571428571427
+Distance from Iris-virginica: 8.21458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.1, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.8040000000000002
+Distance from Iris-versicolor: 5.528571428571428
+Distance from Iris-virginica: 8.01458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.6, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.2959999999999988
+Distance from Iris-versicolor: 5.728571428571427
+Distance from Iris-virginica: 8.21458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.9, PL:1.7, PW: 0.4
+Distance from Iris-setosa: 1.2680000000000005
+Distance from Iris-versicolor: 5.128571428571426
+Distance from Iris-virginica: 7.61458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.4, PL:1.4, PW: 0.3
+Distance from Iris-setosa: 0.5440000000000005
+Distance from Iris-versicolor: 5.828571428571428
+Distance from Iris-virginica: 8.31458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.4, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.10399999999999995
+Distance from Iris-versicolor: 5.428571428571427
+Distance from Iris-virginica: 7.91458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.4, SW: 2.9, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 1.2319999999999995
+Distance from Iris-versicolor: 5.628571428571427
+Distance from Iris-virginica: 8.247916666666663
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 0.6039999999999994
+Distance from Iris-versicolor: 5.328571428571427
+Distance from Iris-virginica: 7.81458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.7, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.7560000000000006
+Distance from Iris-versicolor: 5.3285714285714265
+Distance from Iris-virginica: 7.81458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.4, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.40400000000000025
+Distance from Iris-versicolor: 5.528571428571428
+Distance from Iris-virginica: 8.01458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.0, PL:1.4, PW: 0.1
+Distance from Iris-setosa: 0.8320000000000001
+Distance from Iris-versicolor: 5.428571428571427
+Distance from Iris-virginica: 7.914583333333329
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.3, SW: 3.0, PL:1.1, PW: 0.1
+Distance from Iris-setosa: 1.632
+Distance from Iris-versicolor: 6.228571428571428
+Distance from Iris-virginica: 8.71458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.8, SW: 4.0, PL:1.2, PW: 0.2
+Distance from Iris-setosa: 1.6839999999999997
+Distance from Iris-versicolor: 5.528571428571428
+Distance from Iris-virginica: 8.01458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.7, SW: 4.4, PL:1.5, PW: 0.4
+Distance from Iris-setosa: 1.8680000000000008
+Distance from Iris-versicolor: 5.528571428571427
+Distance from Iris-virginica: 8.01458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.9, PL:1.3, PW: 0.4
+Distance from Iris-setosa: 1.1960000000000004
+Distance from Iris-versicolor: 5.528571428571427
+Distance from Iris-virginica: 8.01458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.5, PL:1.4, PW: 0.3
+Distance from Iris-setosa: 0.2959999999999998
+Distance from Iris-versicolor: 5.428571428571428
+Distance from Iris-virginica: 7.914583333333331
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.7, SW: 3.8, PL:1.7, PW: 0.3
+Distance from Iris-setosa: 1.368
+Distance from Iris-versicolor: 4.8285714285714265
+Distance from Iris-virginica: 7.31458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.8, PL:1.5, PW: 0.3
+Distance from Iris-setosa: 0.5679999999999996
+Distance from Iris-versicolor: 5.628571428571427
+Distance from Iris-virginica: 8.11458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.4, PL:1.7, PW: 0.2
+Distance from Iris-setosa: 0.6920000000000016
+Distance from Iris-versicolor: 4.8285714285714265
+Distance from Iris-virginica: 7.31458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.7, PL:1.5, PW: 0.4
+Distance from Iris-setosa: 0.5680000000000001
+Distance from Iris-versicolor: 5.428571428571427
+Distance from Iris-virginica: 7.914583333333331
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.6, PL:1.0, PW: 0.2
+Distance from Iris-setosa: 1.095999999999999
+Distance from Iris-versicolor: 6.528571428571428
+Distance from Iris-virginica: 9.01458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.3, PL:1.7, PW: 0.5
+Distance from Iris-setosa: 0.7040000000000012
+Distance from Iris-versicolor: 4.728571428571428
+Distance from Iris-virginica: 7.214583333333331
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.4, PL:1.9, PW: 0.2
+Distance from Iris-setosa: 0.7040000000000001
+Distance from Iris-versicolor: 5.228571428571427
+Distance from Iris-virginica: 7.71458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.0, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.604
+Distance from Iris-versicolor: 4.928571428571427
+Distance from Iris-virginica: 7.41458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.4, PL:1.6, PW: 0.4
+Distance from Iris-setosa: 0.3160000000000003
+Distance from Iris-versicolor: 5.128571428571426
+Distance from Iris-virginica: 7.61458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.2, SW: 3.5, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.3560000000000002
+Distance from Iris-versicolor: 5.3285714285714265
+Distance from Iris-virginica: 7.81458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.2, SW: 3.4, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.3200000000000015
+Distance from Iris-versicolor: 5.3285714285714265
+Distance from Iris-virginica: 7.81458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.7, SW: 3.2, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.7039999999999996
+Distance from Iris-versicolor: 5.428571428571427
+Distance from Iris-virginica: 7.91458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.1, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.7040000000000001
+Distance from Iris-versicolor: 5.228571428571427
+Distance from Iris-virginica: 7.71458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.4, SW: 3.4, PL:1.5, PW: 0.4
+Distance from Iris-setosa: 0.6040000000000019
+Distance from Iris-versicolor: 4.8285714285714265
+Distance from Iris-virginica: 7.31458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.2, SW: 4.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 1.0559999999999998
+Distance from Iris-versicolor: 6.028571428571427
+Distance from Iris-virginica: 8.514583333333329
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.5, SW: 4.2, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 1.3840000000000001
+Distance from Iris-versicolor: 5.828571428571427
+Distance from Iris-virginica: 8.31458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 0.6039999999999994
+Distance from Iris-versicolor: 5.328571428571427
+Distance from Iris-virginica: 7.81458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.2, PL:1.2, PW: 0.2
+Distance from Iris-setosa: 0.5319999999999997
+Distance from Iris-versicolor: 5.528571428571428
+Distance from Iris-virginica: 8.01458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.5, SW: 3.5, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 0.7839999999999999
+Distance from Iris-versicolor: 5.228571428571427
+Distance from Iris-virginica: 7.71458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1
+Distance from Iris-setosa: 0.6039999999999994
+Distance from Iris-versicolor: 5.328571428571427
+Distance from Iris-virginica: 7.81458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.4, SW: 3.0, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 1.2319999999999993
+Distance from Iris-versicolor: 5.8285714285714265
+Distance from Iris-virginica: 8.31458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.4, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.19200000000000092
+Distance from Iris-versicolor: 5.328571428571427
+Distance from Iris-virginica: 7.8145833333333306
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.5, PL:1.3, PW: 0.3
+Distance from Iris-setosa: 0.3079999999999987
+Distance from Iris-versicolor: 5.628571428571427
+Distance from Iris-virginica: 8.11458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.5, SW: 2.3, PL:1.3, PW: 0.3
+Distance from Iris-setosa: 1.844
+Distance from Iris-versicolor: 5.851020408163264
+Distance from Iris-virginica: 8.747916666666663
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.4, SW: 3.2, PL:1.3, PW: 0.2
+Distance from Iris-setosa: 1.0319999999999991
+Distance from Iris-versicolor: 6.028571428571428
+Distance from Iris-virginica: 8.51458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.5, PL:1.6, PW: 0.6
+Distance from Iris-setosa: 0.579999999999999
+Distance from Iris-versicolor: 5.028571428571428
+Distance from Iris-virginica: 7.514583333333331
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.8, PL:1.9, PW: 0.4
+Distance from Iris-setosa: 1.0679999999999996
+Distance from Iris-versicolor: 5.128571428571427
+Distance from Iris-virginica: 7.61458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.8, SW: 3.0, PL:1.4, PW: 0.3
+Distance from Iris-setosa: 0.7440000000000002
+Distance from Iris-versicolor: 5.228571428571428
+Distance from Iris-virginica: 7.71458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.1, SW: 3.8, PL:1.6, PW: 0.2
+Distance from Iris-setosa: 0.6559999999999996
+Distance from Iris-versicolor: 5.628571428571427
+Distance from Iris-virginica: 8.11458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 4.6, SW: 3.2, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.7320000000000001
+Distance from Iris-versicolor: 5.728571428571428
+Distance from Iris-virginica: 8.21458333333333
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.3, SW: 3.7, PL:1.5, PW: 0.2
+Distance from Iris-setosa: 0.656
+Distance from Iris-versicolor: 5.428571428571428
+Distance from Iris-virginica: 7.914583333333331
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-setosa, Determined: N/A, SL: 5.0, SW: 3.3, PL:1.4, PW: 0.2
+Distance from Iris-setosa: 0.23200000000000007
+Distance from Iris-versicolor: 5.428571428571427
+Distance from Iris-virginica: 7.914583333333329
+Iris Determined as Iris-setosa
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 7.0, SW: 3.2, PL:4.7, PW: 1.4
+Distance from Iris-setosa: 6.604000000000001
+Distance from Iris-versicolor: 2.048979591836736
+Distance from Iris-virginica: 2.0979166666666673
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.4, SW: 3.2, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 5.904000000000002
+Distance from Iris-versicolor: 1.3489795918367364
+Distance from Iris-virginica: 2.0145833333333303
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.9, SW: 3.1, PL:4.9, PW: 1.5
+Distance from Iris-setosa: 6.904000000000002
+Distance from Iris-versicolor: 2.1489795918367367
+Distance from Iris-virginica: 1.5979166666666673
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.3, PL:4.0, PW: 1.3
+Distance from Iris-setosa: 5.2040000000000015
+Distance from Iris-versicolor: 1.1510204081632642
+Distance from Iris-virginica: 4.047916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.5, SW: 2.8, PL:4.6, PW: 1.5
+Distance from Iris-setosa: 6.504000000000001
+Distance from Iris-versicolor: 1.1489795918367354
+Distance from Iris-virginica: 1.7479166666666637
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.8, PL:4.5, PW: 1.3
+Distance from Iris-setosa: 5.404000000000002
+Distance from Iris-versicolor: 0.5265306122448978
+Distance from Iris-virginica: 2.847916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.3, SW: 3.3, PL:4.7, PW: 1.6
+Distance from Iris-setosa: 6.004000000000001
+Distance from Iris-versicolor: 1.6489795918367358
+Distance from Iris-virginica: 1.9145833333333302
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 4.9, SW: 2.4, PL:3.3, PW: 1.0
+Distance from Iris-setosa: 3.7159999999999997
+Distance from Iris-versicolor: 2.651020408163264
+Distance from Iris-virginica: 5.547916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.6, SW: 2.9, PL:4.6, PW: 1.3
+Distance from Iris-setosa: 6.304000000000001
+Distance from Iris-versicolor: 1.19795918367347
+Distance from Iris-virginica: 1.747916666666664
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.2, SW: 2.7, PL:3.9, PW: 1.4
+Distance from Iris-setosa: 4.504000000000001
+Distance from Iris-versicolor: 1.2020408163265288
+Distance from Iris-virginica: 3.947916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.0, SW: 2.0, PL:3.5, PW: 1.0
+Distance from Iris-setosa: 4.216
+Distance from Iris-versicolor: 2.751020408163264
+Distance from Iris-virginica: 5.647916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.9, SW: 3.0, PL:4.2, PW: 1.5
+Distance from Iris-setosa: 5.304000000000002
+Distance from Iris-versicolor: 0.47959183673469186
+Distance from Iris-virginica: 2.61458333333333
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 2.2, PL:4.0, PW: 1.0
+Distance from Iris-setosa: 5.504000000000001
+Distance from Iris-versicolor: 1.2224489795918365
+Distance from Iris-virginica: 3.947916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 2.9, PL:4.7, PW: 1.4
+Distance from Iris-setosa: 6.0040000000000004
+Distance from Iris-versicolor: 0.8489795918367355
+Distance from Iris-virginica: 2.0479166666666635
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 2.9, PL:3.6, PW: 1.3
+Distance from Iris-setosa: 4.304000000000001
+Distance from Iris-versicolor: 1.1285714285714274
+Distance from Iris-virginica: 3.7479166666666632
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.7, SW: 3.1, PL:4.4, PW: 1.4
+Distance from Iris-setosa: 6.104000000000002
+Distance from Iris-versicolor: 1.3489795918367364
+Distance from Iris-virginica: 1.9979166666666672
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 3.0, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 5.304000000000001
+Distance from Iris-versicolor: 0.9775510204081637
+Distance from Iris-virginica: 2.614583333333331
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.8, SW: 2.7, PL:4.1, PW: 1.0
+Distance from Iris-setosa: 4.904000000000001
+Distance from Iris-versicolor: 0.6510204081632645
+Distance from Iris-virginica: 3.5479166666666635
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.2, SW: 2.2, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 6.7040000000000015
+Distance from Iris-versicolor: 1.2714285714285727
+Distance from Iris-virginica: 2.747916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 2.5, PL:3.9, PW: 1.1
+Distance from Iris-setosa: 4.804000000000001
+Distance from Iris-versicolor: 1.1510204081632645
+Distance from Iris-virginica: 4.047916666666664
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.9, SW: 3.2, PL:4.8, PW: 1.8
+Distance from Iris-setosa: 6.004000000000001
+Distance from Iris-versicolor: 1.477551020408163
+Distance from Iris-virginica: 1.9145833333333304
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 2.8, PL:4.0, PW: 1.3
+Distance from Iris-setosa: 5.304000000000001
+Distance from Iris-versicolor: 0.49999999999999933
+Distance from Iris-virginica: 2.9479166666666634
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.3, SW: 2.5, PL:4.9, PW: 1.5
+Distance from Iris-setosa: 6.904000000000002
+Distance from Iris-versicolor: 1.4714285714285729
+Distance from Iris-virginica: 1.947916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 2.8, PL:4.7, PW: 1.2
+Distance from Iris-setosa: 5.904000000000002
+Distance from Iris-versicolor: 0.7979591836734705
+Distance from Iris-virginica: 2.3479166666666638
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.4, SW: 2.9, PL:4.3, PW: 1.3
+Distance from Iris-setosa: 5.804000000000001
+Distance from Iris-versicolor: 0.6979591836734709
+Distance from Iris-virginica: 2.2479166666666632
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.6, SW: 3.0, PL:4.4, PW: 1.4
+Distance from Iris-setosa: 6.104000000000001
+Distance from Iris-versicolor: 1.1489795918367358
+Distance from Iris-virginica: 1.8145833333333306
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.8, SW: 2.8, PL:4.8, PW: 1.4
+Distance from Iris-setosa: 6.904000000000001
+Distance from Iris-versicolor: 1.5489795918367353
+Distance from Iris-virginica: 1.7312500000000002
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.7, SW: 3.0, PL:5.0, PW: 1.7
+Distance from Iris-setosa: 7.104000000000001
+Distance from Iris-versicolor: 2.148979591836736
+Distance from Iris-virginica: 0.9979166666666675
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 2.9, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 5.804000000000002
+Distance from Iris-versicolor: 0.6489795918367358
+Distance from Iris-virginica: 2.2479166666666632
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.6, PL:3.5, PW: 1.0
+Distance from Iris-setosa: 4.304000000000001
+Distance from Iris-versicolor: 1.4510204081632638
+Distance from Iris-virginica: 4.347916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.4, PL:3.8, PW: 1.1
+Distance from Iris-setosa: 4.7040000000000015
+Distance from Iris-versicolor: 1.4510204081632643
+Distance from Iris-virginica: 4.347916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.4, PL:3.7, PW: 1.0
+Distance from Iris-setosa: 4.504000000000001
+Distance from Iris-versicolor: 1.651020408163264
+Distance from Iris-virginica: 4.547916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.8, SW: 2.7, PL:3.9, PW: 1.2
+Distance from Iris-setosa: 4.904000000000001
+Distance from Iris-versicolor: 0.6510204081632642
+Distance from Iris-virginica: 3.547916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 2.7, PL:5.1, PW: 1.6
+Distance from Iris-setosa: 6.704000000000001
+Distance from Iris-versicolor: 1.2714285714285722
+Distance from Iris-virginica: 1.7479166666666632
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.4, SW: 3.0, PL:4.5, PW: 1.5
+Distance from Iris-setosa: 5.104000000000002
+Distance from Iris-versicolor: 1.177551020408163
+Distance from Iris-virginica: 2.81458333333333
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.0, SW: 3.4, PL:4.5, PW: 1.6
+Distance from Iris-setosa: 5.404000000000002
+Distance from Iris-versicolor: 1.248979591836736
+Distance from Iris-virginica: 2.5145833333333303
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.7, SW: 3.1, PL:4.7, PW: 1.5
+Distance from Iris-setosa: 6.504000000000001
+Distance from Iris-versicolor: 1.7489795918367363
+Distance from Iris-virginica: 1.5979166666666673
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.3, SW: 2.3, PL:4.4, PW: 1.3
+Distance from Iris-setosa: 6.404000000000002
+Distance from Iris-versicolor: 1.020408163265308
+Distance from Iris-virginica: 2.847916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 3.0, PL:4.1, PW: 1.3
+Distance from Iris-setosa: 4.704000000000001
+Distance from Iris-versicolor: 0.728571428571428
+Distance from Iris-virginica: 3.214583333333331
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.5, PL:4.0, PW: 1.3
+Distance from Iris-setosa: 5.004000000000001
+Distance from Iris-versicolor: 0.951020408163264
+Distance from Iris-virginica: 3.847916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.5, SW: 2.6, PL:4.4, PW: 1.2
+Distance from Iris-setosa: 5.2040000000000015
+Distance from Iris-versicolor: 0.8489795918367353
+Distance from Iris-virginica: 3.4479166666666625
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.1, SW: 3.0, PL:4.6, PW: 1.4
+Distance from Iris-setosa: 5.804
+Distance from Iris-versicolor: 0.8489795918367351
+Distance from Iris-virginica: 2.1145833333333313
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.8, SW: 2.6, PL:4.0, PW: 1.2
+Distance from Iris-setosa: 5.104000000000002
+Distance from Iris-versicolor: 0.6510204081632642
+Distance from Iris-virginica: 3.547916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.0, SW: 2.3, PL:3.3, PW: 1.0
+Distance from Iris-setosa: 3.716
+Distance from Iris-versicolor: 2.6510204081632645
+Distance from Iris-virginica: 5.547916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.6, SW: 2.7, PL:4.2, PW: 1.3
+Distance from Iris-setosa: 5.104000000000001
+Distance from Iris-versicolor: 0.45102040816326405
+Distance from Iris-virginica: 3.347916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 3.0, PL:4.2, PW: 1.2
+Distance from Iris-setosa: 4.804000000000002
+Distance from Iris-versicolor: 0.628571428571427
+Distance from Iris-virginica: 3.1145833333333304
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.9, PL:4.2, PW: 1.3
+Distance from Iris-setosa: 5.004000000000001
+Distance from Iris-versicolor: 0.4285714285714268
+Distance from Iris-virginica: 3.047916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 6.2, SW: 2.9, PL:4.3, PW: 1.3
+Distance from Iris-setosa: 5.604000000000002
+Distance from Iris-versicolor: 0.4979591836734707
+Distance from Iris-virginica: 2.4479166666666634
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.1, SW: 2.5, PL:3.0, PW: 1.1
+Distance from Iris-setosa: 3.4040000000000012
+Distance from Iris-versicolor: 2.5510204081632644
+Distance from Iris-virginica: 5.4479166666666625
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-versicolor, Determined: N/A, SL: 5.7, SW: 2.8, PL:4.1, PW: 1.3
+Distance from Iris-setosa: 5.004000000000001
+Distance from Iris-versicolor: 0.42857142857142727
+Distance from Iris-virginica: 3.2479166666666632
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 3.3, PL:6.0, PW: 2.5
+Distance from Iris-setosa: 8.204
+Distance from Iris-versicolor: 3.8489795918367355
+Distance from Iris-virginica: 1.56875
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.8, SW: 2.7, PL:5.1, PW: 1.9
+Distance from Iris-setosa: 6.804
+Distance from Iris-versicolor: 1.5999999999999996
+Distance from Iris-virginica: 1.6479166666666636
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.1, SW: 3.0, PL:5.9, PW: 2.1
+Distance from Iris-setosa: 8.804
+Distance from Iris-versicolor: 3.848979591836736
+Distance from Iris-virginica: 0.952083333333337
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.9, PL:5.6, PW: 1.8
+Distance from Iris-setosa: 7.5040000000000004
+Distance from Iris-versicolor: 2.348979591836735
+Distance from Iris-virginica: 0.6437499999999987
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.0, PL:5.8, PW: 2.2
+Distance from Iris-setosa: 8.204
+Distance from Iris-versicolor: 3.248979591836736
+Distance from Iris-virginica: 0.5687500000000001
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.6, SW: 3.0, PL:6.6, PW: 2.1
+Distance from Iris-setosa: 10.004
+Distance from Iris-versicolor: 5.048979591836735
+Distance from Iris-virginica: 2.1520833333333362
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 4.9, SW: 2.5, PL:4.5, PW: 1.7
+Distance from Iris-setosa: 5.516
+Distance from Iris-versicolor: 1.8999999999999997
+Distance from Iris-virginica: 3.547916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.3, SW: 2.9, PL:6.3, PW: 1.8
+Distance from Iris-setosa: 9.204
+Distance from Iris-versicolor: 4.048979591836735
+Distance from Iris-virginica: 1.7270833333333353
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 2.5, PL:5.8, PW: 1.8
+Distance from Iris-setosa: 8.504000000000001
+Distance from Iris-versicolor: 3.071428571428573
+Distance from Iris-virginica: 1.0270833333333356
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.2, SW: 3.6, PL:6.1, PW: 2.5
+Distance from Iris-setosa: 9.268
+Distance from Iris-versicolor: 5.148979591836736
+Distance from Iris-virginica: 2.2520833333333368
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.2, PL:5.1, PW: 2.0
+Distance from Iris-setosa: 7.104000000000001
+Distance from Iris-versicolor: 2.5489795918367357
+Distance from Iris-virginica: 0.814583333333331
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 2.7, PL:5.3, PW: 1.9
+Distance from Iris-setosa: 7.604000000000001
+Distance from Iris-versicolor: 2.1714285714285726
+Distance from Iris-virginica: 0.8479166666666629
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.8, SW: 3.0, PL:5.5, PW: 2.1
+Distance from Iris-setosa: 8.104000000000001
+Distance from Iris-versicolor: 3.148979591836736
+Distance from Iris-virginica: 0.35625000000000107
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.7, SW: 2.5, PL:5.0, PW: 2.0
+Distance from Iris-setosa: 6.904000000000002
+Distance from Iris-versicolor: 1.9
+Distance from Iris-virginica: 1.947916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.8, SW: 2.8, PL:5.1, PW: 2.4
+Distance from Iris-setosa: 7.204000000000001
+Distance from Iris-versicolor: 2.077551020408163
+Distance from Iris-virginica: 1.8062499999999977
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 3.2, PL:5.3, PW: 2.3
+Distance from Iris-setosa: 7.504000000000001
+Distance from Iris-versicolor: 2.948979591836736
+Distance from Iris-virginica: 0.9729166666666642
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.0, PL:5.5, PW: 1.8
+Distance from Iris-setosa: 7.5040000000000004
+Distance from Iris-versicolor: 2.548979591836736
+Distance from Iris-virginica: 0.4145833333333304
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 3.8, PL:6.7, PW: 2.2
+Distance from Iris-setosa: 10.268
+Distance from Iris-versicolor: 6.148979591836736
+Distance from Iris-virginica: 3.252083333333337
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 2.6, PL:6.9, PW: 2.3
+Distance from Iris-setosa: 11.004000000000001
+Distance from Iris-versicolor: 5.571428571428573
+Distance from Iris-virginica: 3.08541666666667
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.0, SW: 2.2, PL:5.0, PW: 1.5
+Distance from Iris-setosa: 7.004000000000001
+Distance from Iris-versicolor: 1.5714285714285725
+Distance from Iris-virginica: 2.447916666666663
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.9, SW: 3.2, PL:5.7, PW: 2.3
+Distance from Iris-setosa: 8.404000000000003
+Distance from Iris-versicolor: 3.8489795918367364
+Distance from Iris-virginica: 0.9520833333333374
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.6, SW: 2.8, PL:4.9, PW: 2.0
+Distance from Iris-setosa: 6.404000000000002
+Distance from Iris-versicolor: 1.6775510204081638
+Distance from Iris-virginica: 1.8479166666666633
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 2.8, PL:6.7, PW: 2.0
+Distance from Iris-setosa: 10.304000000000002
+Distance from Iris-versicolor: 4.948979591836736
+Distance from Iris-virginica: 2.427083333333336
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.7, PL:4.9, PW: 1.8
+Distance from Iris-setosa: 7.004000000000001
+Distance from Iris-versicolor: 1.5714285714285727
+Distance from Iris-virginica: 1.4479166666666627
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.3, PL:5.7, PW: 2.1
+Distance from Iris-setosa: 7.904000000000002
+Distance from Iris-versicolor: 3.548979591836736
+Distance from Iris-virginica: 0.6520833333333371
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.2, SW: 3.2, PL:6.0, PW: 1.8
+Distance from Iris-setosa: 8.504000000000001
+Distance from Iris-versicolor: 3.9489795918367365
+Distance from Iris-virginica: 1.4937500000000032
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.2, SW: 2.8, PL:4.8, PW: 1.8
+Distance from Iris-setosa: 6.7040000000000015
+Distance from Iris-versicolor: 1.3489795918367358
+Distance from Iris-virginica: 1.5479166666666633
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.1, SW: 3.0, PL:4.9, PW: 1.8
+Distance from Iris-setosa: 6.504000000000001
+Distance from Iris-versicolor: 1.548979591836736
+Distance from Iris-virginica: 1.4145833333333304
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 2.8, PL:5.6, PW: 2.1
+Distance from Iris-setosa: 8.004000000000001
+Distance from Iris-versicolor: 2.648979591836736
+Distance from Iris-virginica: 0.5020833333333323
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.2, SW: 3.0, PL:5.8, PW: 1.6
+Distance from Iris-setosa: 8.304000000000002
+Distance from Iris-versicolor: 3.348979591836736
+Distance from Iris-virginica: 1.2937500000000028
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.4, SW: 2.8, PL:6.1, PW: 1.9
+Distance from Iris-setosa: 9.304000000000002
+Distance from Iris-versicolor: 3.9489795918367356
+Distance from Iris-virginica: 1.6270833333333359
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.9, SW: 3.8, PL:6.4, PW: 2.0
+Distance from Iris-setosa: 9.968
+Distance from Iris-versicolor: 5.848979591836736
+Distance from Iris-virginica: 2.9937500000000035
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 2.8, PL:5.6, PW: 2.2
+Distance from Iris-setosa: 8.104000000000001
+Distance from Iris-versicolor: 2.748979591836736
+Distance from Iris-virginica: 0.6020833333333324
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.8, PL:5.1, PW: 1.5
+Distance from Iris-setosa: 6.804000000000001
+Distance from Iris-versicolor: 1.4489795918367352
+Distance from Iris-virginica: 1.4479166666666639
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.1, SW: 2.6, PL:5.6, PW: 1.4
+Distance from Iris-setosa: 7.204
+Distance from Iris-versicolor: 1.7714285714285718
+Distance from Iris-virginica: 1.5437499999999988
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 7.7, SW: 3.0, PL:6.1, PW: 2.3
+Distance from Iris-setosa: 9.804000000000002
+Distance from Iris-versicolor: 4.848979591836736
+Distance from Iris-virginica: 1.9520833333333365
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 3.4, PL:5.6, PW: 2.4
+Distance from Iris-setosa: 7.604000000000001
+Distance from Iris-versicolor: 3.448979591836735
+Distance from Iris-virginica: 1.1687499999999997
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.4, SW: 3.1, PL:5.5, PW: 1.8
+Distance from Iris-setosa: 7.304000000000001
+Distance from Iris-versicolor: 2.548979591836736
+Distance from Iris-virginica: 0.6145833333333302
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.0, SW: 3.0, PL:4.8, PW: 1.8
+Distance from Iris-setosa: 6.304000000000001
+Distance from Iris-versicolor: 1.3489795918367358
+Distance from Iris-virginica: 1.6145833333333306
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.9, SW: 3.1, PL:5.4, PW: 2.1
+Distance from Iris-setosa: 8.004000000000001
+Distance from Iris-versicolor: 3.248979591836737
+Distance from Iris-virginica: 0.6562500000000013
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.1, PL:5.6, PW: 2.4
+Distance from Iris-setosa: 8.304
+Distance from Iris-versicolor: 3.5489795918367357
+Distance from Iris-virginica: 0.6520833333333367
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.9, SW: 3.1, PL:5.1, PW: 2.3
+Distance from Iris-setosa: 7.904000000000001
+Distance from Iris-versicolor: 3.148979591836736
+Distance from Iris-virginica: 1.1562500000000018
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.8, SW: 2.7, PL:5.1, PW: 1.9
+Distance from Iris-setosa: 6.804
+Distance from Iris-versicolor: 1.5999999999999996
+Distance from Iris-virginica: 1.6479166666666636
+Iris Determined as Iris-versicolor
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.8, SW: 3.2, PL:5.9, PW: 2.3
+Distance from Iris-setosa: 8.504000000000001
+Distance from Iris-versicolor: 3.948979591836736
+Distance from Iris-virginica: 1.052083333333337
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.3, PL:5.7, PW: 2.5
+Distance from Iris-setosa: 8.304000000000002
+Distance from Iris-versicolor: 3.948979591836736
+Distance from Iris-virginica: 1.052083333333337
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.7, SW: 3.0, PL:5.2, PW: 2.3
+Distance from Iris-setosa: 7.904000000000002
+Distance from Iris-versicolor: 2.948979591836736
+Distance from Iris-virginica: 0.756250000000001
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.3, SW: 2.5, PL:5.0, PW: 1.9
+Distance from Iris-setosa: 7.404000000000001
+Distance from Iris-versicolor: 1.9714285714285724
+Distance from Iris-virginica: 1.4479166666666634
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.5, SW: 3.0, PL:5.2, PW: 2.0
+Distance from Iris-setosa: 7.404000000000002
+Distance from Iris-versicolor: 2.448979591836736
+Distance from Iris-virginica: 0.5145833333333303
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 6.2, SW: 3.4, PL:5.4, PW: 2.3
+Distance from Iris-setosa: 7.2040000000000015
+Distance from Iris-versicolor: 3.048979591836736
+Distance from Iris-virginica: 1.2729166666666636
+Iris Determined as Iris-virginica
+Current Iris: [ Actual: Iris-virginica, Determined: N/A, SL: 5.9, SW: 3.0, PL:5.1, PW: 1.8
+Distance from Iris-setosa: 6.504000000000001
+Distance from Iris-versicolor: 1.5775510204081626
+Distance from Iris-virginica: 1.4145833333333304
+Iris Determined as Iris-virginica
+Iris: Iris-setosa Correct: 50.0 Total: 50.0 Score: 100.00
+Iris: Iris-versicolor Correct: 47.0 Total: 50.0 Score: 94.00
+Iris: Iris-virginica Correct: 42.0 Total: 50.0 Score: 84.00
+Class Dump: 
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.1, SW: 3.5, PL:1.4, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.9, SW: 3.0, PL:1.4, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.7, SW: 3.2, PL:1.3, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.6, SW: 3.1, PL:1.5, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.0, SW: 3.6, PL:1.4, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.4, SW: 3.9, PL:1.7, PW: 0.4 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.6, SW: 3.4, PL:1.4, PW: 0.3 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.0, SW: 3.4, PL:1.5, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.4, SW: 2.9, PL:1.4, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.4, SW: 3.7, PL:1.5, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.8, SW: 3.4, PL:1.6, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.8, SW: 3.0, PL:1.4, PW: 0.1 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.3, SW: 3.0, PL:1.1, PW: 0.1 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.8, SW: 4.0, PL:1.2, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.7, SW: 4.4, PL:1.5, PW: 0.4 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.4, SW: 3.9, PL:1.3, PW: 0.4 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.1, SW: 3.5, PL:1.4, PW: 0.3 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.7, SW: 3.8, PL:1.7, PW: 0.3 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.1, SW: 3.8, PL:1.5, PW: 0.3 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.4, SW: 3.4, PL:1.7, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.1, SW: 3.7, PL:1.5, PW: 0.4 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.6, SW: 3.6, PL:1.0, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.1, SW: 3.3, PL:1.7, PW: 0.5 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.8, SW: 3.4, PL:1.9, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.0, SW: 3.0, PL:1.6, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.0, SW: 3.4, PL:1.6, PW: 0.4 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.2, SW: 3.5, PL:1.5, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.2, SW: 3.4, PL:1.4, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.7, SW: 3.2, PL:1.6, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.8, SW: 3.1, PL:1.6, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.4, SW: 3.4, PL:1.5, PW: 0.4 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.2, SW: 4.1, PL:1.5, PW: 0.1 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.5, SW: 4.2, PL:1.4, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.0, SW: 3.2, PL:1.2, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.5, SW: 3.5, PL:1.3, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.9, SW: 3.1, PL:1.5, PW: 0.1 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.4, SW: 3.0, PL:1.3, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.1, SW: 3.4, PL:1.5, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.0, SW: 3.5, PL:1.3, PW: 0.3 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.5, SW: 2.3, PL:1.3, PW: 0.3 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.4, SW: 3.2, PL:1.3, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.0, SW: 3.5, PL:1.6, PW: 0.6 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.1, SW: 3.8, PL:1.9, PW: 0.4 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.8, SW: 3.0, PL:1.4, PW: 0.3 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.1, SW: 3.8, PL:1.6, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 4.6, SW: 3.2, PL:1.4, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.3, SW: 3.7, PL:1.5, PW: 0.2 ]
+[ Actual: Iris-setosa, Determined: Iris-setosa, SL: 5.0, SW: 3.3, PL:1.4, PW: 0.2 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 7.0, SW: 3.2, PL:4.7, PW: 1.4 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.4, SW: 3.2, PL:4.5, PW: 1.5 ]
+[ Actual: Iris-versicolor, Determined: Iris-virginica, SL: 6.9, SW: 3.1, PL:4.9, PW: 1.5 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.5, SW: 2.3, PL:4.0, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.5, SW: 2.8, PL:4.6, PW: 1.5 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.7, SW: 2.8, PL:4.5, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.3, SW: 3.3, PL:4.7, PW: 1.6 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 4.9, SW: 2.4, PL:3.3, PW: 1.0 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.6, SW: 2.9, PL:4.6, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.2, SW: 2.7, PL:3.9, PW: 1.4 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.0, SW: 2.0, PL:3.5, PW: 1.0 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.9, SW: 3.0, PL:4.2, PW: 1.5 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.0, SW: 2.2, PL:4.0, PW: 1.0 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.1, SW: 2.9, PL:4.7, PW: 1.4 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.6, SW: 2.9, PL:3.6, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.7, SW: 3.1, PL:4.4, PW: 1.4 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.6, SW: 3.0, PL:4.5, PW: 1.5 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.8, SW: 2.7, PL:4.1, PW: 1.0 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.2, SW: 2.2, PL:4.5, PW: 1.5 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.6, SW: 2.5, PL:3.9, PW: 1.1 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.9, SW: 3.2, PL:4.8, PW: 1.8 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.1, SW: 2.8, PL:4.0, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.3, SW: 2.5, PL:4.9, PW: 1.5 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.1, SW: 2.8, PL:4.7, PW: 1.2 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.4, SW: 2.9, PL:4.3, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.6, SW: 3.0, PL:4.4, PW: 1.4 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.8, SW: 2.8, PL:4.8, PW: 1.4 ]
+[ Actual: Iris-versicolor, Determined: Iris-virginica, SL: 6.7, SW: 3.0, PL:5.0, PW: 1.7 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.0, SW: 2.9, PL:4.5, PW: 1.5 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.7, SW: 2.6, PL:3.5, PW: 1.0 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.5, SW: 2.4, PL:3.8, PW: 1.1 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.5, SW: 2.4, PL:3.7, PW: 1.0 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.8, SW: 2.7, PL:3.9, PW: 1.2 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.0, SW: 2.7, PL:5.1, PW: 1.6 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.4, SW: 3.0, PL:4.5, PW: 1.5 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.0, SW: 3.4, PL:4.5, PW: 1.6 ]
+[ Actual: Iris-versicolor, Determined: Iris-virginica, SL: 6.7, SW: 3.1, PL:4.7, PW: 1.5 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.3, SW: 2.3, PL:4.4, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.6, SW: 3.0, PL:4.1, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.5, SW: 2.5, PL:4.0, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.5, SW: 2.6, PL:4.4, PW: 1.2 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.1, SW: 3.0, PL:4.6, PW: 1.4 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.8, SW: 2.6, PL:4.0, PW: 1.2 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.0, SW: 2.3, PL:3.3, PW: 1.0 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.6, SW: 2.7, PL:4.2, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.7, SW: 3.0, PL:4.2, PW: 1.2 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.7, SW: 2.9, PL:4.2, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 6.2, SW: 2.9, PL:4.3, PW: 1.3 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.1, SW: 2.5, PL:3.0, PW: 1.1 ]
+[ Actual: Iris-versicolor, Determined: Iris-versicolor, SL: 5.7, SW: 2.8, PL:4.1, PW: 1.3 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.3, SW: 3.3, PL:6.0, PW: 2.5 ]
+[ Actual: Iris-virginica, Determined: Iris-versicolor, SL: 5.8, SW: 2.7, PL:5.1, PW: 1.9 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.1, SW: 3.0, PL:5.9, PW: 2.1 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.3, SW: 2.9, PL:5.6, PW: 1.8 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.5, SW: 3.0, PL:5.8, PW: 2.2 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.6, SW: 3.0, PL:6.6, PW: 2.1 ]
+[ Actual: Iris-virginica, Determined: Iris-versicolor, SL: 4.9, SW: 2.5, PL:4.5, PW: 1.7 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.3, SW: 2.9, PL:6.3, PW: 1.8 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.7, SW: 2.5, PL:5.8, PW: 1.8 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.2, SW: 3.6, PL:6.1, PW: 2.5 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.5, SW: 3.2, PL:5.1, PW: 2.0 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.4, SW: 2.7, PL:5.3, PW: 1.9 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.8, SW: 3.0, PL:5.5, PW: 2.1 ]
+[ Actual: Iris-virginica, Determined: Iris-versicolor, SL: 5.7, SW: 2.5, PL:5.0, PW: 2.0 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 5.8, SW: 2.8, PL:5.1, PW: 2.4 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.4, SW: 3.2, PL:5.3, PW: 2.3 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.5, SW: 3.0, PL:5.5, PW: 1.8 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.7, SW: 3.8, PL:6.7, PW: 2.2 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.7, SW: 2.6, PL:6.9, PW: 2.3 ]
+[ Actual: Iris-virginica, Determined: Iris-versicolor, SL: 6.0, SW: 2.2, PL:5.0, PW: 1.5 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.9, SW: 3.2, PL:5.7, PW: 2.3 ]
+[ Actual: Iris-virginica, Determined: Iris-versicolor, SL: 5.6, SW: 2.8, PL:4.9, PW: 2.0 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.7, SW: 2.8, PL:6.7, PW: 2.0 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.3, SW: 2.7, PL:4.9, PW: 1.8 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.7, SW: 3.3, PL:5.7, PW: 2.1 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.2, SW: 3.2, PL:6.0, PW: 1.8 ]
+[ Actual: Iris-virginica, Determined: Iris-versicolor, SL: 6.2, SW: 2.8, PL:4.8, PW: 1.8 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.1, SW: 3.0, PL:4.9, PW: 1.8 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.4, SW: 2.8, PL:5.6, PW: 2.1 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.2, SW: 3.0, PL:5.8, PW: 1.6 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.4, SW: 2.8, PL:6.1, PW: 1.9 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.9, SW: 3.8, PL:6.4, PW: 2.0 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.4, SW: 2.8, PL:5.6, PW: 2.2 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.3, SW: 2.8, PL:5.1, PW: 1.5 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.1, SW: 2.6, PL:5.6, PW: 1.4 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 7.7, SW: 3.0, PL:6.1, PW: 2.3 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.3, SW: 3.4, PL:5.6, PW: 2.4 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.4, SW: 3.1, PL:5.5, PW: 1.8 ]
+[ Actual: Iris-virginica, Determined: Iris-versicolor, SL: 6.0, SW: 3.0, PL:4.8, PW: 1.8 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.9, SW: 3.1, PL:5.4, PW: 2.1 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.7, SW: 3.1, PL:5.6, PW: 2.4 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.9, SW: 3.1, PL:5.1, PW: 2.3 ]
+[ Actual: Iris-virginica, Determined: Iris-versicolor, SL: 5.8, SW: 2.7, PL:5.1, PW: 1.9 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.8, SW: 3.2, PL:5.9, PW: 2.3 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.7, SW: 3.3, PL:5.7, PW: 2.5 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.7, SW: 3.0, PL:5.2, PW: 2.3 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.3, SW: 2.5, PL:5.0, PW: 1.9 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.5, SW: 3.0, PL:5.2, PW: 2.0 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 6.2, SW: 3.4, PL:5.4, PW: 2.3 ]
+[ Actual: Iris-virginica, Determined: Iris-virginica, SL: 5.9, SW: 3.0, PL:5.1, PW: 1.8 ]
+ Averages 
+[ Actual: Iris-setosa, Determined: N/A, SL: 5.005999999999999, SW: 3.4180000000000006, PL:1.464, PW: 0.2439999999999999 ]
+[ Actual: Iris-versicolor, Determined: N/A, SL: 5.914285714285714, SW: 2.7612244897959184, PL:4.2510204081632645, PW: 1.3244897959183675 ]
+[ Actual: Iris-virginica, Determined: N/A, SL: 6.608333333333332, SW: 2.9666666666666663, PL:5.552083333333332, PW: 2.020833333333333 ]
+
