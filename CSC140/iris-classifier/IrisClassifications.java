@@ -209,9 +209,6 @@ public class IrisClassifications {
 			} else {
 				total++;
 			}
-			
-			
-			
 		}
 		
 		System.out.println("Iris: " + irises.get(irises.size()-1).getActualClass() + " Correct: " + correct + " Total: " + total + " Score: " + String.format("%,.2f", ((correct / total) * 100)));
