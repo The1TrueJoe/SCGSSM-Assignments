@@ -1,0 +1,33 @@
+WarehouseID,SKU,SKU_Description,QuantityOnHand,QuantityOnOrder
+100,100100,"Std. Scuba Tank, Yellow",250,0
+100,100200,"Std. Scuba Tank, Magenta",200,30
+100,101100,"Dive Mask, Small Clear",0,500
+100,101200,"Dive Mask, Med Clear",100,500
+100,201000,"Half-dome Tent",2,100
+100,202000,"Half-dome Tent Vestibule",10,250
+100,301000,"Light Fly Climbing Harness",300,250
+100,302000,"Locking Carabiner, Oval",1000,0
+200,100100,"Std. Scuba Tank, Yellow",100,50
+200,100200,"Std. Scuba Tank, Magenta",75,75
+200,101100,"Dive Mask, Small Clear",0,500
+200,101200,"Dive Mask, Med Clear",50,500
+200,201000,"Half-dome Tent",10,250
+200,202000,"Half-dome Tent Vestibule",1,250
+200,301000,"Light Fly Climbing Harness",250,250
+200,302000,"Locking Carabiner, Oval",1250,0
+300,100100,"Std. Scuba Tank, Yellow",100,0
+300,100200,"Std. Scuba Tank, Magenta",100,100
+300,101100,"Dive Mask, Small Clear",300,200
+300,101200,"Dive Mask, Med Clear",475,0
+300,201000,"Half-dome Tent",250,0
+300,202000,"Half-dome Tent Vestibule",100,0
+300,301000,"Light Fly Climbing Harness",0,250
+300,302000,"Locking Carabiner, Oval",500,500
+400,100100,"Std. Scuba Tank, Yellow",200,0
+400,100200,"Std. Scuba Tank, Magenta",250,0
+400,101100,"Dive Mask, Small Clear",450,0
+400,101200,"Dive Mask, Med Clear",250,250
+400,201000,"Half-dome Tent",0,250
+400,202000,"Half-dome Tent Vestibule",0,200
+400,301000,"Light Fly Climbing Harness",0,250
+400,302000,"Locking Carabiner, Oval",0,1000
