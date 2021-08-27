@@ -6,7 +6,7 @@ using namespace std;
 class GradeBook {
     public:
         // Constructor
-        GradeBook( string );
+        GradeBook();
 
         // Set the course name
         void setCourseName( string );  
@@ -18,7 +18,7 @@ class GradeBook {
         void displayMessage(); 
 
         // Input grades
-        void inputGrades();    
+        int * inputGrades(int);    
 
         // Get the maximum of three values
         int maximum( int, int, int );
@@ -27,7 +27,7 @@ class GradeBook {
         void displayGradeReport();
 
         // Get the class average
-        void determineClassAverage();
+        int determineClassAverage(int[]);
     
     private:
         // Name of the course
@@ -35,5 +35,11 @@ class GradeBook {
 
         // Max grade
         int maximumGrade;
+
+        // Average
+        double average;
+
+        // Grades
+        int * all_grades;
 
 };

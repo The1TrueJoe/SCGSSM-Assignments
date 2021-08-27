@@ -7,8 +7,19 @@
 using namespace std;
 
 // Constructor
-GradeBook::GradeBook( string name ) {
-    setCourseName( name ); 
+GradeBook::GradeBook() {
+    cout << "Enter course name" << endl;
+    string name;
+    cin >> name;
+
+    setCourseName(name); 
+
+    cout << "Enter number of grades" << endl;
+    int size;
+    cin >> size;
+
+    all_grades = inputGrades(size);
+    displayGradeReport();
 
 }
 
@@ -26,42 +37,77 @@ void GradeBook::setCourseName( string name ) {
 
 }
 
+// Get the name of the course
 string GradeBook::getCourseName() {
     return courseName;
 
 }
 
+// Print out the course banner
 void GradeBook::displayMessage() {
     cout << "Welcome to the grade book for\n" << getCourseName() << "!\n" << endl;
 
 }
 
-void GradeBook::determineClassAverage() {
+// Print out the grades
+void GradeBook::displayGradeReport() {
+    // Title and Average
+    cout << courseName << " Grade Report" << endl;
+    cout << "Average: " << determineClassAverage(all_grades) << endl;
+
+    // List all lines
+    for (int i = 0; i < sizeof(all_grades); i++) {
+        cout << all_grades[i] << endl;
+
+    }
+}
+
+// Input grades
+int * GradeBook::inputGrades(int size) {
+    // Setup array
+    int grade[size];
+
+    // Enter grades
+    for (int i = 0; i < size; i++) {
+        cout << "Enter " << i << " grade: " << endl;
+        cin >> grade[i];
+
+    }
+
+    // Return
+    return grade;
+
+}
+
+// Compute average
+int GradeBook::determineClassAverage(int grades[]) {
+    // Setup variables
     int total;
     int gradeCounter;
     int grade;
-    double average;
 
-    total =0;
-    gradeCounter = 0;
+    // Set variables
+    total = 0;
+    gradeCounter = sizeof(grades);
 
-    cout<< "Enter grade or -1 to quit: ";
-    cin >> grade;
+    // Sum grades
+    for (int i = 0; i < gradeCounter; i++) {
+        total = total + grades[i];
 
-    while(grade != -1) {
-        total = total + grade;
-        gradeCounter++;
-        cout << "Enter grade or -1 to quit: ";
-        cin >>grade;
     }
 
+    // Compute average
     if(gradeCounter != 0 ) {
         average = static_cast<double>(total)/gradeCounter;
-        cout << "\nTotal of all " << gradeCounter << "grades entered is "<< total <<endl;
-        cout << "\nClass average is "<< setprecision(2) << fixed <<average<< endl;
-        
-    } else
-        cout << "No grades were entered " << endl;
+
+        // Return average
+        return average;
+
+    } else {
+        // Default
+        return 0;
+
+    }
 
 }
 
