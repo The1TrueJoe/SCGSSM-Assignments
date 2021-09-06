@@ -21,11 +21,11 @@ docs/
 sshj.jar
 
 # MacOS X
-.DS_Store
+/.DS_Store
 
 # VSCode
 .metals/
-.vscode/
+/.vscode/
 
 # VSCode Counter
 .VSCodeCounter/
