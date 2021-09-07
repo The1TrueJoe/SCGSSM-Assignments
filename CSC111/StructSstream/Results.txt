@@ -1,0 +1,53 @@
+Enter Rectangle 1 Length
+10
+
+Enter Rectangle 1 Width
+7
+
+Enter Rectangle 1 Upper Left x
+2
+
+Enter Rectangle 1 Upper Left y
+2
+
+Enter Rectangle 2 Length
+5
+
+Enter Rectangle 2 Width
+3
+
+Enter Rectangle 2 Upper Left x
+3
+
+Enter Rectangle 2 Upper Left y
+3
+
+The rectangle is entirely inside the other
+
+--------------------------------
+
+Enter Rectangle 1 Length
+10
+
+Enter Rectangle 1 Width
+7
+
+Enter Rectangle 1 Upper Left x
+2
+
+Enter Rectangle 1 Upper Left y
+2
+
+Enter Rectangle 2 Length
+9
+
+Enter Rectangle 2 Width
+6
+
+Enter Rectangle 2 Upper Left x
+1
+
+Enter Rectangle 2 Upper Left y
+1
+
+The rectangle is not entirely inside the other

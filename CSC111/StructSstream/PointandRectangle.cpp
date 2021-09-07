@@ -6,6 +6,18 @@
  *              user-inputted rectangles can be placed inside each other
  *
  * Honor Code: On my honor, I have neither given nor received unauthorized help on this assignment.
+ * 
+ * +--------------------> X axis
+ * |
+ * |    (X,Y)      (X+W, Y)
+ * |    +--------------+
+ * |    |              |
+ * |    |              |
+ * |    |              |
+ * |    +--------------+
+ * v    (X, Y+H)     (X+W,Y+H)
+ * 
+ * Y axis
  */
 
 #include <iostream>
@@ -73,18 +85,18 @@ int main() {
     ss << "Enter Rectangle 2 Upper Left y" << endl;
     ss >> rect_2.upper_left_corner.y;
 
-    if (overlap(rect_1, rect_2)) {
-        ss << "The rectangles overlap" << endl;
+    if (inside(rect_1, rect_2)) {
+        ss << "The rectangle is not entirely inside the other" << endl;
 
     } else {
-        ss << "The rectangles do not overlap" << endl;
+        ss << "The rectangle is not entirely inside the other" << endl;
 
     }
 
 }
 
 // Test if the overlap
-bool overlap(const Rectangle & rect1, const Rectangle & rect2) {
+bool inside(const Rectangle & rect1, const Rectangle & rect2) {
     bool x_overlap = within(rect1.upper_left_corner.x, rect2.upper_left_corner.x, rect2.upper_left_corner.x + rect2.length) ||
                      within(rect2.upper_left_corner.x, rect1.upper_left_corner.x, rect1.upper_left_corner.x + rect1.length);
 
