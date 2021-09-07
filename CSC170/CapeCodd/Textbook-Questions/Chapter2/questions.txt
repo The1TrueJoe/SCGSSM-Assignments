@@ -1,0 +1,51 @@
+2.25 Write an SQL statement to display the SKU, SKU_Description, and WarehouseID for
+products that have a QuantityOnHand equal to 0. Sort the results in ascending order
+by WarehouseID.
+2.26 Write an SQL statement to display the SKU, SKU_Description, and WarehouseID for
+products that have a QuantityOnHand greater than 0. Sort the results in descending
+order by WarehouseID and in ascending order by SKU.
+2.27 Write an SQL statement to display SKU, SKU_Description, and WarehouseID for all
+products that have a QuantityOnHand equal to 0 and a QuantityOnOrder greater than 0.
+Sort the results in descending order by WarehouseID and in ascending order by SKU.
+2.28 Write an SQL statement to display SKU, SKU_Description, and WarehouseID for
+all products that have a QuantityOnHand equal to 0 or a QuantityOnOrder equal
+to 0. Sort the results in descending order by WarehouseID and in ascending order
+by SKU.
+2.29 Write an SQL statement to display the SKU, SKU_Description, WarehouseID, and
+QuantityOnHand for all products having a QuantityOnHand greater than 1 and less
+than 10. Do not use the BETWEEN keyword.
+2.30 Write an SQL statement to display the SKU, SKU_Description, WarehouseID, and
+QuantityOnHand for all products having a QuantityOnHand greater than 1 and less
+than 10. Use the BETWEEN keyword.
+
+2.31 Write an SQL statement to show a unique SKU and SKU_Description for all prod-
+ucts with an SKU description starting with ‘Half-Dome’.
+
+2.32 Write an SQL statement to show a unique SKU and SKU_Description for all prod-
+ucts with a description that includes the word ‘Climb’.
+
+2.33 Write an SQL statement to show a unique SKU and SKU_Description for all prod-
+ucts with a ‘d’ in the third position from the left in SKU_Description.
+
+2.34 Write an SQL statement that uses all of the SQL built-in functions on the Quantity-
+OnHand column. Include meaningful column names in the result.
+
+2.35 Explain the difference between the SQL built-in functions COUNT and SUM.
+
+2.36 Write an SQL statement to display the WarehouseID and the sum of QuantityOn-
+Hand grouped by WarehouseID. Name the sum TotalItemsOnHand and display the
+results in descending order of TotalItemsOnHand.
+
+2.37 Write an SQL statement to display the WarehouseID and the sum of QuantityOn-
+Hand grouped by WarehouseID. Omit all SKU items that have three or more itemson hand from the sum, name the sum TotalItemsOnHandLT3, and display the results
+in descending order of TotalItemsOnHandLT3.
+
+2.38 Write an SQL statement to display the WarehouseID and the sum of Quantity
+OnHand grouped by WarehouseID. Omit all SKU items that have three or
+more items on hand from the sum, and name the sum TotalItemsOnHandLT3.
+Show the WarehouseID only for warehouses having fewer than two SKUs
+in their TotalItemsOnHandLT3. Display the results in descending order of
+TotalItemsOnHandLT3.
+
+2.39 In your answer to Review Question 2.38, was the WHERE clause or the HAVING
+clause applied first? Why?
