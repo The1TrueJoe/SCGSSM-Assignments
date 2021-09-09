@@ -1,0 +1,6 @@
+SELECT Buyer, SKU_DATA.SKU, SKU_Description, SUM(ExtendedPrice) AS BuyerSKURevenue
+FROM SKU_DATA, ORDER_ITEM
+WHERE SKU_DATA.SKU = ORDER_ITEM.SKU
+GROUP BY Buyer, SKU_DATA.SKU, SKU_Description
+ORDER BY BuyerSKURevenue DESC
+;
