@@ -1,3 +1,12 @@
+/* 
+ * Write the code to declare a struct to represent the time in hours,  
+ * minutes, and seconds (all whole numbers).  
+ * Write a function update() which is passed the number of hours, minutes, and seconds which are  
+ * added to the current time.  
+ * In main(), set the current time to 12:45:30 and call update to add 
+ * 1 hour, 20 minutes, and 15 seconds to the time.Display the updated time in main().
+ */
+
 #include <iostream>
 
 using namespace std;

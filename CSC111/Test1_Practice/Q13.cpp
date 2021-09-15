@@ -1,3 +1,5 @@
+// Examine the following code.  Fill in the code to make the changes indicated in the comments
+
 #include <iostream>
 #include <string>
 
