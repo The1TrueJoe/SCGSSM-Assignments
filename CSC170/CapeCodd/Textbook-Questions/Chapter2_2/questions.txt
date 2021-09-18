@@ -1,0 +1,59 @@
+2.40 Write an SQL statement to display the SKU, SKU_Description, WarehouseID,
+WarehouseCity, and WarehouseState for all items stored in the Atlanta, Bangor, or
+Chicago warehouse. Do not use the IN keyword.
+
+2.41 Write an SQL statement to display the SKU, SKU_Description, WarehouseID,
+WarehouseCity, and WarehouseState for all items stored in the Atlanta, Bangor, or
+Chicago warehouse. Use the IN keyword.
+
+2.42 Write an SQL statement to display the SKU, SKU_Description, WarehouseID,
+WarehouseCity, and WarehouseState of all items not stored in the Atlanta, Bangor, or
+Chicago warehouse. Do not use the NOT IN keyword.
+
+2.43 Write an SQL statement to display the SKU, SKU_Description, WarehouseID,
+WarehouseCity, and WarehouseState of all items not stored in the Atlanta, Bangor, or
+Chicago warehouse. Use the NOT IN keyword.
+
+2.44 Write an SQL statement to produce a single column called ItemLocation that com-
+bines the SKU_Description, the phrase “is located in,” and WarehouseCity. Do not be
+concerned with removing leading or trailing blanks.
+
+2.45 Write an SQL statement to show the SKU, SKU_Description, and WarehouseID for
+all items stored in a warehouse managed by ‘Lucille Smith’. Use a subquery.
+
+2.46 Write an SQL statement to show the SKU, SKU_Description, and WarehouseID for
+all items stored in a warehouse managed by ‘Lucille Smith’. Use a join, but do not use
+JOIN ON syntax.
+
+2.47 Write an SQL statement to show the SKU, SKU_Description, and WarehouseID for
+all items stored in a warehouse managed by ‘Lucille Smith’. Use a join using JOIN ON
+syntax.
+
+2.48 Write an SQL statement to show the WarehouseID and average QuantityOnHand of
+all items stored in a warehouse managed by ‘Lucille Smith’. Use a subquery.
+
+2.49 Write an SQL statement to show the WarehouseID and average QuantityOnHand of
+all items stored in a warehouse managed by ‘Lucille Smith’. Use a join, but do not use
+JOIN ON syntax.
+
+2.50 Write an SQL statement to show the WarehouseID and average QuantityOnHand of
+all items stored in a warehouse managed by ‘Lucille Smith’. Use a join using JOIN ON
+syntax.
+
+2.51 Write an SQL statement to show the WarehouseID, WarehouseCity, WarehouseState,
+Manager, SKU, SKU_Description, and QuantityOnHand of all items stored in a ware-
+house managed by ‘Lucille Smith’. Use a join using JOIN ON syntax.
+
+2.52 Write an SQL statement to display the WarehouseID, the sum of QuantityOnOrder,
+and the sum of QuantityOnHand, grouped by WarehouseID and QuantityOnOrder.
+Name the sum of QuantityOnOrder as TotalItemsOnOrder and the sum of Quantity
+OnHand as TotalItemsOnHand. Use only the INVENTORY table in your SQL
+statement.
+
+2.53 Explain why you cannot use a subquery in your answer to Review Question 2.52.
+
+2.54 Explain how subqueries and joins differ.
+
+2.55 Write an SQL statement to join WAREHOUSE and INVENTORY and include all
+rows of WAREHOUSE in your answer, regardless of whether they have any INVEN-
+TORY. Include all columns of both tables, but do not repeat the join column.

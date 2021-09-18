@@ -1,0 +1,3 @@
+2.54 Explain how subqueries and joins differ.
+
+Subqueries return scalar values but joins return multiple rows. For example, a subquery is commonly used to calculate a sum of a column.
