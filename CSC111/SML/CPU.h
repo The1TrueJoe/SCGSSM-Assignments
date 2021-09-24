@@ -15,13 +15,13 @@ class CPU {
         int InstructionPointer;
 
         // Starts
-        void Start();
+        void Start(array<int, 100>);
 
         // Operate
-        int OP(int op_code, int memmory_adress);
+        int OP(int op_code, int memory_adress);
 
-        // Memmory
-        RAM memmory;
+        // memory
+        RAM memory;
 
         // OPCODES
         static const int READ       = 10; // Read a word from the keyboard into the specified memory location
@@ -37,20 +37,23 @@ class CPU {
         static const int BRANCHZERO = 42; // Branch to the specified location if the accumulator is zero 
         static const int HALT       = 43; // Halt
 
+        static const int THROW_ERR  = -1; // Throw a compile error
+
     private:
 
         // Operations
-        int OP_READ(int);       // Read a word from the keyboard into the specified memory location
-        int OP_WRITE(int);      // Write a word from a specified memory location onto the screen
-        int OP_LOAD(int);       // Load a word from a specified location in memory into the accumulator 
-        int OP_STORE(int);      // Store a word from the accumulator into a specified location in memory
-        int OP_ADD(int);        // Add a word from a specified location in memory to the accumulator
-        int OP_SUB(int);        // Subtract a word from a location in memory from the accumulator
-        int OP_DIV(int);        // Divide a word from a location into the value in the accumulator
-        int OP_MULT(int);       // Multiply a word from a location into the value in the accumulator
-        int OP_BRANCH(int);     // Branch to the specified location in memory
-        int OP_BRANCHNEG(int);  // Branch to the specified location if the accumulator is negative
-        int OP_BRANCHZERO(int); // Branch to the specified location if the accumulator is zero 
-        int OP_HALT(int);       // Halt
+        void OP_READ(int);       // Read a word from the keyboard into the specified memory location
+        void OP_WRITE(int);      // Write a word from a specified memory location onto the screen
+        void OP_LOAD(int);       // Load a word from a specified location in memory into the accumulator 
+        void OP_STORE(int);      // Store a word from the accumulator into a specified location in memory
+        void OP_ADD(int);        // Add a word from a specified location in memory to the accumulator
+        void OP_SUB(int);        // Subtract a word from a location in memory from the accumulator
+        void OP_DIV(int);        // Divide a word from a location into the value in the accumulator
+        void OP_MULT(int);       // Multiply a word from a location into the value in the accumulator
+        void OP_BRANCH(int);     // Branch to the specified location in memory
+        void OP_BRANCHNEG(int);  // Branch to the specified location if the accumulator is negative
+        void OP_BRANCHZERO(int); // Branch to the specified location if the accumulator is zero 
+
+        void SYS_THROW_ERR();        // Throws a compile error
 
 };
