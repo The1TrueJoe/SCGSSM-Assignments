@@ -6,9 +6,6 @@ class RAM {
         // Constructor
         RAM();
 
-        // Constructor (Loads file)
-        RAM(string);
-
         // Store into specific address
         void Store(int, int);
 
@@ -16,9 +13,12 @@ class RAM {
         int Load(int);
 
         // Load from file into memmory
-        array<int, 100> LoadFile(string);
+        void LoadFile(string);
+
+        // Reset memory
+        void SET(array<int, 100>);
 
     private:
-        array<int, 100> memmory;
+        array<int, 100> memory;
         
 };

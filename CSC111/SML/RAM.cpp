@@ -1,14 +1,22 @@
 #include "RAM.h"
+#include "CPU.h"
 
 #include <array>
 #include <string>
+
+using namespace std;
 
 RAM::RAM() {
 
 }
 
-RAM::RAM(string file_location) {
-    CPU::memmory = CPU::LoadFile(file_location);
+void RAM::LoadFile(string file_location) {
+    
 
 }
 
+// Reset the ram with a new array
+void RAM::SET(array<int, 100> new_memory) {
+    RAM::memory = new_memory;
+
+}
