@@ -6,6 +6,10 @@
 
 #include "RAM.h"
 
+#include <array>
+
+using namespace std;
+
 class CPU {
     public:
         // Accumulator stores a word that cpu is working on
