@@ -1,0 +1,3 @@
+2.53 Explain why you cannot use a subquery in your answer to Review Question 2.52.
+
+Review Question 2.52 requires that the sql query only access the INVENTORY table. A subquery would have to access another table.
