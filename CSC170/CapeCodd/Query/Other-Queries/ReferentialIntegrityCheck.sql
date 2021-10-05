@@ -1,0 +1,7 @@
+SELECT Buyer
+FROM SKU_DATA
+WHERE Buyer NOT IN ( 
+	SELECT BuyerName
+    FROM BUYER
+)
+    

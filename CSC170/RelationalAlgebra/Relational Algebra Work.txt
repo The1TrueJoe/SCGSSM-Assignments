@@ -1,0 +1,68 @@
+2.5.1
+	1. π ID, name (σ dept_name = 'Physics' (instructor))
+
+		instructor.ID	instructor.name
+			22222	Einstein
+			33456	Gold
+
+	2. π ID, name (σ building = 'Watson' ((department) ⨝ (instructor)))
+
+		instructor.ID	instructor.name
+			76766	Crick
+			22222	Einstein
+			33456	Gold
+
+	3.  π ID, name (σ instructor.salary > department.budget (department ⨝ instructor))
+
+		instructor.ID	instructor.name
+			32343	El Said
+			58583	Califieri
+			22222	Einstein
+			33456	Gold
+
+2.5.2
+	4. π ID, name (σ year = 2010 (student ⨝ takes))
+
+		student.ID	student.name
+			12345	Shankar
+			19991	Brandt
+			23121	Chavez
+			45678	Levy
+			55739	Sanchez
+			76543	Brown
+			98765	Bourikas
+			98988	Tanaka
+
+	5. π ID, name (σ year ≠ 2010 (student ⨝ takes)) - π ID, name (σ year = 2010 (student ⨝ takes))
+
+		student.ID	student.name
+			128	Zhang
+			44553	Peltier
+			54321	Williams
+			76653	Aoi
+
+2.5.3
+	6. π ID, name (student ⨝ ((π ID, course_id (takes)) / π course_id (σ course.dept_name = 'Comp. Sc. department' (course))))
+
+		student.ID	student.name
+			128	Zhang
+			12345	Shankar
+			19991	Brandt
+			23121	Chavez
+			44553	Peltier
+			45678	Levy
+			54321	Williams
+			55739	Sanchez
+			76543	Brown
+			76653	Aoi
+			98765	Bourikas
+			98988	Tanaka
+
+
+	7. π ID, name (student ⨝ ((π ID, course_id (takes)) / π course_id (σ name = 'Zhang' ((student ⨝ takes)))))
+
+		student.ID	student.name
+			128	Zhang
+			12345	Shankar
+
+	8. 
