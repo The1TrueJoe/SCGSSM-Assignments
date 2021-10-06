@@ -1,0 +1,151 @@
+C++ Form and Format differs from Java.
+
+Refer to the C++ Notes by Cay Horstmann
+
+1. Write a C++ application to prompt the user for 2 integers, store them in variables and swap the values in the variables.    Display the changed values. Now remove the & from the swap parameters. What happens
+
+	void swapVar(int &a, int &b){
+		int c = a;
+		a = b;
+		b = a;
+
+	}
+
+	int main () {
+	    int a;
+	    int b;
+
+	    cout << "Enter two numbers " << endl;
+	    cin >> a >> b;
+
+	    swapVar(a, b);
+
+	    cout << a << endl;
+	    cout << b << endl;
+
+	}
+
+
+    // The variables don't swap when you remove & since the variable's address is not passed.
+
+2. Create a new application which declares a vectorint that can contain 10 integer values that represent student scores.
+
+		// a. display all of the scores in the vector
+		void displayVector(const vector <int> &grades) {
+			for (size_t i = 0; i < grades.size(); i++) {
+				cout << grades[i] << endl;
+
+			}
+		}
+
+		// b. return the sum of the values in the vector
+		int sumGrades(const vector<int> &grades) {
+			int sum = 0;
+			for (size_t i = 0; i < grades.size(); i++) {
+				sum += grades[i];
+
+			}
+		}
+
+		// c. curve the grades in the vector by adding a bonus value
+		void curveGrade (const vector<int> &grades) {
+			int largest = 0;
+
+			for (size_t i = 0; i < grades.size(); i++) {
+				if (grades[i] > largest) {
+					largest = grades[i];
+
+				}
+			}
+
+			//Applying the curve
+			int curve = 100 - largest;
+
+			for (size_t i = 0; i < grades.size(); i++) {
+				grades[i] = grades[i] + curve;
+
+			}
+		}
+
+    	// Main
+	    int main(){
+
+	        // Name
+		    string course_name;
+		    cin >> course_name;
+
+		    // Grades
+		    vector<int> grades (10);
+
+		    // Fill the elements
+		    for (int i = 0; i < grades.size(); i++) {
+			    cout << "Enter grade ";
+			    cin >> grades[i];
+
+		    }
+
+		    // Print the vector
+		    displayVector(grades);
+
+		    // Summing and display it
+		    sumGrades(grades);
+		    displayVector(grades);
+
+		    // Make a copy
+		    vector<int> grades2 (10);
+		    grades2 = grades;
+
+		    // Curve
+		    curveGrades(grades);
+
+		    // Print
+		    cout << courseName << "Grades " << endl;
+		    displayVector(grades);
+
+		    // Outputting vector without curve
+		    displayVector(grades2);
+
+		    return 0;
+
+	    }
+
+
+3. Pointers are variables that contain the address of an element in memory.
+	// Declare an integer variable a and initialize it to be 4.
+	int a = 4;
+
+	// Declare a pointer b to the variable a by using a's address.
+	int* b = &a;
+
+	// Declare a variable c and store the value which the pointer p is pointing to.
+	int c = *p;
+
+	// Display c
+	cout << c;
+
+	// Display the contents of pointer b
+	cout << *b;
+
+	// Display the address of value a
+	cout << b;
+
+
+	//Declare an array of 5 integer elements (not a vector)
+	int foo [5];
+
+	// Store the values 0,2,4,8,16 into the array using a loop
+	for (int i = 0; i < 5; i++) {
+		foo [i] = (i * 2);
+
+	}
+
+	// Declare a pointer variable and assign the array to that pointer.
+	int pointer * = arrayName
+
+	// Display the pointer's address.
+	cout << &pointer;
+
+	// Display the dereferenced pointer.
+	cout << pointer;
+
+	// In a loop from 1 up to 5, display the values of the pointer incremented by 1 After the loop display the pointer's address
