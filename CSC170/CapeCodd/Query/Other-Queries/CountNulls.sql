@@ -1,0 +1,4 @@
+SELECT COUNT(*) AS QuantityNullCount
+FROM ORDER_ITEM
+WHERE Quantity IS NULL
+;
