@@ -2,6 +2,9 @@
 // Created by jtelaak on 10/5/2021.
 // High Low Game in c++
 //
+// Reviewers
+// Akhil: Game worked great
+// Josh: It worked
 
 // Include
 #include <iostream>
