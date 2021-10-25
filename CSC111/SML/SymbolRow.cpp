@@ -1,34 +1,32 @@
 #include "SymbolRow.h";
 #include <iostream>
 
-SymbolRow::SymbolRow (string InputSym, string InputType, int InputLoc) {
-	SetSym(InputSym);
-	SetType(InputType);
-	SetLoc(InputLoc);
+SymbolRow::SymbolRow (string my_sym, string my_type, int my_location) {
+	setSymbol(my_sym);
+	setType(my_type);
+	setLocation(my_location);
 }
 
-// Writing the mutator methods
-void SymbolRow::SetSym(string InputSym) {
-	sym = InputSym;
+void SymbolRow::setSymbol(string my_sym) {
+	symbol = my_sym;
 }
 
-void SymbolRow::SetType(string InputType) {
-	type = InputType;
+void SymbolRow::setType(string my_type) {
+	type = my_type;
 }
 
-void SymbolRow::SetLoc(int InputLoc) {
-	loc = InputLoc;
+void SymbolRow::setLocation(int my_location) {
+	location = my_location;
 }
 
-//Accessor methods
-string SymbolRow::getSym() {
-	return sym;
+string SymbolRow::getSymbol() {
+	return symbol;
 }
 
 string SymbolRow::getType() {
 	return type;
 }
 
-int SymbolRow::getLoc() {
-	return loc;
+int SymbolRow::getLocation() {
+	return location;
 }

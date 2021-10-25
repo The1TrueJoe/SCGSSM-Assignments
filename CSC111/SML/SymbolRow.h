@@ -5,20 +5,25 @@ using namespace std;
 
 class SymbolRow {
 public:
-	//Accessor methods
 	SymbolRow(string, string, int);
-	string getSym();
-	string getType();
-	int getLoc();
 
-	//mutator methods
-	void SetSym(string);
-	void SetType(string);
-	void SetLoc(int);
+	string getSymbol();
+
+	string getType();
+
+	int getLocation();
+
+	void setSymbol(string);
+
+	void setType(string);
+
+	void setLocation(int);
 
 private:
-	string sym;
+	string symbol;
+
 	string type;
-	int loc;
+
+	int location;
 
 };
