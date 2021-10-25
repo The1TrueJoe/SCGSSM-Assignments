@@ -53,7 +53,7 @@ void GradeBook::displayMessage() {
 void GradeBook::displayGradeReport() {
     // Title and Average
     cout << courseName << " Grade Report" << endl;
-    cout << "Average: " << determineClassAverage(all_grades) << endl;
+    cout << letter_grade + " Average: " << determineClassAverage(all_grades) << endl;
 
     // List all lines
     for (int i = 0; i < sizeof(all_grades); i++) {
@@ -79,6 +79,12 @@ int * GradeBook::inputGrades(int size) {
 
 }
 
+// Get letter grade
+char GradeBook::getLetterGrade() {
+    return letter_grade;
+
+}
+
 // Compute average
 int GradeBook::determineClassAverage(int grades[]) {
     // Setup variables
@@ -99,6 +105,18 @@ int GradeBook::determineClassAverage(int grades[]) {
     // Compute average
     if(gradeCounter != 0 ) {
         average = static_cast<double>(total)/gradeCounter;
+
+        if (average >= 90) {
+            letter_grade = 'A';
+        } else if (average >= 80) {
+            letter_grade = 'B';
+        } else if (average >= 70) {
+            letter_grade = 'C';
+        } else if (average >= 60) {
+            letter_grade = 'D';
+        } else {
+            letter_grade = 'F';
+        }
 
         // Return average
         return average;

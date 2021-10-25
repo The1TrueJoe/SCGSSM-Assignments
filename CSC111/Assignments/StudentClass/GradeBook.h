@@ -28,6 +28,9 @@ class GradeBook {
 
         // Get the class average
         int determineClassAverage(int[]);
+
+        // Get letter grade
+        char getLetterGrade();
     
     private:
         // Name of the course
@@ -38,6 +41,9 @@ class GradeBook {
 
         // Average
         double average;
+
+        // Letter grade
+        char letter_grade;
 
         // Grades
         int * all_grades;
