@@ -1,0 +1,2 @@
+INSERT INTO TESTSCHEMA09.DANCER (DancerID, Name, Address, Phone, Age, `Parent/Guardian`) VALUES (1, 'Akhil', '123 Main St', '123-456-7890', '17', 'Jane');
+INSERT INTO TESTSCHEMA09.DANCER (DancerID, Name, Address, Phone, Age, `Parent/Guardian`) VALUES (2, 'Benjamin', '321 Main St', '987-654-3210', '17', 'John');
