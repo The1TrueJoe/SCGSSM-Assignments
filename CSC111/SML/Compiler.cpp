@@ -8,7 +8,6 @@
 
 using namespace std;
 
-
 int CurrentData = 99;
 int CurrentPointer = 0;
 int current_sym = 0;
@@ -19,12 +18,26 @@ vector <int> unresolved_symbols;
 
 vector <SymbolRow> symbol_table;
 
+/**
+ * @brief 
+ * 
+ * @param symbol 
+ * @param type 
+ * @param location 
+ */
+
 void symbolTable(string symbol, string type, int location) {
 	symbol_table.push_back(SymbolRow(symbol, type, location));
 
 }
 
-
+/**
+ * @brief 
+ * 
+ * @param op_code 
+ * @param location 
+ * @return int 
+ */
 
 int genSMLCommand(int op_code, int location) {
 	string s1 = to_string(op_code);
@@ -42,6 +55,14 @@ int genSMLCommand(int op_code, int location) {
 
 }
 
+/**
+ * @brief 
+ * 
+ * @param op_code 
+ * @param location 
+ * @param row 
+ * @return int 
+ */
 
 int genSMLCommandGoto(int op_code, string location, vector<SymbolRow> row) {
 	string op_location;
@@ -66,6 +87,14 @@ int genSMLCommandGoto(int op_code, string location, vector<SymbolRow> row) {
 
 }
 
+/**
+ * @brief 
+ * 
+ * @param row 
+ * @param symbol 
+ * @return true 
+ * @return false 
+ */
 
 bool symbolInTable(vector<SymbolRow> row, string symbol) {
 	for (int i = 0; i < symbol_table.size(); i++) {
@@ -78,6 +107,14 @@ bool symbolInTable(vector<SymbolRow> row, string symbol) {
 	return false;
 }
 
+/**
+ * @brief 
+ * 
+ * @param row 
+ * @param symbol 
+ * @return int 
+ */
+
 int findSymbolLocation(vector<SymbolRow> row, string symbol) {
 	for (int i = 0; i < symbol_table.size(); i++) {
 		if (row[i].getSymbol() == symbol) {
@@ -89,6 +126,12 @@ int findSymbolLocation(vector<SymbolRow> row, string symbol) {
     return 0;
 }
 
+/**
+ * @brief 
+ * 
+ * @param sml_code 
+ * @return int 
+ */
 
 int branchesWithNoAddress(vector <int> sml_code) {
 	int key1 = 40;
@@ -111,6 +154,14 @@ int branchesWithNoAddress(vector <int> sml_code) {
 
 }
 
+/**
+ * @brief 
+ * 
+ * @param unresolved_symbols 
+ * @param sml_code 
+ * @param row 
+ */
+
 void secondPass(vector<int> unresolved_symbols, vector<int> &sml_code, vector <SymbolRow> row) {
 
 	for (int i = 0; i < unresolved_symbols.size(); i++) {
@@ -130,7 +181,15 @@ void secondPass(vector<int> unresolved_symbols, vector<int> &sml_code, vector <S
 	}
 }
 
-
+/**
+ * @brief 
+ * 
+ * @param line 
+ * @param goto_num 
+ * @param temp_smlgen 
+ * @param symbol_table 
+ * @param branch_command 
+ */
 
 void handleGoto(string line, string goto_num, vector<int> temp_smlgen, vector<SymbolRow> symbol_table, int branch_command) {
 	if (stoi(goto_num) > stoi(line)) {
@@ -145,6 +204,17 @@ void handleGoto(string line, string goto_num, vector<int> temp_smlgen, vector<Sy
 	}
 }
 
+/**
+ * @brief 
+ * 
+ * @param line_num 
+ * @param var1 
+ * @param relop 
+ * @param var2 
+ * @param goto_line 
+ * @param sml_code 
+ * @param symbol_table 
+ */
 
 void ifStatementGen(string line_num, string var1, string relop, string var2, string goto_line, vector<int> &sml_code, vector<SymbolRow> symbol_table) {
 	if (relop == "==") {
@@ -167,6 +237,11 @@ void ifStatementGen(string line_num, string var1, string relop, string var2, str
 
 }
 
+/**
+ * @brief 
+ * 
+ * @param Command 
+ */
 
 void smlGen(vector<string> Command) {
 	if (Command[1] == "rem") {
@@ -232,6 +307,14 @@ void smlGen(vector<string> Command) {
 
 }
 
+/**
+ * @brief 
+ * 
+ * @tparam Out 
+ * @param s 
+ * @param delim 
+ * @param result 
+ */
 
 template <typename Out>
 void split(const string& s, char delim, Out result) {
@@ -244,6 +327,14 @@ void split(const string& s, char delim, Out result) {
 	}
 }
 
+/**
+ * @brief 
+ * 
+ * @param s 
+ * @param delim 
+ * @return vector<string> 
+ */
+
 vector<string> split(const string& s, char delim) {
 	vector<string> elems;
 	split(s, delim, back_inserter(elems));
@@ -251,6 +342,11 @@ vector<string> split(const string& s, char delim) {
 
 }
 
+/**
+ * @brief 
+ * 
+ * @param command 
+ */
 
 void smlWriter(string command) {
 	chars.clear();
@@ -259,6 +355,11 @@ void smlWriter(string command) {
 
 }
 
+/**
+ * @brief 
+ * 
+ * @return int 
+ */
 
 int main() {
 	ifstream file("Text.txt");
