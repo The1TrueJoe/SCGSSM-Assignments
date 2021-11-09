@@ -6,6 +6,12 @@
 
 using namespace std;
 
+/**
+ * @brief start the cpu
+ * 
+ * @param new_memory memory to load
+ */
+
 void CPU::Start(array<int, 100> new_memory) {  
     memory.SET(new_memory);
 
@@ -24,7 +30,14 @@ void CPU::Start(array<int, 100> new_memory) {
     }
 }
 
-// OP
+/**
+ * @brief operation chooser
+ * 
+ * @param op_code operation code
+ * @param memory_address memory address to use
+ * @return int result
+ */
+
 int CPU::OP(int op_code, int memory_address) {
     switch (op_code) {
         case CPU::READ:         OP_READ(memory_address);
@@ -48,7 +61,12 @@ int CPU::OP(int op_code, int memory_address) {
 
 }
 
-// Read a word from the keyboard into the specified memory location
+/**
+ * @brief Read a word from the keyboard into the specified memory location
+ * 
+ * @param memory_address memory address to use
+ */
+
 void CPU::OP_READ(int memory_address) {
     int in;
     cout << "Enter word" << endl;
@@ -58,55 +76,100 @@ void CPU::OP_READ(int memory_address) {
 
 }
 
-// Write a word from a specified memory location onto the screen
+/**
+ * @brief Write a word from a specified memory location onto the screen
+ * 
+ * @param memory_address memory address to display
+ */
+
 void CPU::OP_WRITE(int memory_address) {
     cout << memory.Load(memory_address) << endl;
 
 }      
-        
-// Load a word from a specified location in memory into the accumulator 
+
+/**
+ * @brief Load a word from a specified location in memory into the accumulator 
+ * 
+ * @param memory_address memory address to load
+ */
+
 void CPU::OP_LOAD(int memory_address) {
     Accumulator = memory.Load(memory_address);
 
 }
 
-// Store a word from the accumulator into a specified location in memory
+/**
+ * @brief Store a word from the accumulator into a specified location in memory
+ * 
+ * @param memory_address memory address to store
+ */
+
 void CPU::OP_STORE(int memory_address) {
     memory.Store(memory_address, Accumulator);
 
 }  
-        
-// Add a word from a specified location in memory to the accumulator
+
+/**
+ * @brief Add a word from a specified location in memory to the accumulator
+ * 
+ * @param memory_address memory address to add into the accumulator
+ */
+
 void CPU::OP_ADD(int memory_address) {
     Accumulator += memory.Load(memory_address);
 
 }
 
-// Subtract a word from a location in memory from the accumulator
+/**
+ * @brief Subtract a word from a location in memory from the accumulator
+ * 
+ * @param memory_address memory address to subtract
+ */
+
 void CPU::OP_SUB(int memory_address) {
     Accumulator -= memory.Load(memory_address);
 
 }     
 
-// Divide a word from a location into the value in the accumulator
+/**
+ * @brief Divide a word from a location into the value in the accumulator
+ * 
+ * @param memory_address memory address to divide to
+ */
+
 void CPU::OP_DIV(int memory_address) {
     Accumulator /= memory.Load(memory_address);
 
 }
 
-// Multiply a word from a location into the value in the accumulator
+/**
+ * @brief Multiply a word from a location into the value in the accumulator
+ * 
+ * @param memory_address memory address to multiply
+ */
+
 void CPU::OP_MULT(int memory_address) {
     Accumulator *= memory.Load(memory_address);
 
 }
 
-// Branch to the specified location in memory
+/**
+ * @brief Branch to the specified location in memory
+ * 
+ * @param memory_address memory address to branch to
+ */
+
 void CPU::OP_BRANCH(int memory_address) {
     InstructionPointer = memory_address;
 
 }
 
-// Branch to the specified location if the accumulator is negative
+/**
+ * @brief Branch to the specified location if the accumulator is negative
+ * 
+ * @param memory_address memory address to branch to
+ */
+
 void CPU::OP_BRANCHNEG(int memory_address) {
     if (Accumulator <= 0) {
         OP_BRANCH(memory_address);
@@ -114,7 +177,12 @@ void CPU::OP_BRANCHNEG(int memory_address) {
     }
 }
 
-// Branch to the specified location if the accumulator is zero 
+/**
+ * @brief Branch to the specified location if the accumulator is zero 
+ * 
+ * @param memory_address memory address to branch to
+ */
+
 void CPU::OP_BRANCHZERO(int memory_address) {
     if (Accumulator == 0) {
         OP_BRANCH(memory_address);
@@ -122,7 +190,10 @@ void CPU::OP_BRANCHZERO(int memory_address) {
     }
 }
 
-// Throw a compiler error
+/**
+ * @brief throw an error
+ */
+
 void CPU::SYS_THROW_ERR() {
     cout << "Compiler error at " << InstructionPointer << endl;
 

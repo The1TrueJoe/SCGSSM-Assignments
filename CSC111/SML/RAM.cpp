@@ -12,6 +12,12 @@ RAM::RAM() {
 
 }
 
+/**
+ * @brief load the memmory from a file
+ * 
+ * @param file_location 
+ */
+
 void RAM::LoadFile(string file_location) {
     // Setup vars
     string line;
@@ -56,7 +62,11 @@ void RAM::LoadFile(string file_location) {
     }
 }
 
-// Reset the ram with a new array
+/**
+ * @brief reset the memory with an array
+ * 
+ * @param new_memory array of new memory
+ */
 void RAM::SET(array<int, 100> new_memory) {
     RAM::memory = new_memory;
 
