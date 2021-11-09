@@ -1,0 +1,13 @@
+SELECT A.FirstName, A.LastName
+FROM ARTIST AS A
+WHERE NOT EXISTS(
+	SELECT C.CustomerID
+    FROM CUSTOMER AS C
+    WHERE NOT EXISTS(
+		SELECT CAI.CUSTOMERID
+        FROM CUSTOMER_ARTIST_INT AS CAI
+        WHERE C.CustomerID = CAI.CustomerID
+        AND A.ArtistID = CAI.ArtistID
+	)
+)
+;	
