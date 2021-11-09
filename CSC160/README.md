@@ -4,7 +4,7 @@ Introduction to Computer Networking (Spring 2021)
 <br>
 ## GSSM Course Description
 <br>
-See: <a link='https://dc.statelibrary.sc.gov/bitstream/handle/10827/36887/GSSM_Course_Catalog_2021-2022.pdf'>GSSM Course Catalog </a>
+See: <a href='https://dc.statelibrary.sc.gov/bitstream/handle/10827/36887/GSSM_Course_Catalog_2021-2022.pdf'>GSSM Course Catalog </a>
 <br><br>
 
 > This course is a survey of the underpinnings of computer networks. It will cover the basics of network architecture,
