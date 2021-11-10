@@ -4,7 +4,7 @@ Data Structures and Algorithms (Fall 2020)
 <br>
 ## GSSM Course Description
 <br>
-See: <a href='https://dc.statelibrary.sc.gov/bitstream/handle/10827/36887/GSSM_Course_Catalog_2021-2022.pdf'>GSSM Course Catalog </a>
+See: <a href='https://github.com/The1TrueJoe/SCGSSM-Assignments/blob/main/Resources/2021-2022%20Course%20Catalog.pdf'>GSSM Course Catalog </a>
 <br><br>
 
 > A second course in computer science in which students are introduced to algorithm design and analysis, big-Oh
