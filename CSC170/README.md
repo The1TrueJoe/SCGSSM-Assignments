@@ -1,6 +1,6 @@
-# CSC 160
+# CSC 170
 
-Introduction to Computer Networking (Spring 2021)
+Introduction to Database Design (Fall 2021)
 <br>
 ## GSSM Course Description
 <br>
