@@ -10,4 +10,4 @@ WHERE NOT EXISTS(
         AND A.ArtistID = CAI.ArtistID
 	)
 )
-;	
+;
