@@ -8,8 +8,8 @@
 
 using namespace std;
 
-int CurrentData = 99;
-int CurrentPointer = 0;
+int current_data = 99;
+int current_pointer = 0;
 int current_sym = 0;
 
 vector<string> chars;
@@ -36,10 +36,11 @@ void symbolTable(string symbol, string type, int location) {
  * 
  * @param op_code 
  * @param location 
+ * 
  * @return int 
  */
 
-int genSMLCommand(int op_code, int location) {
+int makeCommand(int op_code, int location) {
 	string s1 = to_string(op_code);
 	string s2 = to_string(location);
 
@@ -61,10 +62,11 @@ int genSMLCommand(int op_code, int location) {
  * @param op_code 
  * @param location 
  * @param row 
+ * 
  * @return int 
  */
 
-int genSMLCommandGoto(int op_code, string location, vector<SymbolRow> row) {
+int makeGoto(int op_code, string location, vector<SymbolRow> row) {
 	string op_location;
 	
 	for (int i = 0; i < symbol_table.size(); i++) {
@@ -96,7 +98,7 @@ int genSMLCommandGoto(int op_code, string location, vector<SymbolRow> row) {
  * @return false 
  */
 
-bool symbolInTable(vector<SymbolRow> row, string symbol) {
+bool checkSymbolTable(vector<SymbolRow> row, string symbol) {
 	for (int i = 0; i < symbol_table.size(); i++) {
 		if (row[i].getSymbol() == symbol) {
 			return true;
@@ -112,10 +114,11 @@ bool symbolInTable(vector<SymbolRow> row, string symbol) {
  * 
  * @param row 
  * @param symbol 
+ * 
  * @return int 
  */
 
-int findSymbolLocation(vector<SymbolRow> row, string symbol) {
+int getSymLocation(vector<SymbolRow> row, string symbol) {
 	for (int i = 0; i < symbol_table.size(); i++) {
 		if (row[i].getSymbol() == symbol) {
 			return row[i].getLocation();
@@ -130,6 +133,7 @@ int findSymbolLocation(vector<SymbolRow> row, string symbol) {
  * @brief 
  * 
  * @param sml_code 
+ * 
  * @return int 
  */
 
@@ -142,7 +146,7 @@ int branchesWithNoAddress(vector <int> sml_code) {
 
 	for (int i = 0; i < sml_code.size(); i++) {
 		if ((sml_code[i] == key1) || (sml_code[i] == key2) || (sml_code[i] == key3)) {
-			cout << "Element present at index " << i << endl;
+			cout << "Element at " << i << endl;
 			
             found = true;
             return i;
@@ -167,15 +171,15 @@ void secondPass(vector<int> unresolved_symbols, vector<int> &sml_code, vector <S
 	for (int i = 0; i < unresolved_symbols.size(); i++) {
 		if (unresolved_symbols[i] != -1) {
 			int index = branchesWithNoAddress(sml_code);
-			cout << "Location at index " << index << endl;
+			cout << "Location: " << index << endl;
 
-			int location = findSymbolLocation(symbol_table, to_string(unresolved_symbols[i]));
+			int location = getSymLocation(symbol_table, to_string(unresolved_symbols[i]));
 			location += 1;
 			cout << location << endl;
 
-			sml_code[index] = genSMLCommand(sml_code[index], location);
-			cout << "The command generated " << genSMLCommand(sml_code[index], location) << endl;
-			cout << "We running but nothing happening" << endl;
+			sml_code[index] = makeCommand(sml_code[index], location);
+			cout << "command: " << makeCommand(sml_code[index], location) << endl;
+			cout << "Nothing running" << endl;
 
 		}
 	}
@@ -191,15 +195,15 @@ void secondPass(vector<int> unresolved_symbols, vector<int> &sml_code, vector <S
  * @param branch_command 
  */
 
-void handleGoto(string line, string goto_num, vector<int> temp_smlgen, vector<SymbolRow> symbol_table, int branch_command) {
+void doGoto(string line, string goto_num, vector<int> temp_smlgen, vector<SymbolRow> symbol_table, int branch_command) {
 	if (stoi(goto_num) > stoi(line)) {
-		sml_code.push_back(genSMLCommand(4, -1));
+		sml_code.push_back(makeCommand(4, -1));
 		unresolved_symbols.push_back(stoi(goto_num));
 		symbolTable(line, "L", -1);
 		current_sym += 1;
 
 	} else {
-		sml_code.push_back(genSMLCommandGoto(40, goto_num, symbol_table));
+		sml_code.push_back(makeGoto(40, goto_num, symbol_table));
 
 	}
 }
@@ -216,21 +220,21 @@ void handleGoto(string line, string goto_num, vector<int> temp_smlgen, vector<Sy
  * @param symbol_table 
  */
 
-void ifStatementGen(string line_num, string var1, string relop, string var2, string goto_line, vector<int> &sml_code, vector<SymbolRow> symbol_table) {
+void ifstatement(string line_num, string var1, string relop, string var2, string goto_line, vector<int> &sml_code, vector<SymbolRow> symbol_table) {
 	if (relop == "==") {
 
 		cout << "Relop cout" << endl;
 
-		if ((symbolInTable(symbol_table, var1) == true) && (symbolInTable(symbol_table, var2) == true)) {
-			sml_code.push_back(genSMLCommand(20, findSymbolLocation(symbol_table, var1)));
-			CurrentPointer += 1;
+		if ((checkSymbolTable(symbol_table, var1) == true) && (checkSymbolTable(symbol_table, var2) == true)) {
+			sml_code.push_back(makeCommand(20, getSymLocation(symbol_table, var1)));
+			current_pointer += 1;
 
-			sml_code.push_back(genSMLCommand(31, findSymbolLocation(symbol_table, var2)));
-			CurrentPointer += 1;
+			sml_code.push_back(makeCommand(31, getSymLocation(symbol_table, var2)));
+			current_pointer += 1;
 
-			handleGoto(line_num, goto_line, sml_code, symbol_table, 420);
+			doGoto(line_num, goto_line, sml_code, symbol_table, 420);
 		} else {
-			cout << "Error, variable does not exist" << endl;
+			cout << "Error, var dne";
 
 		}
 	}
@@ -240,29 +244,29 @@ void ifStatementGen(string line_num, string var1, string relop, string var2, str
 /**
  * @brief 
  * 
- * @param Command 
+ * @param command 
  */
 
-void smlGen(vector<string> Command) {
-	if (Command[1] == "rem") {
-		symbolTable(Command[0], "L", CurrentPointer);
+void smlGen(vector<string> command) {
+	if (command[1] == "rem") {
+		symbolTable(command[0], "L", current_pointer);
 		current_sym += 1;
 		unresolved_symbols.push_back(-1);
 
 	}
 
-	if (Command[1] == "input") {
-		if (!symbolInTable(symbol_table, Command[2])) {
+	if (command[1] == "input") {
+		if (!checkSymbolTable(symbol_table, command[2])) {
 			
-			symbolTable(Command[0], "L", CurrentPointer);
-			CurrentPointer += 1;
+			symbolTable(command[0], "L", current_pointer);
+			current_pointer += 1;
 			current_sym += 1;
 			unresolved_symbols.push_back(-1);
 			
             
-			sml_code.push_back(genSMLCommand(10, CurrentData));
-			symbolTable(Command[2], "V", CurrentData);
-			CurrentData -= 1;
+			sml_code.push_back(makeCommand(10, current_data));
+			symbolTable(command[2], "V", current_data);
+			current_data -= 1;
 			current_sym += 1;
 			unresolved_symbols.push_back(-1);
 		} else {
@@ -271,36 +275,36 @@ void smlGen(vector<string> Command) {
 		}
 	}
 
-	if (Command[1] == "print") {
-		if (!symbolInTable(symbol_table, Command[2])) {
-			cout << Command[2] << " does not exist" << endl;
+	if (command[1] == "print") {
+		if (!checkSymbolTable(symbol_table, command[2])) {
+			cout << command[2] << " dne" << endl;
 
 		} else {
-			sml_code.push_back(genSMLCommand(11, findSymbolLocation(symbol_table, Command[2])));
-			symbolTable(Command[0], "L", CurrentPointer);
-			CurrentPointer += 1;
+			sml_code.push_back(makeCommand(11, getSymLocation(symbol_table, command[2])));
+			symbolTable(command[0], "L", current_pointer);
+			current_pointer += 1;
 			unresolved_symbols.push_back(-1);
 
 		}
 	}
 
 
-	if (Command[1] == "goto") {
-		cout << stoi(Command[2]) << endl;
-		handleGoto(Command[0], Command[2], sml_code, symbol_table, 40);
+	if (command[1] == "goto") {
+		cout << stoi(command[2]) << endl;
+		doGoto(command[0], command[2], sml_code, symbol_table, 40);
 
 	} 
     
-    if (Command[1] == "if") {
+    if (command[1] == "if") {
 		cout << "If statement relop" << endl;
-		ifStatementGen(Command[0], Command[2], Command[3], Command[4], Command[6], sml_code, symbol_table);
+		ifstatement(command[0], command[2], command[3], command[4], command[6], sml_code, symbol_table);
 
 	}
 
-	if (Command[1] == "end") {
-		sml_code.push_back(genSMLCommand(43, 00));
-		symbolTable(Command[0], "L", CurrentPointer);
-		CurrentPointer += 1;
+	if (command[1] == "end") {
+		sml_code.push_back(makeCommand(43, 00));
+		symbolTable(command[0], "L", current_pointer);
+		current_pointer += 1;
 		current_sym += 1;
 
 	}
@@ -311,6 +315,7 @@ void smlGen(vector<string> Command) {
  * @brief 
  * 
  * @tparam Out 
+ * 
  * @param s 
  * @param delim 
  * @param result 
@@ -332,6 +337,7 @@ void split(const string& s, char delim, Out result) {
  * 
  * @param s 
  * @param delim 
+ * 
  * @return vector<string> 
  */
 
