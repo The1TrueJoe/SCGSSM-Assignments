@@ -1,0 +1,30 @@
+10 input a
+20 input b
+30 input c
+40 let y = a + b
+50 let x = y + c
+60 let r = x / 3
+70 print r
+80 end
+
+
+10 let a = -999
+20 let y = 0
+30 input x
+40 if x > y goto 90
+50 if x == a goto 110
+60 goto 30
+90 y = x
+100 goto 50
+110 end
+
+
+10 let a = 0
+20 let b = 5
+30 let x = 0
+40 input y
+50 x = x + y
+60 a = a + 1
+70 if a < 5 goto 40
+80 let r = x / b
+90 end}
