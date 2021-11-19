@@ -4,118 +4,51 @@
 #include <iterator>
 #include <sstream>
 
-#include "SymbolRow.h";
+#include "SymbolRow.h"
+#include "CPU.h"
 
 using namespace std;
 
+//
 int current_data = 99;
+//
 int current_pointer = 0;
+//
 int current_sym = 0;
 
+//
 vector<string> chars;
+//
 vector <int> sml_code;
+//
 vector <int> unresolved_symbols;
-
+//
 vector <SymbolRow> symbol_table;
 
+
+
+// ----------- Symbol Table Utils -----------
+
 /**
- * @brief 
+ * @brief Inserts new symbol row at the end of the symbol table
  * 
- * @param symbol 
- * @param type 
- * @param location 
+ * @param symbol Symbol table symbol
+ * @param type Symbol type
+ * @param location Memory location
  */
 
-void symbolTable(string symbol, string type, int location) {
+void insertIntoSymTable(string symbol, string type, int location) {
 	symbol_table.push_back(SymbolRow(symbol, type, location));
 
 }
 
 /**
- * @brief 
+ * @brief Get the location of the symbol
  * 
- * @param op_code 
- * @param location 
+ * @param row Symbol Table row
+ * @param symbol Symbol Row Symbol
  * 
- * @return int 
- */
-
-int makeCommand(int op_code, int location) {
-	string s1 = to_string(op_code);
-	string s2 = to_string(location);
-
-	if (location < 10) {
-		s2 = "0" + to_string(location);
-
-	}
-
-	string SML = s1 + s2;
-	int code = stoi(SML);
-
-	return code;
-
-}
-
-/**
- * @brief 
- * 
- * @param op_code 
- * @param location 
- * @param row 
- * 
- * @return int 
- */
-
-int makeGoto(int op_code, string location, vector<SymbolRow> row) {
-	string op_location;
-	
-	for (int i = 0; i < symbol_table.size(); i++) {
-		if (row[i].getSymbol() == location) {
-			op_location = to_string(row[i].getLocation());
-
-		}
-	}
-
-	if (stoi(op_location) < 10) {
-		op_location = "0" + op_location;
-
-	}
-
-	string s1 = to_string(op_code);
-	string SML = s1 + op_location;
-	int code = stoi(SML);
-
-	return code;
-
-}
-
-/**
- * @brief 
- * 
- * @param row 
- * @param symbol 
- * @return true 
- * @return false 
- */
-
-bool checkSymbolTable(vector<SymbolRow> row, string symbol) {
-	for (int i = 0; i < symbol_table.size(); i++) {
-		if (row[i].getSymbol() == symbol) {
-			return true;
-
-		}
-	}
-
-	return false;
-}
-
-/**
- * @brief 
- * 
- * @param row 
- * @param symbol 
- * 
- * @return int 
+ * @return int the location
  */
 
 int getSymLocation(vector<SymbolRow> row, string symbol) {
@@ -130,186 +63,27 @@ int getSymLocation(vector<SymbolRow> row, string symbol) {
 }
 
 /**
- * @brief 
+ * @brief Check if the symbol is inserted into the table
  * 
- * @param sml_code 
+ * @param row Symbol Table row
+ * @param symbol Symbol Row symbol
  * 
- * @return int 
+ * @return true if the symbol is in the symbol table
+ * @return false if the symbol is not in the symbol table
  */
 
-int branchesWithNoAddress(vector <int> sml_code) {
-	int key1 = 40;
-	int key2 = 41;
-	int key3 = 42;
-
-	bool found = false;
-
-	for (int i = 0; i < sml_code.size(); i++) {
-		if ((sml_code[i] == key1) || (sml_code[i] == key2) || (sml_code[i] == key3)) {
-			cout << "Element at " << i << endl;
-			
-            found = true;
-            return i;
+bool wasSymInserted(vector<SymbolRow> row, string symbol) {
+	for (int i = 0; i < symbol_table.size(); i++) {
+		if (row[i].getSymbol() == symbol) {
+			return true;
 
 		}
 	}
 
-    return 0;
-
+	return false;
 }
 
-/**
- * @brief 
- * 
- * @param unresolved_symbols 
- * @param sml_code 
- * @param row 
- */
-
-void secondPass(vector<int> unresolved_symbols, vector<int> &sml_code, vector <SymbolRow> row) {
-
-	for (int i = 0; i < unresolved_symbols.size(); i++) {
-		if (unresolved_symbols[i] != -1) {
-			int index = branchesWithNoAddress(sml_code);
-			cout << "Location: " << index << endl;
-
-			int location = getSymLocation(symbol_table, to_string(unresolved_symbols[i]));
-			location += 1;
-			cout << location << endl;
-
-			sml_code[index] = makeCommand(sml_code[index], location);
-			cout << "command: " << makeCommand(sml_code[index], location) << endl;
-			cout << "Nothing running" << endl;
-
-		}
-	}
-}
-
-/**
- * @brief 
- * 
- * @param line 
- * @param goto_num 
- * @param temp_smlgen 
- * @param symbol_table 
- * @param branch_command 
- */
-
-void doGoto(string line, string goto_num, vector<int> temp_smlgen, vector<SymbolRow> symbol_table, int branch_command) {
-	if (stoi(goto_num) > stoi(line)) {
-		sml_code.push_back(makeCommand(4, -1));
-		unresolved_symbols.push_back(stoi(goto_num));
-		symbolTable(line, "L", -1);
-		current_sym += 1;
-
-	} else {
-		sml_code.push_back(makeGoto(40, goto_num, symbol_table));
-
-	}
-}
-
-/**
- * @brief 
- * 
- * @param line_num 
- * @param var1 
- * @param relop 
- * @param var2 
- * @param goto_line 
- * @param sml_code 
- * @param symbol_table 
- */
-
-void ifstatement(string line_num, string var1, string relop, string var2, string goto_line, vector<int> &sml_code, vector<SymbolRow> symbol_table) {
-	if (relop == "==") {
-
-		cout << "Relop cout" << endl;
-
-		if ((checkSymbolTable(symbol_table, var1) == true) && (checkSymbolTable(symbol_table, var2) == true)) {
-			sml_code.push_back(makeCommand(20, getSymLocation(symbol_table, var1)));
-			current_pointer += 1;
-
-			sml_code.push_back(makeCommand(31, getSymLocation(symbol_table, var2)));
-			current_pointer += 1;
-
-			doGoto(line_num, goto_line, sml_code, symbol_table, 420);
-		} else {
-			cout << "Error, var dne";
-
-		}
-	}
-
-}
-
-/**
- * @brief 
- * 
- * @param command 
- */
-
-void smlGen(vector<string> command) {
-	if (command[1] == "rem") {
-		symbolTable(command[0], "L", current_pointer);
-		current_sym += 1;
-		unresolved_symbols.push_back(-1);
-
-	}
-
-	if (command[1] == "input") {
-		if (!checkSymbolTable(symbol_table, command[2])) {
-			
-			symbolTable(command[0], "L", current_pointer);
-			current_pointer += 1;
-			current_sym += 1;
-			unresolved_symbols.push_back(-1);
-			
-            
-			sml_code.push_back(makeCommand(10, current_data));
-			symbolTable(command[2], "V", current_data);
-			current_data -= 1;
-			current_sym += 1;
-			unresolved_symbols.push_back(-1);
-		} else {
-			cout << "Variable already declared" << endl;
-
-		}
-	}
-
-	if (command[1] == "print") {
-		if (!checkSymbolTable(symbol_table, command[2])) {
-			cout << command[2] << " dne" << endl;
-
-		} else {
-			sml_code.push_back(makeCommand(11, getSymLocation(symbol_table, command[2])));
-			symbolTable(command[0], "L", current_pointer);
-			current_pointer += 1;
-			unresolved_symbols.push_back(-1);
-
-		}
-	}
-
-
-	if (command[1] == "goto") {
-		cout << stoi(command[2]) << endl;
-		doGoto(command[0], command[2], sml_code, symbol_table, 40);
-
-	} 
-    
-    if (command[1] == "if") {
-		cout << "If statement relop" << endl;
-		ifstatement(command[0], command[2], command[3], command[4], command[6], sml_code, symbol_table);
-
-	}
-
-	if (command[1] == "end") {
-		sml_code.push_back(makeCommand(43, 00));
-		symbolTable(command[0], "L", current_pointer);
-		current_pointer += 1;
-		current_sym += 1;
-
-	}
-
-}
+// ----------- String Utils -----------
 
 /**
  * @brief 
@@ -348,60 +122,570 @@ vector<string> split(const string& s, char delim) {
 
 }
 
+// ----------- SML Command Utils -----------
+
+/**
+ * @brief Formats the command into the SML style
+ * 
+ * @param op_code op code
+ * @param location memory location
+ * 
+ * @return int 
+ */
+
+int formatCommand(int op_code, int location) {
+	string loc = to_string(location);
+	if (location < 10) { loc = "0" + to_string(location);}
+
+	return stoi(to_string(op_code) + loc);
+
+}
+
+// ----------- Not -----------
+
 /**
  * @brief 
  * 
  * @param command 
+ * @return true 
+ * @return false 
  */
 
-void smlWriter(string command) {
-	chars.clear();
-	chars = split(command, ' ');
-	smlGen(chars);
+bool notOp(string command) {
+	bool found = true;
+
+	// Expand the list later
+	const int size = 5;
+	string legalVar[size] = { "*", "+", "-", "/" };
+	for (int i = 0; i < size; i++) {
+		if (legalVar[i] == command) {
+			found = false;
+			return found;
+
+		}
+	}
+
+	return found;
+}
+
+/**
+ * @brief 
+ * 
+ * @param command 
+ * @return true 
+ * @return false 
+ */
+
+bool notVar(string command) {
+	bool found = true;
+
+	// Expand the list later
+	const int size = 5;
+	string legalVar[size] = { "x", "y", "z", "b", "a"};
+	for (int i = 0; i < size; i++) {
+		if (legalVar[i] == command) {
+			found = false;
+			return found;
+		}
+	}
+
+	return found;
+}
+
+// ----------- Infix to Postfix -----------
+
+/**
+ * @brief Check operator precedence
+ * 
+ * @param c operator
+ * 
+ * @return precedence
+ */
+
+int precedence(char c) {
+	if (c == '^')
+		return 3;
+	else if (c == '/' || c == '*')
+		return 2;
+	else if (c == '+' || c == '-')
+		return 1;
+	else
+		return -1;
+
+}
+
+/**
+ * @brief convert infix to postfix
+ * 
+ * @param string string in infix
+ * 
+ * @return the string converted to postfix
+ */
+
+string infixToPostfix(string s) {
+	stack<char> st; 
+	string result;
+
+	for (int i = 0; i < s.length(); i++) {
+		char c = s[i];
+		
+		if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9')) {
+			result = result + c + " ";
+
+		
+		} else if (c == '(') {
+			st.push('(');
+
+		
+		} else if (c == ')') {
+			while (st.top() != '(') {
+				result = result + st.top() + " ";
+				st.pop();
+			}
+
+			st.pop();
+
+		} else {
+			while (!st.empty() && precedence(s[i]) <= precedence(st.top())) {
+				result = result + st.top() + " ";
+				st.pop();
+			}
+
+			st.push(c);
+
+		}
+	}
+
+	
+	while (!st.empty()) {
+		result = result + st.top() + " ";
+		st.pop();
+
+	}
+
+	return result;
+
+}
+
+// ----------- GOTOs -----------
+
+/**
+ * @brief Makr the goto command
+ * 
+ * @param op_code The op code
+ * @param location Goto location
+ * @param row Symbol table row
+ * 
+ * @return int SML command
+ */
+
+int makeGoto(int op_code, string location, vector<SymbolRow> row) {
+	string op_location;
+	
+	for (int i = 0; i < symbol_table.size(); i++) {
+		if (row[i].getSymbol() == location) {
+			op_location = to_string(row[i].getLocation());
+
+		}
+	}
+
+	return formatCommand(op_code, stoi(op_location));
 
 }
 
 /**
  * @brief 
  * 
- * @return int 
+ * @param line 
+ * @param goto_num 
+ * @param temp_smlgen 
+ * @param symbol_table 
+ * @param branch_command 
  */
 
-int main() {
-	ifstream file("Text.txt");
+void doGoto(string line, string goto_num, vector<int> temp_smlgen, vector<SymbolRow> symbol_table, int branch_command) {
+	if (stoi(goto_num) > stoi(line)) {
+		sml_code.push_back(formatCommand(4, -1));
+		unresolved_symbols.push_back(stoi(goto_num));
 
-	if (file.is_open()) {
-		string line;
+		insertIntoSymTable(line, "L", -1);
 
-		while (getline(file, line)) {
-			smlWriter(line);
+		current_sym += 1;
+
+	} else {
+		sml_code.push_back(makeGoto(40, goto_num, symbol_table));
+
+	}
+}
+
+// ----------- IFs -----------
+
+/**
+ * @brief 
+ * 
+ * @param line_num 
+ * @param var1 
+ * @param relop 
+ * @param var2 
+ * @param goto_line 
+ * @param sml_code 
+ * @param symbol_table 
+ */
+
+void doIf(string line_num, string var1, string relop, string var2, string goto_line, vector<int> &temp_sml, vector<SymbolRow> symbol_table) {
+	// If statement for ==
+	if (relop == "==") {
+		cout << "Relop cout" << endl;
+
+		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
+			temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
+			current_pointer += 1;
+
+			temp_sml.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
+			current_pointer += 1;
+
+			doGoto(line_num, goto_line, temp_sml, symbol_table, 42);
+			current_pointer += 1;
+
+		} else {
+			cout << "Error, variable does not exist" << endl;
 
 		}
-
-		file.close();
 	}
 
-	for (int z = 0; z < sml_code.size(); z++) {
-		cout << sml_code[z] << endl;
+	// If statement for <
+	if (relop == "<") {
+		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
+			temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
+			current_pointer += 1;
+
+			temp_sml.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
+			current_pointer += 1;
+
+			doGoto(line_num, goto_line, temp_sml, symbol_table, 41);
+			current_pointer += 1;
+
+		} else {
+			cout << "Error, variable does not exist" << endl;
+
+		}
+	}
+
+	// If statement for >
+	if (relop == ">" || relop == ">=") {
+		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
+			temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
+			current_pointer += 1;
+
+			temp_sml.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
+			current_pointer += 1;
+
+			doGoto(line_num, goto_line, temp_sml, symbol_table, 41);
+			current_pointer += 1;
+
+			doGoto(line_num, goto_line, temp_sml, symbol_table, 40);
+			current_pointer += 1;
+
+			doGoto(line_num, goto_line, temp_sml, symbol_table, 42);
+			current_pointer += 1;
+
+		} else {
+			cout << "Error, variable does not exist" << endl;
+
+		}
+	}
+
+	// If statement for <=
+	if (relop == "<=") {
+		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
+			temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
+			current_pointer += 1;
+
+			temp_sml.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
+			current_pointer += 1;
+
+			doGoto(line_num, goto_line, temp_sml, symbol_table, 41);
+			current_pointer += 1;
+
+			doGoto(line_num, goto_line, temp_sml, symbol_table, 42);
+			current_pointer += 1;
+
+		} else {
+			cout << "Error, variable does not exist" << endl;
+
+		}
+	}
+
+	// If statment for !=
+	if (relop == "!=") {
+		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
+			temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
+			current_pointer += 1;
+
+			temp_sml.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
+			current_pointer += 1;
+
+			doGoto(line_num, goto_line, temp_sml, symbol_table, 41);
+			current_pointer += 1;
+
+			doGoto(line_num, goto_line, temp_sml, symbol_table, 40);
+			current_pointer += 1;
+
+		} else {
+			cout << "Error, variable does not exist" << endl;
+
+		}
+	}
+}
+
+// ----------- Let -----------
+
+/**
+ * @brief 
+ * 
+ * @param equation 
+ * @param temp_sml 
+ * @param symbol_table 
+ * @param memory_location 
+ */
+
+void doEquation(string equation, vector<int>& temp_sml, vector<SymbolRow> symbol_table, int memory_location) {
+	string s = infixToPostfix(equation);
+
+	string space_delimiter = " ";
+	vector<string> EquationSymbol{};
+
+	size_t pos = 0;
+	while ((pos = s.find(space_delimiter)) != string::npos) {
+		EquationSymbol.push_back(s.substr(0, pos));
+		s.erase(0, pos + space_delimiter.length());
+	}
+
+	int stackpointer = current_data;
+	for (int i = 0; i < EquationSymbol.size(); i++) {
+		cout << EquationSymbol[i] << endl;
+		if (notOp(EquationSymbol[i]) == false) {
+			cout << "evaluvating operator" << endl;
+
+			stackpointer += 1;
+			temp_sml.push_back(formatCommand(CPU::LOAD, stackpointer));
+			stackpointer += 1;
+
+			switch (Operator(EquationSymbol[i])) {
+				case 0:
+					temp_sml.push_back(formatCommand(CPU::MULT, stackpointer));
+					break;
+
+				case 1:
+					temp_sml.push_back(formatCommand(CPU::DIV, stackpointer));
+					break;
+
+				case 2:
+					temp_sml.push_back(formatCommand(CPU::ADD, stackpointer));
+					break;
+
+				case 3:
+					temp_sml.push_back(formatCommand(CPU::SUB, stackpointer));
+					break;
+			
+				default:
+					break;
+			}
+
+			temp_sml.push_back(formatCommand(CPU::STORE, stackpointer));
+			stackpointer -= 1;
+
+		} else {
+			if (notVar(EquationSymbol[i]) == true) {
+				temp_sml.push_back(formatCommand(22, stoi(EquationSymbol[i])));
+				
+				
+			} else {
+				temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, EquationSymbol[i])));
+				
+			}
+
+			current_pointer += 1;
+			temp_sml.push_back(formatCommand(CPU::STORE, stackpointer));
+			current_pointer += 1;
+			current_data -= 1;
+			stackpointer -= 1;
+
+		}
+	}
+
+	temp_sml.push_back(formatCommand(CPU::LOAD, (stackpointer + 1)));
+	current_pointer += 1;
+	temp_sml.push_back(formatCommand(CPU::STORE, memory_location));
+	current_pointer += 1;
+	
+}
+
+// ----------- Branches -----------
+
+/**
+ * @brief Counte number of branches that point nowhere
+ * 
+ * @param sml_code code
+ * 
+ * @return int number of branches that point nowhere
+ */
+
+int checkBranchesNoPointer(vector <int> sml_code) {
+	for (int i = 0; i < sml_code.size(); i++) {
+		if ((sml_code[i] == CPU::BRANCH) || (sml_code[i] == CPU::BRANCHNEG) || (sml_code[i] == CPU::BRANCHZERO)) {
+			cout << "Element at " << i << endl;
+			
+            return i;
+
+		}
+	}
+
+    return 0;
+
+}
+
+// ----------- Second Pass -----------
+
+/**
+ * @brief 
+ * 
+ * @param unresolved_symbols 
+ * @param sml_code 
+ * @param row 
+ */
+
+void secondPass(vector<int> unresolved_symbols, vector<int> &sml_code, vector <SymbolRow> row) {
+	for (int i = 0; i < unresolved_symbols.size(); i++) {
+		if (unresolved_symbols[i] != -1) {
+			int index = checkBranchesNoPointer(sml_code);
+			cout << "Location: " << index << endl;
+
+			int location = getSymLocation(symbol_table, to_string(unresolved_symbols[i]));
+			location += 1;
+			cout << location << endl;
+
+			sml_code[index] = formatCommand(sml_code[index], location);
+			cout << "command: " << formatCommand(sml_code[index], location) << endl;
+			cout << "Nothing running" << endl;
+
+		}
+	}
+}
+
+
+
+/**
+ * @brief 
+ * 
+ * @param command 
+ */
+
+void smlGen(vector<string> Command) {
+	if (Command[1] == "rem") {
+		insertIntoSMLTable(Command[0], "L", current_pointer);
+		current_symbol += 1;
+		unresolved_symbols.push_back(-1);
 
 	}
 
-	cout << "---------------------------------------" << endl;
+	if (Command[1] == "input") {
+		if (!wasSymInserted(symbol_table, Command[2])) {
+			insertIntoSMLTable(Command[0], "L", current_pointer);
+
+			current_pointer += 1;
+			current_symbol += 1;
+
+			unresolved_symbols.push_back(-1);
+			temp_sml.push_back(formatCommand(CPU::READ, current_data));
+
+			insertIntoSMLTable(Command[2], "V", current_data);
+
+			current_data -= 1;
+			current_symbol += 1;
+
+			unresolved_symbols.push_back(-1);
+
+		} else {
+			cout << "Variable already declared" << endl;
+
+		}
+	}
+
+	if (Command[1] == "print") {
+		if (!wasSymInserted(symbol_table, Command[2])) {
+			cout << "Var you trying to get " << Command[2] << " does not exist" << endl;
+
+		} else {
+			temp_sml.push_back(formatCommand(CPU::WRITE, getSymLocation(symbol_table, Command[2])));
+
+			insertIntoSMLTable(Command[0], "L", current_pointer);
+			current_pointer += 1;
+
+			unresolved_symbols.push_back(-1);
+
+		}
+	}
 
 
-	for (int x = 0; x < unresolved_symbols.size(); x++) {
-		cout << unresolved_symbols[x] << endl;
+	if (Command[1] == "goto") {
+		cout << stoi(Command[2]) << endl;
+
+		doGoto(Command[0], Command[2], temp_sml, symbol_table, 40);
+		insertIntoSMLTable(Command[0], "L", -1);
+
+		current_symbol += 1;
+		current_data += 1;
 
 	}
 
-	secondPass(unresolved_symbols, sml_code, symbol_table);
+	if (Command[1] == "if") {
+		if (notVar(Command[4]) == true) {
+			cout << "Literal Statement in here " << endl;
 
-	cout << "---------------------------------------" << endl;
+			temp_sml.push_back(formatCommand(22, stoi(Command[4])));
+			current_pointer += 1;
 
-	for (int z = 0; z < sml_code.size(); z++) {
-		cout << sml_code[z] << endl;
+			temp_sml.push_back(formatCommand(CPU::STORE, current_data));
+			current_pointer += 1;
+
+			insertIntoSMLTable(Command[4], "C", current_data);
+			current_data -= 1;
+			current_symbol += 1;
+			
+		}
+		
+		cout << "If statement relop" << endl;
+		doIf(Command[0], Command[2], Command[3], Command[4], Command[6], temp_sml, symbol_table);
 
 	}
 
-	return 0;
+	if (Command[1] == "end") {
+		temp_sml.push_back(formatCommand(CPU::HALT, 00));
+
+		insertIntoSMLTable(Command[0], "L", current_pointer);
+		current_pointer += 1;
+		current_symbol += 1;
+	}
+
+	if (Command[1] == "let") {
+		if (wasSymInserted(symbol_table, Command[2]) == true) {
+			doEquation(Command[4], temp_sml, symbol_table, getSymLocation(symbol_table, Command[2]));
+
+		} else {
+			insertIntoSMLTable(Command[2], "V", current_data);
+			current_data -= 1;
+			current_symbol += 1;
+
+			unresolved_symbols.push_back(-1);
+
+			doEquation(Command[4], temp_sml, symbol_table, getSymLocation(symbol_table, Command[2]));
+
+		}
+	}
+
+	for (int z = 0; z < temp_sml.size(); z++) {
+		cout << temp_sml[z] << endl;
+
+	}
 }
