@@ -472,7 +472,7 @@ void doEquation(string equation, vector<int>& temp_sml, vector<SymbolRow> symbol
 			
 			stackpointer += 1;
 
-			switch (Operator(EquationSymbol[i])) {
+			switch (opSwitch(EquationSymbol[i])) {
 				case 0:
 					temp_sml.push_back(formatCommand(CPU::MULT, stackpointer));
 					break;
@@ -522,6 +522,32 @@ void doEquation(string equation, vector<int>& temp_sml, vector<SymbolRow> symbol
 	temp_sml.push_back(formatCommand(CPU::STORE, memory_location));
 	current_pointer += 1;
 	
+}
+
+/**
+ * @brief 
+ * 
+ * @param symbol 
+ * @return int 
+ */
+
+int opSwitch(string symbol) {
+	if (symbol == "*") {
+		return 0;
+
+	} else if (symbol == "/") {
+		return 1;
+
+	} else if (symbol == "+") {
+		return 2;
+
+	} else if (symbol == "-") {
+		return 3;
+
+	} else {
+		return -1;
+
+	}
 }
 
 // ----------- Branches -----------
