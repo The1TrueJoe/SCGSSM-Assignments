@@ -469,6 +469,7 @@ void doEquation(string equation, vector<int>& temp_sml, vector<SymbolRow> symbol
 
 			stackpointer += 1;
 			temp_sml.push_back(formatCommand(CPU::LOAD, stackpointer));
+			
 			stackpointer += 1;
 
 			switch (Operator(EquationSymbol[i])) {
@@ -507,6 +508,7 @@ void doEquation(string equation, vector<int>& temp_sml, vector<SymbolRow> symbol
 
 			current_pointer += 1;
 			temp_sml.push_back(formatCommand(CPU::STORE, stackpointer));
+
 			current_pointer += 1;
 			current_data -= 1;
 			stackpointer -= 1;
@@ -516,6 +518,7 @@ void doEquation(string equation, vector<int>& temp_sml, vector<SymbolRow> symbol
 
 	temp_sml.push_back(formatCommand(CPU::LOAD, (stackpointer + 1)));
 	current_pointer += 1;
+
 	temp_sml.push_back(formatCommand(CPU::STORE, memory_location));
 	current_pointer += 1;
 	
