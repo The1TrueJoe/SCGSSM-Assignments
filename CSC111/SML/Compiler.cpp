@@ -597,7 +597,7 @@ void secondPass(vector<int> unresolved_symbols, vector<int> &sml_code, vector <S
 			cout << location << endl;
 
 			sml_code[index] = formatCommand(sml_code[index], location);
-			cout << "command: " << formatCommand(sml_code[index], location) << endl;
+			cout << "Command: " << formatCommand(sml_code[index], location) << endl;
 			cout << "Nothing running" << endl;
 
 		}
@@ -613,10 +613,30 @@ void secondPass(vector<int> unresolved_symbols, vector<int> &sml_code, vector <S
  */
 
 void smlGen(vector<string> Command) {
+	
 	if (Command[1] == "rem") {
 		insertIntoSymTable(Command[0], "L", current_pointer);
 		current_sym += 1;
 		unresolved_symbols.push_back(-1);
+
+	}
+
+	if (Command[1] == "end") {
+		temp_sml.push_back(formatCommand(CPU::HALT, 00));
+
+		insertIntoSymTable(Command[0], "L", current_pointer);
+		current_pointer += 1;
+		current_sym += 1;
+	}
+
+	if (Command[1] == "goto") {
+		cout << stoi(Command[2]) << endl;
+
+		doGoto(Command[0], Command[2], temp_sml, symbol_table, 40);
+		insertIntoSymTable(Command[0], "L", -1);
+
+		current_sym += 1;
+		current_data += 1;
 
 	}
 
@@ -643,6 +663,22 @@ void smlGen(vector<string> Command) {
 		}
 	}
 
+	if (Command[1] == "let") {
+		if (wasSymInserted(symbol_table, Command[2])) {
+			doEquation(Command[4], temp_sml, symbol_table, getSymLocation(symbol_table, Command[2]));
+
+		} else {
+			insertIntoSymTable(Command[2], "V", current_data);
+			current_data -= 1;
+			current_sym += 1;
+
+			unresolved_symbols.push_back(-1);
+
+			doEquation(Command[4], temp_sml, symbol_table, getSymLocation(symbol_table, Command[2]));
+
+		}
+	}
+
 	if (Command[1] == "print") {
 		if (!wasSymInserted(symbol_table, Command[2])) {
 			cout << "Var you trying to get " << Command[2] << " does not exist" << endl;
@@ -656,18 +692,6 @@ void smlGen(vector<string> Command) {
 			unresolved_symbols.push_back(-1);
 
 		}
-	}
-
-
-	if (Command[1] == "goto") {
-		cout << stoi(Command[2]) << endl;
-
-		doGoto(Command[0], Command[2], temp_sml, symbol_table, 40);
-		insertIntoSymTable(Command[0], "L", -1);
-
-		current_sym += 1;
-		current_data += 1;
-
 	}
 
 	if (Command[1] == "if") {
@@ -689,30 +713,6 @@ void smlGen(vector<string> Command) {
 		cout << "If statement relop" << endl;
 		doIf(Command[0], Command[2], Command[3], Command[4], Command[6], temp_sml, symbol_table);
 
-	}
-
-	if (Command[1] == "end") {
-		temp_sml.push_back(formatCommand(CPU::HALT, 00));
-
-		insertIntoSymTable(Command[0], "L", current_pointer);
-		current_pointer += 1;
-		current_sym += 1;
-	}
-
-	if (Command[1] == "let") {
-		if (wasSymInserted(symbol_table, Command[2]) == true) {
-			doEquation(Command[4], temp_sml, symbol_table, getSymLocation(symbol_table, Command[2]));
-
-		} else {
-			insertIntoSymTable(Command[2], "V", current_data);
-			current_data -= 1;
-			current_sym += 1;
-
-			unresolved_symbols.push_back(-1);
-
-			doEquation(Command[4], temp_sml, symbol_table, getSymLocation(symbol_table, Command[2]));
-
-		}
 	}
 
 	for (int z = 0; z < temp_sml.size(); z++) {
