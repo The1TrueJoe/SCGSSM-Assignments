@@ -337,8 +337,6 @@ void doGoto(string line, string goto_num, vector<int> temp_smlgen, vector<Symbol
 void doIf(string line_num, string var1, string relop, string var2, string goto_line, vector<int> &temp_sml, vector<SymbolRow> symbol_table) {
 	// If statement for ==
 	if (relop == "==") {
-		cout << "Relop cout" << endl;
-
 		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
 			temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
 			current_pointer += 1;
@@ -465,10 +463,7 @@ void doEquation(string equation, vector<int>& temp_sml, vector<SymbolRow> symbol
 
 	int stackpointer = current_data;
 	for (int i = 0; i < EquationSymbol.size(); i++) {
-		cout << EquationSymbol[i] << endl;
 		if (notOp(EquationSymbol[i]) == false) {
-			cout << "evaluvating operator" << endl;
-
 			stackpointer += 1;
 			temp_sml.push_back(formatCommand(CPU::LOAD, stackpointer));
 			
@@ -565,9 +560,7 @@ int opSwitch(string symbol) {
 int checkBranchesNoPointer(vector <int> sml_code) {
 	for (int i = 0; i < sml_code.size(); i++) {
 		if ((sml_code[i] == CPU::BRANCH) || (sml_code[i] == CPU::BRANCHNEG) || (sml_code[i] == CPU::BRANCHZERO)) {
-			cout << "Element at " << i << endl;
-			
-            return i;
+			return i;
 
 		}
 	}
@@ -590,15 +583,11 @@ void secondPass(vector<int> unresolved_symbols, vector<int> &sml_code, vector <S
 	for (int i = 0; i < unresolved_symbols.size(); i++) {
 		if (unresolved_symbols[i] != -1) {
 			int index = checkBranchesNoPointer(sml_code);
-			cout << "Location: " << index << endl;
 
 			int location = getSymLocation(symbol_table, to_string(unresolved_symbols[i]));
 			location += 1;
-			cout << location << endl;
 
 			sml_code[index] = formatCommand(sml_code[index], location);
-			cout << "Command: " << formatCommand(sml_code[index], location) << endl;
-			cout << "Nothing running" << endl;
 
 		}
 	}
@@ -630,8 +619,6 @@ void smlGen(vector<string> Command) {
 	}
 
 	if (Command[1] == "goto") {
-		cout << stoi(Command[2]) << endl;
-
 		doGoto(Command[0], Command[2], temp_sml, symbol_table, 40);
 		insertIntoSymTable(Command[0], "L", -1);
 
@@ -681,7 +668,7 @@ void smlGen(vector<string> Command) {
 
 	if (Command[1] == "print") {
 		if (!wasSymInserted(symbol_table, Command[2])) {
-			cout << "Var you trying to get " << Command[2] << " does not exist" << endl;
+			cout << "Var " << Command[2] << " does not exist" << endl;
 
 		} else {
 			temp_sml.push_back(formatCommand(CPU::WRITE, getSymLocation(symbol_table, Command[2])));
@@ -696,8 +683,6 @@ void smlGen(vector<string> Command) {
 
 	if (Command[1] == "if") {
 		if (notVar(Command[4]) == true) {
-			cout << "Literal Statement in here " << endl;
-
 			temp_sml.push_back(formatCommand(22, stoi(Command[4])));
 			current_pointer += 1;
 
@@ -710,7 +695,6 @@ void smlGen(vector<string> Command) {
 			
 		}
 		
-		cout << "If statement relop" << endl;
 		doIf(Command[0], Command[2], Command[3], Command[4], Command[6], temp_sml, symbol_table);
 
 	}
