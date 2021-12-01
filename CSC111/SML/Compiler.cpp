@@ -534,21 +534,21 @@ void doEquation(string equation, vector<int>& temp_sml, vector<SymbolRow> symbol
  */
 
 int opSwitch(string symbol) {
-	if (symbol == "*") {
-		return 0;
+	switch (symbol[0]) {
+		case '*':
+			return 0;
 
-	} else if (symbol == "/") {
-		return 1;
+		case '/':
+			return 1;
 
-	} else if (symbol == "+") {
-		return 2;
+		case '+':
+			return 2;
 
-	} else if (symbol == "-") {
-		return 3;
+		case '-':
+			return 3;
 
-	} else {
-		return -1;
-
+		default:
+			return -1;
 	}
 }
 
