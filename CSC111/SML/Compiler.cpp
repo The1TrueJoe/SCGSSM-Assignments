@@ -17,17 +17,84 @@ int current_pointer = 0;
 int current_sym = 0;
 
 //
-vector<string> chars;
-//
 vector <int> sml_code;
 //
 vector <int> unresolved_symbols;
 //
 vector <SymbolRow> symbol_table;
-//
-vector <int> temp_sml;
 
 
+void main(int argc, char* argv[]) {
+	ifstream infile;
+	ofstream outfile;
+
+	if (argc == 1 || argc == 2) {
+		printHelp();
+
+	} else if (argc == 3) {
+		if (argv[1] == "-in") {
+			infile.open(argv[1]);
+			outfile.open("out.txt");
+
+		} else {
+			printHelp();
+
+		}
+
+	} else if (argc == 5) {
+		for (int i = 1; i < argc; i++) {
+			if (argv[i] == "-in") {
+				infile.open(argv[i+1]);
+
+			} else if (argv[i] == "-out") {
+				infile.open(argv[i+1]);
+
+			} else {
+				printHelp();
+
+			}
+		}
+
+	} else {
+		printHelp();
+
+	}
+
+	cout << "Reading from file" << endl;
+
+	if (infile.is_open()) {
+		std::string line;
+		while (getline(infile, line)) {
+			smlGen(split(line, ' '));
+
+		}
+
+		infile.close();
+	}
+
+	cout << "Unresolved Symbols: " << unresolved_symbols.size() << endl;
+	for (int x = 0; x < unresolved_symbols.size(); x++) { cout << unresolved_symbols[x] << endl; }
+
+	cout << "Second Pass" << endl;
+	secondPass(unresolved_symbols, sml_code, symbol_table);
+
+	cout << "Writing to file" << endl;
+	for (int x = 0; x < sml_code.size(); x++) {
+		outfile << sml_code[x] << endl;
+
+	}
+
+	cout << "Done!" << endl;
+
+}
+
+void printHelp() {
+	cout << "SML Compiler Help" << endl;
+	cout << "-in <file>  -> Input a file that will be compiled" << endl;
+	cout << "-out <file> -> Output the compiled SML code into this file" << endl;
+	exit(0);
+
+}
 
 // ----------- Symbol Table Utils -----------
 
@@ -300,12 +367,12 @@ int makeGoto(int op_code, string location, vector<SymbolRow> row) {
  * 
  * @param line 
  * @param goto_num 
- * @param temp_smlgen 
+ * @param sml_codegen 
  * @param symbol_table 
  * @param branch_command 
  */
 
-void doGoto(string line, string goto_num, vector<int> temp_smlgen, vector<SymbolRow> symbol_table, int branch_command) {
+void doGoto(string line, string goto_num, vector<int> sml_codegen, vector<SymbolRow> symbol_table, int branch_command) {
 	if (stoi(goto_num) > stoi(line)) {
 		sml_code.push_back(formatCommand(4, -1));
 		unresolved_symbols.push_back(stoi(goto_num));
@@ -334,17 +401,17 @@ void doGoto(string line, string goto_num, vector<int> temp_smlgen, vector<Symbol
  * @param symbol_table 
  */
 
-void doIf(string line_num, string var1, string relop, string var2, string goto_line, vector<int> &temp_sml, vector<SymbolRow> symbol_table) {
+void doIf(string line_num, string var1, string relop, string var2, string goto_line, vector<int> &sml_code, vector<SymbolRow> symbol_table) {
 	// If statement for ==
 	if (relop == "==") {
 		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
-			temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
+			sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
 			current_pointer += 1;
 
-			temp_sml.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
+			sml_code.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
 			current_pointer += 1;
 
-			doGoto(line_num, goto_line, temp_sml, symbol_table, 42);
+			doGoto(line_num, goto_line, sml_code, symbol_table, 42);
 			current_pointer += 1;
 
 		} else {
@@ -356,13 +423,13 @@ void doIf(string line_num, string var1, string relop, string var2, string goto_l
 	// If statement for <
 	if (relop == "<") {
 		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
-			temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
+			sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
 			current_pointer += 1;
 
-			temp_sml.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
+			sml_code.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
 			current_pointer += 1;
 
-			doGoto(line_num, goto_line, temp_sml, symbol_table, 41);
+			doGoto(line_num, goto_line, sml_code, symbol_table, 41);
 			current_pointer += 1;
 
 		} else {
@@ -374,19 +441,19 @@ void doIf(string line_num, string var1, string relop, string var2, string goto_l
 	// If statement for >
 	if (relop == ">" || relop == ">=") {
 		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
-			temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
+			sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
 			current_pointer += 1;
 
-			temp_sml.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
+			sml_code.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
 			current_pointer += 1;
 
-			doGoto(line_num, goto_line, temp_sml, symbol_table, 41);
+			doGoto(line_num, goto_line, sml_code, symbol_table, 41);
 			current_pointer += 1;
 
-			doGoto(line_num, goto_line, temp_sml, symbol_table, 40);
+			doGoto(line_num, goto_line, sml_code, symbol_table, 40);
 			current_pointer += 1;
 
-			doGoto(line_num, goto_line, temp_sml, symbol_table, 42);
+			doGoto(line_num, goto_line, sml_code, symbol_table, 42);
 			current_pointer += 1;
 
 		} else {
@@ -398,16 +465,16 @@ void doIf(string line_num, string var1, string relop, string var2, string goto_l
 	// If statement for <=
 	if (relop == "<=") {
 		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
-			temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
+			sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
 			current_pointer += 1;
 
-			temp_sml.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
+			sml_code.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
 			current_pointer += 1;
 
-			doGoto(line_num, goto_line, temp_sml, symbol_table, 41);
+			doGoto(line_num, goto_line, sml_code, symbol_table, 41);
 			current_pointer += 1;
 
-			doGoto(line_num, goto_line, temp_sml, symbol_table, 42);
+			doGoto(line_num, goto_line, sml_code, symbol_table, 42);
 			current_pointer += 1;
 
 		} else {
@@ -419,16 +486,16 @@ void doIf(string line_num, string var1, string relop, string var2, string goto_l
 	// If statment for !=
 	if (relop == "!=") {
 		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
-			temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
+			sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
 			current_pointer += 1;
 
-			temp_sml.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
+			sml_code.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
 			current_pointer += 1;
 
-			doGoto(line_num, goto_line, temp_sml, symbol_table, 41);
+			doGoto(line_num, goto_line, sml_code, symbol_table, 41);
 			current_pointer += 1;
 
-			doGoto(line_num, goto_line, temp_sml, symbol_table, 40);
+			doGoto(line_num, goto_line, sml_code, symbol_table, 40);
 			current_pointer += 1;
 
 		} else {
@@ -444,12 +511,12 @@ void doIf(string line_num, string var1, string relop, string var2, string goto_l
  * @brief 
  * 
  * @param equation 
- * @param temp_sml 
+ * @param sml_code 
  * @param symbol_table 
  * @param memory_location 
  */
 
-void doEquation(string equation, vector<int>& temp_sml, vector<SymbolRow> symbol_table, int memory_location) {
+void doEquation(string equation, vector<int>& sml_code, vector<SymbolRow> symbol_table, int memory_location) {
 	string s = infixToPostfix(equation);
 
 	string space_delimiter = " ";
@@ -465,46 +532,46 @@ void doEquation(string equation, vector<int>& temp_sml, vector<SymbolRow> symbol
 	for (int i = 0; i < EquationSymbol.size(); i++) {
 		if (notOp(EquationSymbol[i]) == false) {
 			stackpointer += 1;
-			temp_sml.push_back(formatCommand(CPU::LOAD, stackpointer));
+			sml_code.push_back(formatCommand(CPU::LOAD, stackpointer));
 			
 			stackpointer += 1;
 
 			switch (opSwitch(EquationSymbol[i])) {
 				case 0:
-					temp_sml.push_back(formatCommand(CPU::MULT, stackpointer));
+					sml_code.push_back(formatCommand(CPU::MULT, stackpointer));
 					break;
 
 				case 1:
-					temp_sml.push_back(formatCommand(CPU::DIV, stackpointer));
+					sml_code.push_back(formatCommand(CPU::DIV, stackpointer));
 					break;
 
 				case 2:
-					temp_sml.push_back(formatCommand(CPU::ADD, stackpointer));
+					sml_code.push_back(formatCommand(CPU::ADD, stackpointer));
 					break;
 
 				case 3:
-					temp_sml.push_back(formatCommand(CPU::SUB, stackpointer));
+					sml_code.push_back(formatCommand(CPU::SUB, stackpointer));
 					break;
 			
 				default:
 					break;
 			}
 
-			temp_sml.push_back(formatCommand(CPU::STORE, stackpointer));
+			sml_code.push_back(formatCommand(CPU::STORE, stackpointer));
 			stackpointer -= 1;
 
 		} else {
 			if (notVar(EquationSymbol[i]) == true) {
-				temp_sml.push_back(formatCommand(22, stoi(EquationSymbol[i])));
+				sml_code.push_back(formatCommand(22, stoi(EquationSymbol[i])));
 				
 				
 			} else {
-				temp_sml.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, EquationSymbol[i])));
+				sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, EquationSymbol[i])));
 				
 			}
 
 			current_pointer += 1;
-			temp_sml.push_back(formatCommand(CPU::STORE, stackpointer));
+			sml_code.push_back(formatCommand(CPU::STORE, stackpointer));
 
 			current_pointer += 1;
 			current_data -= 1;
@@ -513,10 +580,10 @@ void doEquation(string equation, vector<int>& temp_sml, vector<SymbolRow> symbol
 		}
 	}
 
-	temp_sml.push_back(formatCommand(CPU::LOAD, (stackpointer + 1)));
+	sml_code.push_back(formatCommand(CPU::LOAD, (stackpointer + 1)));
 	current_pointer += 1;
 
-	temp_sml.push_back(formatCommand(CPU::STORE, memory_location));
+	sml_code.push_back(formatCommand(CPU::STORE, memory_location));
 	current_pointer += 1;
 	
 }
@@ -611,7 +678,7 @@ void smlGen(vector<string> Command) {
 	}
 
 	if (Command[1] == "end") {
-		temp_sml.push_back(formatCommand(CPU::HALT, 00));
+		sml_code.push_back(formatCommand(CPU::HALT, 00));
 
 		insertIntoSymTable(Command[0], "L", current_pointer);
 		current_pointer += 1;
@@ -619,7 +686,7 @@ void smlGen(vector<string> Command) {
 	}
 
 	if (Command[1] == "goto") {
-		doGoto(Command[0], Command[2], temp_sml, symbol_table, 40);
+		doGoto(Command[0], Command[2], sml_code, symbol_table, 40);
 		insertIntoSymTable(Command[0], "L", -1);
 
 		current_sym += 1;
@@ -635,7 +702,7 @@ void smlGen(vector<string> Command) {
 			current_sym += 1;
 
 			unresolved_symbols.push_back(-1);
-			temp_sml.push_back(formatCommand(CPU::READ, current_data));
+			sml_code.push_back(formatCommand(CPU::READ, current_data));
 
 			insertIntoSymTable(Command[2], "V", current_data);
 
@@ -652,7 +719,7 @@ void smlGen(vector<string> Command) {
 
 	if (Command[1] == "let") {
 		if (wasSymInserted(symbol_table, Command[2])) {
-			doEquation(Command[4], temp_sml, symbol_table, getSymLocation(symbol_table, Command[2]));
+			doEquation(Command[4], sml_code, symbol_table, getSymLocation(symbol_table, Command[2]));
 
 		} else {
 			insertIntoSymTable(Command[2], "V", current_data);
@@ -661,7 +728,7 @@ void smlGen(vector<string> Command) {
 
 			unresolved_symbols.push_back(-1);
 
-			doEquation(Command[4], temp_sml, symbol_table, getSymLocation(symbol_table, Command[2]));
+			doEquation(Command[4], sml_code, symbol_table, getSymLocation(symbol_table, Command[2]));
 
 		}
 	}
@@ -671,7 +738,7 @@ void smlGen(vector<string> Command) {
 			cout << "Var " << Command[2] << " does not exist" << endl;
 
 		} else {
-			temp_sml.push_back(formatCommand(CPU::WRITE, getSymLocation(symbol_table, Command[2])));
+			sml_code.push_back(formatCommand(CPU::WRITE, getSymLocation(symbol_table, Command[2])));
 
 			insertIntoSymTable(Command[0], "L", current_pointer);
 			current_pointer += 1;
@@ -683,10 +750,10 @@ void smlGen(vector<string> Command) {
 
 	if (Command[1] == "if") {
 		if (notVar(Command[4]) == true) {
-			temp_sml.push_back(formatCommand(22, stoi(Command[4])));
+			sml_code.push_back(formatCommand(22, stoi(Command[4])));
 			current_pointer += 1;
 
-			temp_sml.push_back(formatCommand(CPU::STORE, current_data));
+			sml_code.push_back(formatCommand(CPU::STORE, current_data));
 			current_pointer += 1;
 
 			insertIntoSymTable(Command[4], "C", current_data);
@@ -695,12 +762,12 @@ void smlGen(vector<string> Command) {
 			
 		}
 		
-		doIf(Command[0], Command[2], Command[3], Command[4], Command[6], temp_sml, symbol_table);
+		doIf(Command[0], Command[2], Command[3], Command[4], Command[6], sml_code, symbol_table);
 
 	}
 
-	for (int z = 0; z < temp_sml.size(); z++) {
-		cout << temp_sml[z] << endl;
+	for (int z = 0; z < sml_code.size(); z++) {
+		cout << sml_code[z] << endl;
 
 	}
 }
