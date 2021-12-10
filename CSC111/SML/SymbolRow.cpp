@@ -1,4 +1,4 @@
-#include "SymbolRow.h";
+#include "SymbolRow.h"
 #include <iostream>
 
 /**
