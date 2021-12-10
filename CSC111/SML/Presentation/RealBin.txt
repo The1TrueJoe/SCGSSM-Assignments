@@ -1,0 +1,4 @@
+10101001 10011001 1100000 ; Load from $6099 into accumulator
+1101001 10011000 1100000 ; Add $6098 into accumulator
+11101001 10010111 1100000 ; Sub $6097 into accumulator
+10001101 10010110 1100000 ; Store accumulator into $6096

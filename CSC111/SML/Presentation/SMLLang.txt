@@ -1,0 +1,4 @@
+2099 ; Load from $99 into accumulator
+3098 ; Add $98 into accumulator
+3197 ; Sub $97 into accumulator
+2196 ; Store accumulator into $96
