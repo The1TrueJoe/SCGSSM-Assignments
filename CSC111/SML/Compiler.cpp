@@ -10,18 +10,18 @@
 
 using namespace std;
 
-//
+// Open memory location to place variables (starts at 99 and goes 99 - n)
 int current_data = 99;
-//
+// Current pointer
 int current_pointer = 0;
-//
+// 
 int current_sym = 0;
 
-//
+// Current SML code output
 vector <int> sml_code;
-//
+// Symbols that are not resolved
 vector <int> unresolved_symbols;
-//
+// Symbol table
 vector <SymbolRow> symbol_table;
 
 
@@ -84,13 +84,13 @@ bool wasSymInserted(vector<SymbolRow> row, string symbol) {
 // ----------- String Utils -----------
 
 /**
- * @brief 
+ * @brief Split string based on regex
  * 
  * @tparam Out 
  * 
- * @param s 
- * @param delim 
- * @param result 
+ * @param s string to split
+ * @param delim regex character
+ * @param result output
  */
 
 template <typename Out>
@@ -105,17 +105,20 @@ void split(const string& s, char delim, Out result) {
 }
 
 /**
- * @brief 
+ * @brief Split string based on regex
  * 
- * @param s 
- * @param delim 
+ * @param s string to split
+ * @param delim Regex
  * 
  * @return vector<string> 
  */
 
 vector<string> split(const string& s, char delim) {
+	// Split
 	vector<string> elems;
 	split(s, delim, back_inserter(elems));
+
+	// Return
 	return elems;
 
 }
@@ -134,7 +137,6 @@ vector<string> split(const string& s, char delim) {
 int formatCommand(int op_code, int location) {
 	string loc = to_string(location);
 	if (location < 10) { loc = "0" + to_string(location);}
-
 	return stoi(to_string(op_code) + loc);
 
 }
@@ -142,17 +144,16 @@ int formatCommand(int op_code, int location) {
 // ----------- Not -----------
 
 /**
- * @brief 
+ * @brief Check if not an operator
  * 
- * @param command 
- * @return true 
- * @return false 
+ * @param command String to chsck
+ * @return true if not an op
+ * @return false if an op
  */
 
 bool notOp(string command) {
 	bool found = true;
 
-	// Expand the list later
 	const int size = 5;
 	string legalVar[size] = { "*", "+", "-", "/" };
 	for (int i = 0; i < size; i++) {
@@ -167,17 +168,16 @@ bool notOp(string command) {
 }
 
 /**
- * @brief 
+ * @brief Check if not a variable
  * 
- * @param command 
- * @return true 
- * @return false 
+ * @param command String to check
+ * @return true if not a variable
+ * @return false if a variable
  */
 
 bool notVar(string command) {
 	bool found = true;
 
-	// Expand the list later
 	const int size = 5;
 	string legalVar[size] = { "x", "y", "z", "b", "a"};
 	for (int i = 0; i < size; i++) {
@@ -221,9 +221,11 @@ int precedence(char c) {
  */
 
 string infixToPostfix(string s) {
+	// Stack
 	stack<char> st; 
 	string result;
 
+	// Loop through string
 	for (int i = 0; i < s.length(); i++) {
 		char c = s[i];
 		
@@ -231,10 +233,11 @@ string infixToPostfix(string s) {
 			result = result + c + " ";
 
 		
+		// Check Parathensis
 		} else if (c == '(') {
 			st.push('(');
 
-		
+		// Check Parathensis
 		} else if (c == ')') {
 			while (st.top() != '(') {
 				result = result + st.top() + " ";
@@ -254,7 +257,7 @@ string infixToPostfix(string s) {
 		}
 	}
 
-	
+	// While empty
 	while (!st.empty()) {
 		result = result + st.top() + " ";
 		st.pop();
@@ -280,6 +283,7 @@ string infixToPostfix(string s) {
 int makeGoto(int op_code, string location, vector<SymbolRow> row) {
 	string op_location;
 	
+	// Loop through table
 	for (int i = 0; i < symbol_table.size(); i++) {
 		if (row[i].getSymbol() == location) {
 			op_location = to_string(row[i].getLocation());
@@ -287,6 +291,7 @@ int makeGoto(int op_code, string location, vector<SymbolRow> row) {
 		}
 	}
 
+	// Return formatted output
 	return formatCommand(op_code, stoi(op_location));
 
 }
@@ -331,51 +336,22 @@ void doGoto(string line, string goto_num, vector<int> sml_codegen, vector<Symbol
  */
 
 void doIf(string line_num, string var1, string relop, string var2, string goto_line, vector<int> &sml_code, vector<SymbolRow> symbol_table) {
-	// If statement for ==
-	if (relop == "==") {
-		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
-			sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
+	if (wasSymInserted(symbol_table, var1) && wasSymInserted(symbol_table, var2)) {
+		sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
 			current_pointer += 1;
 
-			sml_code.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
-			current_pointer += 1;
+		sml_code.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
+		current_pointer += 1;
 
+		if (relop == "==") {
 			doGoto(line_num, goto_line, sml_code, symbol_table, 42);
 			current_pointer += 1;
-
-		} else {
-			cout << "Error, variable does not exist" << endl;
-
-		}
-	}
-
-	// If statement for <
-	if (relop == "<") {
-		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
-			sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
-			current_pointer += 1;
-
-			sml_code.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
-			current_pointer += 1;
-
+		
+		} else if (relop == "<") {
 			doGoto(line_num, goto_line, sml_code, symbol_table, 41);
 			current_pointer += 1;
 
-		} else {
-			cout << "Error, variable does not exist" << endl;
-
-		}
-	}
-
-	// If statement for >
-	if (relop == ">" || relop == ">=") {
-		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
-			sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
-			current_pointer += 1;
-
-			sml_code.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
-			current_pointer += 1;
-
+		} else if (relop == ">" || relop == ">=") {
 			doGoto(line_num, goto_line, sml_code, symbol_table, 41);
 			current_pointer += 1;
 
@@ -385,42 +361,14 @@ void doIf(string line_num, string var1, string relop, string var2, string goto_l
 			doGoto(line_num, goto_line, sml_code, symbol_table, 42);
 			current_pointer += 1;
 
-		} else {
-			cout << "Error, variable does not exist" << endl;
-
-		}
-	}
-
-	// If statement for <=
-	if (relop == "<=") {
-		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
-			sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
-			current_pointer += 1;
-
-			sml_code.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
-			current_pointer += 1;
-
+		} else if (relop == "<=") {
 			doGoto(line_num, goto_line, sml_code, symbol_table, 41);
 			current_pointer += 1;
 
 			doGoto(line_num, goto_line, sml_code, symbol_table, 42);
 			current_pointer += 1;
-
-		} else {
-			cout << "Error, variable does not exist" << endl;
-
-		}
-	}
-
-	// If statment for !=
-	if (relop == "!=") {
-		if ((wasSymInserted(symbol_table, var1) == true) && (wasSymInserted(symbol_table, var2) == true)) {
-			sml_code.push_back(formatCommand(CPU::LOAD, getSymLocation(symbol_table, var1)));
-			current_pointer += 1;
-
-			sml_code.push_back(formatCommand(CPU::SUB, getSymLocation(symbol_table, var2)));
-			current_pointer += 1;
-
+		
+		} else if (relop == "!=") {
 			doGoto(line_num, goto_line, sml_code, symbol_table, 41);
 			current_pointer += 1;
 
@@ -431,6 +379,10 @@ void doIf(string line_num, string var1, string relop, string var2, string goto_l
 			cout << "Error, variable does not exist" << endl;
 
 		}
+	
+	} else {
+		return; 
+
 	}
 }
 
