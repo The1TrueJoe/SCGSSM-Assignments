@@ -3,6 +3,7 @@
 #include <fstream>
 #include <iterator>
 #include <sstream>
+#include <stack>
 
 #include "SymbolRow.h"
 #include "CPU.h"
@@ -23,78 +24,6 @@ vector <int> unresolved_symbols;
 //
 vector <SymbolRow> symbol_table;
 
-
-void main(int argc, char* argv[]) {
-	ifstream infile;
-	ofstream outfile;
-
-	if (argc == 1 || argc == 2) {
-		printHelp();
-
-	} else if (argc == 3) {
-		if (argv[1] == "-in") {
-			infile.open(argv[1]);
-			outfile.open("out.txt");
-
-		} else {
-			printHelp();
-
-		}
-
-	} else if (argc == 5) {
-		for (int i = 1; i < argc; i++) {
-			if (argv[i] == "-in") {
-				infile.open(argv[i+1]);
-
-			} else if (argv[i] == "-out") {
-				infile.open(argv[i+1]);
-
-			} else {
-				printHelp();
-
-			}
-		}
-
-	} else {
-		printHelp();
-
-	}
-
-	cout << "Reading from file" << endl;
-
-	if (infile.is_open()) {
-		std::string line;
-		while (getline(infile, line)) {
-			smlGen(split(line, ' '));
-
-		}
-
-		infile.close();
-	}
-
-	cout << "Unresolved Symbols: " << unresolved_symbols.size() << endl;
-	for (int x = 0; x < unresolved_symbols.size(); x++) { cout << unresolved_symbols[x] << endl; }
-
-	cout << "Second Pass" << endl;
-	secondPass(unresolved_symbols, sml_code, symbol_table);
-
-	cout << "Writing to file" << endl;
-	for (int x = 0; x < sml_code.size(); x++) {
-		outfile << sml_code[x] << endl;
-
-	}
-
-	cout << "Done!" << endl;
-
-}
-
-void printHelp() {
-	cout << "SML Compiler Help" << endl;
-	cout << "-in <file>  -> Input a file that will be compiled" << endl;
-	cout << "-out <file> -> Output the compiled SML code into this file" << endl;
-	exit(0);
-
-}
 
 // ----------- Symbol Table Utils -----------
 
@@ -510,6 +439,32 @@ void doIf(string line_num, string var1, string relop, string var2, string goto_l
 /**
  * @brief 
  * 
+ * @param symbol 
+ * @return int 
+ */
+
+int opSwitch(string symbol) {
+	switch (symbol[0]) {
+		case '*':
+			return 0;
+
+		case '/':
+			return 1;
+
+		case '+':
+			return 2;
+
+		case '-':
+			return 3;
+
+		default:
+			return -1;
+	}
+}
+
+/**
+ * @brief 
+ * 
  * @param equation 
  * @param sml_code 
  * @param symbol_table 
@@ -586,32 +541,6 @@ void doEquation(string equation, vector<int>& sml_code, vector<SymbolRow> symbol
 	sml_code.push_back(formatCommand(CPU::STORE, memory_location));
 	current_pointer += 1;
 	
-}
-
-/**
- * @brief 
- * 
- * @param symbol 
- * @return int 
- */
-
-int opSwitch(string symbol) {
-	switch (symbol[0]) {
-		case '*':
-			return 0;
-
-		case '/':
-			return 1;
-
-		case '+':
-			return 2;
-
-		case '-':
-			return 3;
-
-		default:
-			return -1;
-	}
 }
 
 // ----------- Branches -----------
@@ -770,4 +699,90 @@ void smlGen(vector<string> Command) {
 		cout << sml_code[z] << endl;
 
 	}
+}
+
+/**
+ * @brief 
+ * 
+ */
+	
+void printHelp() {
+    cout << "SML Compiler Help" << endl;
+	cout << "-in <file>  -> Input a file that will be compiled" << endl;
+	cout << "-out <file> -> Output the compiled SML code into this file" << endl;
+
+}
+
+/**
+ * @brief 
+ * 
+ * @param argc 
+ * @param argv 
+ */
+
+void main(int argc, char* argv[]) {
+    ifstream infile;
+    ofstream outfile;
+
+    if (argc == 1 || argc == 2) {
+    	printHelp();
+
+    } else if (argc == 3) {
+	   	if (argv[1] == "-in") {
+	   	    infile.open(argv[1]);
+    		outfile.open("out.txt");
+
+	   	    
+	   	} else {
+	   	    printHelp();
+
+		}
+
+	} else if (argc == 5) {
+	    for (int i = 1; i < argc; i++) {
+	        if (argv[i] == "-in") {
+		   		infile.open(argv[i+1]);
+
+		   	} else if (argv[i] == "-out") {
+		    	infile.open(argv[i+1]);
+
+	    	} else {
+			printHelp();
+
+		    }
+	        
+	    }
+
+	    
+	} else {
+	    printHelp();
+
+	}
+
+	cout << "Reading from file" << endl;
+
+	if (infile.is_open()) {
+	    std::string line;
+	    while (getline(infile, line)) {
+	    	smlGen(split(line, ' '));
+    
+	    }
+
+		infile.close();
+	}
+
+	cout << "Unresolved Symbols: " << unresolved_symbols.size() << endl;
+	for (int x = 0; x < unresolved_symbols.size(); x++) { cout << unresolved_symbols[x] << endl; }
+
+	cout << "Second Pass" << endl;
+	secondPass(unresolved_symbols, sml_code, symbol_table);
+
+    cout << "Writing to file" << endl;
+    for (int x = 0; x < sml_code.size(); x++) {
+    	outfile << sml_code[x] << endl;
+
+    }
+
+    cout << "Done!" << endl;
+    	
 }
