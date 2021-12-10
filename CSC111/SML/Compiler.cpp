@@ -316,7 +316,7 @@ void doGoto(string line, string goto_num, vector<int> sml_codegen, vector<Symbol
 		current_sym += 1;
 
 	} else {
-		sml_code.push_back(makeGoto(CPU::BRANC, goto_num, symbol_table));
+		sml_code.push_back(makeGoto(CPU::BRANCH, goto_num, symbol_table));
 
 	}
 }
@@ -355,7 +355,7 @@ void doIf(string line_num, string var1, string relop, string var2, string goto_l
 			doGoto(line_num, goto_line, sml_code, symbol_table, CPU::BRANCHNEG);
 			current_pointer += 1;
 
-			doGoto(line_num, goto_line, sml_code, symbol_table, CPU::BRANC);
+			doGoto(line_num, goto_line, sml_code, symbol_table, CPU::BRANCH);
 			current_pointer += 1;
 
 			doGoto(line_num, goto_line, sml_code, symbol_table, CPU::BRANCHZERO);
@@ -372,7 +372,7 @@ void doIf(string line_num, string var1, string relop, string var2, string goto_l
 			doGoto(line_num, goto_line, sml_code, symbol_table, CPU::BRANCHNEG);
 			current_pointer += 1;
 
-			doGoto(line_num, goto_line, sml_code, symbol_table, CPU::BRANC);
+			doGoto(line_num, goto_line, sml_code, symbol_table, CPU::BRANCH);
 			current_pointer += 1;
 
 		} else {
@@ -567,7 +567,7 @@ void smlGen(vector<string> Command) {
 	}
 
 	if (Command[1] == "goto") {
-		doGoto(Command[0], Command[2], sml_code, symbol_table, CPU::BRANC);
+		doGoto(Command[0], Command[2], sml_code, symbol_table, CPU::BRANCH);
 		insertIntoSymTable(Command[0], "L", -1);
 
 		current_sym += 1;
