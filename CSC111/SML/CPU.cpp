@@ -1,10 +1,14 @@
 #include "CPU.h"
+#include "RAM.h"
 
 #include <iostream>
 #include <array>
 #include <string>
 
 using namespace std;
+
+// memory
+RAM memory;
 
 /**
  * @brief start the cpu

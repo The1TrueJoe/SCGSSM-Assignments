@@ -4,8 +4,6 @@
  * CPU Based on SML
  */  
 
-#include "RAM.h"
-
 #include <array>
 
 using namespace std;
@@ -23,9 +21,6 @@ class CPU {
 
         // Operate
         int OP(int op_code, int memory_adress);
-
-        // memory
-        RAM memory;
 
         // OPCODES
         static const int READ       = 10; // Read a word from the keyboard into the specified memory location
