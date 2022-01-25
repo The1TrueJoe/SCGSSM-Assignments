@@ -1,6 +1,6 @@
 # SCGSSM-Assignments
 
-Assignments from classes at gssm. Not sure if all of the programs work or not
+Assignments from classes at GSSM.
 ### GSSM Course Catalog
 > See: <a href='https://github.com/The1TrueJoe/SCGSSM-Assignments/blob/main/Resources/2021-2022%20Course%20Catalog.pdf'>GSSM Course Catalog </a>
 
