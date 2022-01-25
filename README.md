@@ -17,6 +17,7 @@ Assignments from classes at gssm. Not sure if all of the programs work or not
 1. [Cisco CCNAv7: Switching, Routing, and Wireless Essentials](IDStu-SRWE/)
 2. [Cisco CCNAv7: Enterprise Networking, Security, and Automation](IDStu-ENSA/)
 3. [Digital Electronics](IDStu-DigElectronics/)
+4. [Computational Physics](IDStu-ComputationalPhysics/)
 
 ## Interims
 
