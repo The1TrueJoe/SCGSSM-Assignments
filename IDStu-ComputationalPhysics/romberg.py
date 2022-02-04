@@ -34,6 +34,7 @@ def romberg_integration(a, b, desired_error):
     j = 0
     n = 3
     err = 9e4
+    
     while err > desired_error:
         while i > j:
             r[i].append(r[i][j] + (1 / (power(4, j + 1) - 1) * (r[i][j] - r[i - 1][j])))
