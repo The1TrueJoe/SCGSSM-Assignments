@@ -11,6 +11,7 @@ Assignments from classes at GSSM.
 3. [CSC140: Introduction to Artifical Intelligence](CSC140/)
 4. [CSC160: Introduction to Computer Networking](CSC160/)
 5. [CSC170: Introduction to Database Design](CSC170/)
+6. [ENGIN210: Engineering Projects](autogolfc.art)
 
 ## Independent Studies
 
@@ -22,3 +23,7 @@ Assignments from classes at GSSM.
 ## Interims
 
 1. [Makerspace Interim](Makerspace2021/)
+
+## Teaching
+
+1. [Electronics Workshop](https://telaak.dev/GSSM-Interim-23/)
